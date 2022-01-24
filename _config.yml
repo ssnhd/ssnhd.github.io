@@ -75,7 +75,7 @@ ga_domain: auto # 默认的是 auto, 你如果没有自己的域名，需要改�
 
 # 侧边栏设置
 sidebar: true
-sidebar-about-description: "河東，设计师、GIA钻石鉴定师"
+sidebar-about-description: "河東，设计师、GIA 钻石鉴定师"
 sidebar-avatar: /img/avatar-me.jpg # 头像
 
 # Featured Tags 主页右侧特色标签
@@ -92,9 +92,9 @@ page-mathjax: false
 # Friends 友链
 friends:
   [
-    { title: "V2EX群", href: "https://t.me/V2EXPro/" },
-    { title: "Rime群", href: "https://t.me/rimeim/" },
-    { title: "Google群", href: "https://t.me/googleim/" },
-    { title: "路由器群", href: "https://t.me/luyouqi/" },
-    { title: "出售Google Voice", href: "https://t.me/iPantherauncia/" },
+    { title: "V2EX 电报群", href: "https://t.me/V2EXPro/" },
+    { title: "Rime 电报群", href: "https://t.me/rimeim/" },
+    { title: "Google 电报群", href: "https://t.me/googleim/" },
+    { title: "路由器电报群", href: "https://t.me/luyouqi/" },
+    { title: "出售 Google Voice", href: "https://t.me/iPantherauncia/" },
   ]
