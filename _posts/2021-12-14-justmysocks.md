@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Just My Socks 机场代理购买及使用方法
+title:      Just My Socks 机场代理购买及使用
 subtitle:   被墙了没法工作，你需要这个
 date:       2021-12-14
 author:     河東
