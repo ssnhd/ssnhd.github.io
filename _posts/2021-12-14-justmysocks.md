@@ -24,7 +24,7 @@ Just My Socks 是加拿大 BandwagonHost（俗称搬瓦工，VPS 商家）官方
 
 
 
-### 注册与购买
+## 注册与购买
 
 打开 <a href="https://justmysocks.net/members/aff.php?aff=12029" target="_blank">官网</a> 注册并登陆，选择订购新服务，根据个人需求购买套餐。
 
@@ -46,7 +46,7 @@ Just My Socks 是加拿大 BandwagonHost（俗称搬瓦工，VPS 商家）官方
 ![](https://i.imgur.com/r81XVOD.png)
 
 
-### 产品 & 服务
+## 产品 & 服务
 
 点击【我的服务】，右侧会看到已购买的服务器并点击它。
 
@@ -61,29 +61,29 @@ Just My Socks 是加拿大 BandwagonHost（俗称搬瓦工，VPS 商家）官方
 
 
 
-### 订阅方法
+## 订阅方法
 
-#### 手机端
+### 手机端
 
 以 Shadowrocket 为例：点击右上角【+】→ 类型选择【Subscribe】→ 输入订阅地址点击完成 → 选择路线打开开关。
 
 ![](https://i.imgur.com/Hg0vnQw.jpg)
 
-#### 路由器端
+### 路由器端
 
 以 OpenWrt 系统为例：打开 ShadowSocksR Plus+ 插件，点击服务器节点 → 输入订阅链接 → 点击【更新所有订阅服务器节点】后【保存】→ 再点击【客户端】选择路线后【保存&应用】。
 
 ![](https://i.imgur.com/wtk8nIb.png)
 
 
-### 测速
+## 测速
 
 路由器 OpenWrt 系统 ShadowSocksR Plus+ 插件，YouTube 4K 60 帧流畅播放。
  
 ![](https://i.imgur.com/Kb3KMPp.png)
 
 
-### 查询使用流量
+## 查询使用流量
 
 产品管理里可以看到套餐使用情况。
 

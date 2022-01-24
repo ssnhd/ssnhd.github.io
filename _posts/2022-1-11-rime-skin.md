@@ -22,7 +22,7 @@ Rime 电报群：[@RIMEIM](https://t.me/rimeim)
 使用方法：复制下面皮肤主题代码，粘贴到配置文件 `squirrel.custom.yaml`，然后更换主题即可，如果您对皮肤的细节不满意，可以自行修改数值进行调整。
 
 
-### Mac浅色 / mac_light
+## Mac浅色 / mac_light
 ![](https://i.imgur.com/vqDW5La.png)
 ```
 mac_light:
@@ -49,9 +49,9 @@ mac_light:
   hilited_candidate_label_color: 0xFFFFFF # 第一候选项编号颜色
   hilited_comment_text_color: 0x999999    # 注解文字高亮
 ```
----
 
-### Mac深色 / mac_dark
+
+## Mac深色 / mac_dark
 ![](https://i.imgur.com/DNu6P4z.png)
 ```
 mac_dark:
@@ -78,9 +78,9 @@ mac_dark:
   hilited_candidate_label_color: 0xFFFFFF # 第一候选项编号颜色
   hilited_comment_text_color: 0x999999    # 注解文字高亮
 ```
----
 
-### Mac绿 / mac_green
+
+## Mac绿 / mac_green
 ![](https://i.imgur.com/n1P6lUm.png)
 ```
 mac_green:
@@ -107,9 +107,9 @@ mac_green:
   hilited_candidate_label_color: 0xFFFFFF # 第一候选项编号颜色
   hilited_comment_text_color: 0x999999    # 注解文字高亮
 ```
----
 
-### Mac橙 / mac_orange
+
+## Mac橙 / mac_orange
 ![](https://i.imgur.com/tCKKj1D.png)
 ```
 mac_orange:
@@ -138,8 +138,8 @@ mac_orange:
 ```
 
 
----
-### Mac浅蓝 / mac_blue
+
+## Mac浅蓝 / mac_blue
 ![](https://i.imgur.com/V5KLI0z.png)
 ```
 mac_blue:
@@ -164,8 +164,8 @@ mac_blue:
   hilited_comment_text_color: 0x999999    # 注解文字高亮
 ```
 
----
-### 幽能 / psionics
+
+## 幽能 / psionics
 ![](https://i.imgur.com/TEPA69Y.png)
 ```
 psionics:
@@ -189,8 +189,8 @@ psionics:
   hilited_comment_text_color: 0x444444     # 注解文字高亮
 ```
 
----
-### Windows / win10
+
+## Windows / win10
 ![](https://i.imgur.com/HUt3OzN.png)
 ```
 win10:
@@ -222,8 +222,8 @@ win10:
   label_color: 0x888888                   # 预选栏编号颜色
 ```
 
----
-### 日光石 / solarized_rock
+
+## 日光石 / solarized_rock
 ![](https://i.imgur.com/pWxTSMe.png)
 ```
 solarized_rock:
@@ -248,8 +248,8 @@ solarized_rock:
 ```
 
 
----
-### 夜光石 / solarized_dark
+
+## 夜光石 / solarized_dark
 ![](https://i.imgur.com/M74AVYU.png)
 ```
 solarized_dark:
@@ -276,8 +276,8 @@ solarized_dark:
 ```
 
 
----
-### 冷漠 / apathy
+
+## 冷漠 / apathy
 ![](https://i.imgur.com/HLUhDoN.png)
 ```
 apathy:
@@ -299,8 +299,8 @@ apathy:
 ```
 
 
----
-### 谷歌 / google
+
+## 谷歌 / google
 ![](https://i.imgur.com/I07NTJg.png)
 ```
 google:
@@ -325,8 +325,8 @@ google:
 ```
 
 
----
-### 米兰 / milan
+
+## 米兰 / milan
 ![](https://i.imgur.com/KJofh7W.png)
 ```
 milan:
@@ -347,8 +347,8 @@ milan:
 ```
 
 
----
-### 墨池 / ink
+
+## 墨池 / ink
 ![](https://i.imgur.com/pBQaOTS.png)
 ```
 ink:
@@ -370,8 +370,8 @@ ink:
 ```
 
 
----
-### 纯洁 / purity
+
+## 纯洁 / purity
 ![](https://i.imgur.com/bgaAZCl.png)
 ```
 purity:
@@ -393,8 +393,8 @@ purity:
 ```
 
 
----
-### 星际争霸 / starcraft
+
+## 星际争霸 / starcraft
 ![](https://i.imgur.com/uqdMg9T.png)
 ```
 starcraft:
@@ -417,9 +417,9 @@ starcraft:
   hilited_comment_text_color: 0x1010f0     # 注解文字高亮
 ```
 
----
 
-### 北方浅色 / nord_light
+
+## 北方浅色 / nord_light
 ![](https://i.imgur.com/m2kwAsN.png)
 ```
 nord_light:
@@ -441,9 +441,9 @@ nord_light:
   text_color: 0x7087D0                     # 拼音等提示文字颜色
 ```
 
----
 
-### 北方深色 / nord_dark
+
+## 北方深色 / nord_dark
 ![](https://i.imgur.com/mdP4Tnc.png)
 ```
 nord_dark:

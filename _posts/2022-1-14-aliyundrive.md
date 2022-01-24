@@ -18,18 +18,18 @@ Infuse for Mac 效果：
 
 ![](https://i.imgur.com/7P8M6CX.png)
 
-### 准备
+## 准备
 
 - Infuse 软件。
 - 支持安装阿里云盘 WebDVA 插件的系统，例如 X86 OpenWrt 系统的路由器。
 
-### 获取 token
+## 获取 token
 
 打开阿里云盘网页端，鼠标右键选择【审查】出现代码页面，点击【Application】-【Local Storage】网址 -【token】下拉找找到 `refresh token:` 并复制后面的字符。
 
 ![](https://i.imgur.com/RMq12OF.png)
 
-### 设置阿里云盘 WebDAV
+## 设置阿里云盘 WebDAV
 
 打开路由器后台插件阿里云盘 WebDAV，将上面复制的字符粘贴到 `Refresh Token`，主机地址填写您路由器 IP，用户名、密码、端口自定义，勾选【启动】再点击【保存&应用】。
 
@@ -37,7 +37,7 @@ Infuse for Mac 效果：
 
 ![](https://i.imgur.com/YX1UkuP.png)
 
-### 设置 Infuse
+## 设置 Infuse
 
 打开 Infuse，点击【新增文件来源】。
 
