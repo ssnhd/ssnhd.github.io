@@ -16,8 +16,7 @@ tags:
     - Mac
 ---
 
-配置详解：[点击这里](https://ssnhd.com/2022/01/06/rime/)\
-Rime 电报群：[@RIMEIM](https://t.me/rimeim)
+配置详解：[点击这里](https://ssnhd.com/2022/01/06/rime/)，Rime 电报群：[@RIMEIM](https://t.me/rimeim)
 
 使用方法：复制下面皮肤主题代码，粘贴到配置文件 `squirrel.custom.yaml`，然后更换主题即可，如果您对皮肤的细节不满意，可以自行修改数值进行调整。
 
