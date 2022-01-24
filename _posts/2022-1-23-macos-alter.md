@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Mac 修改启动台行列数、程序坞显示时间、允许任何来源、更改密码位数、关闭开启 SIP
-subtitle: 让 Mac 更符合你的使用习惯
+title: Mac 允许任何来源，关闭 SIP 等常见设置
+subtitle: 修改启动台行列数、程序坞显示时间、更改密码位数
 date: 2022-1-23
 author: 河東
 header-img: img/macos/post-bg-macos.jpeg

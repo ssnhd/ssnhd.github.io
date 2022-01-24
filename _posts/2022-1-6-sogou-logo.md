@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      搜狗输入法修改菜单栏图标
-subtitle:   Mac 端更换为自己喜欢的图标
+subtitle:   自定义 Logo
 date:       2022-1-6
 author:     河東
 header-img: img/post-bg-huise.jpg

@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      Rime 鼠须管输入法皮肤
-subtitle:   汇集热门皮肤 UI
+title:      Rime 鼠须管输入法皮肤效果
+subtitle:   热门皮肤 UI
 date:       2022-1-11
 author:     河東
 header-img: img/post-bg-skin.jpeg

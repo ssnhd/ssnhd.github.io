@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      搜狗词库转为 Rime 词库方法
-subtitle:   自定义，适用于绝大部分词库转换
+subtitle:   适用于绝大部分词库转换
 date:       2022-1-6
 author:     河東
 header-img: img/post-bg-rime.png

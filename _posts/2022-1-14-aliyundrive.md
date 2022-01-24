@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 阿里云盘 WebDAV 搭配 Infuse 多平台观影
+title: 阿里云盘配合 Infuse 观影
 subtitle: 影视剧自动添加海报
 date: 2022-1-14
 author: 河東
@@ -10,7 +10,6 @@ top: false
 tags:
   - Infuse
   - 阿里云盘
-  - WebDAV
 ---
 
 阿里云盘不限速且容量大，被很多人用来存储自己喜爱的影视剧，但看剧不是特别方便，今天给大家介绍阿里云盘搭配 Infuse 播放器，影视剧自动载入海报，且支持多平台。
