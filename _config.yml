@@ -92,9 +92,9 @@ page-mathjax: false
 # Friends 友链
 friends:
   [
-    { title: "V2EX 群", href: "https://t.me/V2EXPro/" },
-    { title: "Rime 群", href: "https://t.me/rimeim/" },
-    { title: "Google 群", href: "https://t.me/googleim/" },
+    { title: "V2EX群", href: "https://t.me/V2EXPro/" },
+    { title: "Rime群", href: "https://t.me/rimeim/" },
+    { title: "Google群", href: "https://t.me/googleim/" },
     { title: "路由器群", href: "https://t.me/luyouqi/" },
-    { title: "出售 Google Voice", href: "https://t.me/iPantherauncia/" },
+    { title: "出售Google Voice", href: "https://t.me/iPantherauncia/" },
   ]
