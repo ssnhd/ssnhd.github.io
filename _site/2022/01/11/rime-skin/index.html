@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="科技 数码 美术 设计 | 这里是河東的个人博客，与你一起发现更大的世界。">
+    <meta name="keywords" content="河東, ssnhd, @ssnhd, ssnhd.com, 河東的博客, 三十年河東, HD Blog, 博客, 个人网站">
+    <meta name="theme-color" content="#000000">
+    <base target="_blank" />
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+        content="Rime 鼠须管输入法皮肤 - 三十年河東(SSNHD.COM)-生活、科技、博客">
+    
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="配置详解：点击这里
+Rime 电报群：@RIMEIM
+">
+    
+    <meta property="article:published_time" content=" 2022-01-11T00:00:00Z">
+    
+    
+    <meta property="article:author" content="河東">
+    
+    
+    <meta property="article:tag" content="Rime">
+    
+    <meta property="article:tag" content="Squirrel">
+    
+    <meta property="article:tag" content="鼠须管">
+    
+    <meta property="article:tag" content="输入法">
+    
+    <meta property="article:tag" content="皮肤">
+    
+    <meta property="article:tag" content="Mac">
+    
+    
+    <meta property="og:image" content="http://localhost:4000/img/avatar-me.jpg">
+    <meta property="og:url" content="http://localhost:4000/2022/01/11/rime-skin/">
+    <meta property="og:site_name" content="三十年河東(SSNHD.COM)-生活、科技、博客">
+
+    <title>Rime 鼠须管输入法皮肤 - 三十年河東(SSNHD.COM)-生活、科技、博客</title>
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/pwa/manifest.json">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="http://localhost:4000/2022/01/11/rime-skin/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href=" /css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href=" /css/hux-blog.min.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+
+    <!-- Google AdSense -->
+    <script data-ad-client="ca-pub-6487568398225121" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">三十年河東</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div id="huxblog_navbar">
+                <div class="navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="/">HOME</a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                        
+                        
+                        <li>
+                            <a href="/archive/">Archive</a>
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li class="search-icon">
+                            <a href="javascript:void(0)">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <script>
+        // Drop Bootstarp low-performance Navbar
+        // Use customize navbar with high-quality material design animation
+        // in high-perf jank-free CSS3 implementation
+        var $body = document.body;
+        var $toggle = document.querySelector('.navbar-toggle');
+        var $navbar = document.querySelector('#huxblog_navbar');
+        var $collapse = document.querySelector('.navbar-collapse');
+
+        var __HuxNav__ = {
+            close: function () {
+                $navbar.className = " ";
+                // wait until animation end.
+                setTimeout(function () {
+                    // prevent frequently toggle
+                    if ($navbar.className.indexOf('in') < 0) {
+                        $collapse.style.height = "0px"
+                    }
+                }, 400)
+            },
+            open: function () {
+                $collapse.style.height = "auto"
+                $navbar.className += " in";
+            }
+        }
+
+        // Bind Event
+        $toggle.addEventListener('click', function (e) {
+            if ($navbar.className.indexOf('in') > 0) {
+                __HuxNav__.close()
+            } else {
+                __HuxNav__.open()
+            }
+        })
+
+        /**
+         * Since Fastclick is used to delegate 'touchstart' globally
+         * to hack 300ms delay in iOS by performing a fake 'click',
+         * Using 'e.stopPropagation' to stop 'touchstart' event from 
+         * $toggle/$collapse will break global delegation.
+         * 
+         * Instead, we use a 'e.target' filter to prevent handler
+         * added to document close HuxNav.  
+         *
+         * Also, we use 'click' instead of 'touchstart' as compromise
+         */
+        document.addEventListener('click', function (e) {
+            if (e.target == $toggle) return;
+            if (e.target.className == 'icon-bar') return;
+            __HuxNav__.close();
+        })
+    </script>
+    <!-- Search -->
+<div class="search-page">
+  <div class="search-icon-close-container">
+    <span class="search-icon-close">
+      <i class="fa fa-chevron-down"></i>
+    </span>
+  </div>
+  <div class="search-main container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <form></form>
+        <input type="text" id="search-input" placeholder="$ grep...">
+        </form>
+        <div id="search-results" class="mini-post-list"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="/img/post-bg-skin.jpeg" width="0" height="0"> -->
+
+<!-- Post Header -->
+
+
+
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/img/post-bg-skin.jpeg');
+        background: ;
+    }
+
+    
+</style>
+
+<header class="intro-header" >
+
+    <div class="header-mask"></div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/archive/?tag=Rime" title="Rime">Rime</a>
+                        
+                        <a class="tag" href="/archive/?tag=Squirrel" title="Squirrel">Squirrel</a>
+                        
+                        <a class="tag" href="/archive/?tag=%E9%BC%A0%E9%A1%BB%E7%AE%A1" title="鼠须管">鼠须管</a>
+                        
+                        <a class="tag" href="/archive/?tag=%E8%BE%93%E5%85%A5%E6%B3%95" title="输入法">输入法</a>
+                        
+                        <a class="tag" href="/archive/?tag=%E7%9A%AE%E8%82%A4" title="皮肤">皮肤</a>
+                        
+                        <a class="tag" href="/archive/?tag=Mac" title="Mac">Mac</a>
+                        
+                    </div>
+                    <h1>Rime 鼠须管输入法皮肤</h1>
+                    
+                    <h2 class="subheading">汇集热门皮肤 UI</h2>
+                    <span class="meta">发布日期：2022-01-11</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <!-- Multi-Lingual -->
+                
+
+				<p>配置详解：<a href="https://ssnhd.com/2022/01/06/rime/">点击这里</a><br />
+Rime 电报群：<a href="https://t.me/rimeim">@RIMEIM</a></p>
+
+<p>使用方法：复制下面皮肤主题代码，粘贴到配置文件 <code class="language-plaintext highlighter-rouge">squirrel.custom.yaml</code>，然后更换主题即可，如果您对皮肤的细节不满意，可以自行修改数值进行调整。</p>
+
+<h3 id="mac浅色--mac_light">Mac浅色 / mac_light</h3>
+<p><img src="https://i.imgur.com/vqDW5La.png" alt="" /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+</pre></td><td class="rouge-code"><pre>mac_light:
+  name: Mac浅色
+  horizontal: true             # true横排，false竖排
+  candidate_format: "%c %@ "   # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  corner_radius: 5                             # 窗口圆角
+  hilited_corner_radius: 5                     # 高亮圆角
+  line_spacing: 10                             # 行间距(适用于竖排)
+  border_height: 4                             # 窗口上下高度，大于圆角半径才生效
+  border_width: 4                              # 窗口左右宽度，大于圆角半径才生效
+  font_face: "PingFangSC"                      # 候选词字体
+  font_point: 16                               # 候选字大小
+  label_font_point: 13                         # 候选编号大小
+  text_color: 0x424242                    # 拼音行文字颜色
+  back_color: 0xFFFFFF                    # 候选条背景色
+  border_color: 0xFFFFFF                  # 边框色
+  label_color: 0x999999                   # 预选栏编号颜色
+  candidate_text_color: 0x3c3c3c          # 预选项文字颜色
+  comment_text_color: 0x999999            # 拼音等提示文字颜色
+  hilited_text_color: 0x999999            # 高亮拼音 (需要开启内嵌编码)
+  hilited_back_color: 0xD75A00            # 第一候选项背景背景色
+  hilited_candidate_text_color: 0xFFFFFF  # 第一候选项文字颜色
+  hilited_candidate_label_color: 0xFFFFFF # 第一候选项编号颜色
+  hilited_comment_text_color: 0x999999    # 注解文字高亮
+</pre></td></tr></tbody></table></code></pre></div></div>
+<hr />
+
+<h3 id="mac深色--mac_dark">Mac深色 / mac_dark</h3>
+<p><img src="https://i.imgur.com/DNu6P4z.png" alt="" /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+</pre></td><td class="rouge-code"><pre>mac_dark:
+  name: Mac深色
+  horizontal: true             # true横排，false竖排
+  candidate_format: "%c %@ "   # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  corner_radius: 5                             # 窗口圆角
+  hilited_corner_radius: 5                     # 高亮圆角
+  line_spacing: 10                             # 行间距(适用于竖排)
+  border_height: 4                             # 窗口上下高度，大于圆角半径才生效
+  border_width: 4                              # 窗口左右宽度，大于圆角半径才生效 
+  font_face: "PingFangSC"                      # 候选词字体
+  font_point: 16                               # 候选字大小
+  label_font_point: 13                         # 候选编号大小
+  text_color: 0x424242                    # 拼音行文字颜色
+  back_color: 0x252a2e                    # 候选条背景色
+  border_color: 0x050505                  # 边框色
+  label_color: 0x999999                   # 预选栏编号颜色
+  candidate_text_color: 0xe9e9ea          # 预选项文字颜色
+  comment_text_color: 0x999999            # 拼音等提示文字颜色
+  hilited_text_color: 0x999999            # 高亮拼音 (需要开启内嵌编码)
+  hilited_back_color: 0xD75A00            # 第一候选项背景背景色
+  hilited_candidate_text_color: 0xFFFFFF  # 第一候选项文字颜色
+  hilited_candidate_label_color: 0xFFFFFF # 第一候选项编号颜色
+  hilited_comment_text_color: 0x999999    # 注解文字高亮
+</pre></td></tr></tbody></table></code></pre></div></div>
+<hr />
+
+<h3 id="mac绿--mac_green">Mac绿 / mac_green</h3>
+<p><img src="https://i.imgur.com/n1P6lUm.png" alt="" /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+</pre></td><td class="rouge-code"><pre>mac_green:
+  name: Mac绿色
+  horizontal: true             # true横排，false竖排
+  candidate_format: "%c %@ "   # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  corner_radius: 5                             # 窗口圆角
+  hilited_corner_radius: 5                     # 高亮圆角
+  line_spacing: 10                             # 行间距(适用于竖排)
+  border_height: 4                             # 窗口上下高度，大于圆角半径才生效
+  border_width: 4                              # 窗口左右宽度，大于圆角半径才生效
+  font_face: "PingFangSC"                      # 候选词字体
+  font_point: 16                               # 候选字大小
+  label_font_point: 13                         # 候选编号大小
+  text_color: 0x424242                    # 拼音行文字颜色
+  back_color: 0xFFFFFF                    # 候选条背景色
+  border_color: 0xFFFFFF                  # 边框色
+  label_color: 0x999999                   # 预选栏编号颜色
+  candidate_text_color: 0x3c3c3c          # 预选项文字颜色
+  comment_text_color: 0x999999            # 拼音等提示文字颜色
+  hilited_text_color: 0x999999            # 高亮拼音 (需要开启内嵌编码)
+  hilited_candidate_back_color: 0x32A14C  # 第一候选项背景色
+  hilited_candidate_text_color: 0xFFFFFF  # 第一候选项文字颜色
+  hilited_candidate_label_color: 0xFFFFFF # 第一候选项编号颜色
+  hilited_comment_text_color: 0x999999    # 注解文字高亮
+</pre></td></tr></tbody></table></code></pre></div></div>
+<hr />
+
+<h3 id="mac橙--mac_orange">Mac橙 / mac_orange</h3>
+<p><img src="https://i.imgur.com/tCKKj1D.png" alt="" /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+</pre></td><td class="rouge-code"><pre>mac_orange:
+  name: Mac橙色
+  horizontal: true             # true横排，false竖排
+  candidate_format: "%c %@ "   # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  corner_radius: 5                             # 窗口圆角
+  hilited_corner_radius: 5                     # 高亮圆角
+  line_spacing: 10                             # 行间距(适用于竖排)
+  border_height: 4                             # 窗口上下高度，大于圆角半径才生效
+  border_width: 4                              # 窗口左右宽度，大于圆角半径才生效
+  font_face: "PingFangSC"                      # 候选词字体
+  font_point: 16                               # 候选字大小
+  label_font_point: 13                         # 候选编号大小
+  text_color: 0x424242                    # 拼音行文字颜色
+  back_color: 0xFFFFFF                    # 候选条背景色
+  border_color: 0xFFFFFF                  # 边框色
+  label_color: 0x999999                   # 预选栏编号颜色
+  candidate_text_color: 0x3c3c3c          # 预选项文字颜色
+  comment_text_color: 0x999999            # 拼音等提示文字颜色
+  hilited_text_color: 0x999999            # 高亮拼音 (需要开启内嵌编码)
+  hilited_candidate_back_color: 0x0E6BD8  # 第一候选项背景色
+  hilited_candidate_text_color: 0xFFFFFF  # 第一候选项文字颜色
+  hilited_candidate_label_color: 0xFFFFFF # 第一候选项编号颜色
+  hilited_comment_text_color: 0x999999    # 注解文字高亮
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+<h3 id="mac浅蓝--mac_blue">Mac浅蓝 / mac_blue</h3>
+<p><img src="https://i.imgur.com/V5KLI0z.png" alt="" /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre></td><td class="rouge-code"><pre>mac_blue:
+  name: Mac浅蓝
+  horizontal: true              # true横排，false竖排
+  candidate_format: "%c %@ "    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  corner_radius: 5                             # 窗口圆角
+  font_face: "PingFangSC"                      # 候选词字体
+  font_point: 16                               # 候选字大小
+  label_font_point: 13                         # 候选编号大小
+  line_spacing: 10                             # 行间距(适用于竖排)
+  text_color: 0x424242                    # 拼音行文字颜色
+  back_color: 0xFFFFFF                    # 候选条背景色
+  border_color: 0xFFFFFF                  # 边框色
+  label_color: 0x999999                   # 预选栏编号颜色
+  candidate_text_color: 0x3c3c3c          # 预选项文字颜色
+  comment_text_color: 0x999999            # 拼音等提示文字颜色
+  hilited_text_color: 0x999999            # 高亮拼音 (需要开启内嵌编码)
+  hilited_back_color: 0xF8AA4D            # 第一候选项背景背景色
+  hilited_candidate_text_color: 0xFFFFFF  # 第一候选项文字颜色
+  hilited_candidate_label_color: 0xFFFFFF # 第一候选项编号颜色
+  hilited_comment_text_color: 0x999999    # 注解文字高亮
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+<h3 id="幽能--psionics">幽能 / psionics</h3>
+<p><img src="https://i.imgur.com/TEPA69Y.png" alt="" /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="rouge-code"><pre>psionics:
+  name: 幽能
+  horizontal: true              # true横排，false竖排
+  candidate_format: "%c %@ "    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  corner_radius: 5                             # 窗口圆角 
+  font_point: 16                               # 候选文字大小
+  label_font_point: 14                         # 候选编号大小
+  font_face: "PingFangSC-Regular,HanaMinB"     # 候选词字体
+  line_spacing: 10                             # 行间距(适用于竖排)
+  text_color: 0xc2c2c2                     # 拼音行文字颜色
+  back_color: 0x444444                     # 候选条背景色，24位色值，16进制，BGR顺序
+  candidate_text_color: 0xeeeeee           # 预选项文字颜色
+  hilited_candidate_back_color: 0xd4bc00   # 候选文字背景色
+  comment_text_color: 0x808080             # 拼音等提示文字颜色
+  hilited_text_color: 0xeeeeee             # 高亮拼音 (需要开启内嵌编码)
+  hilited_back_color: 0x444444             # 第一候选项背景背景色
+  hilited_candidate_label_color: 0xfafafa  # 第一候选项编号颜色
+  hilited_candidate_text_color: 0xfafafa   # 第一候选项文字颜色
+  hilited_comment_text_color: 0x444444     # 注解文字高亮
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+<h3 id="windows--win10">Windows / win10</h3>
+<p><img src="https://i.imgur.com/HUt3OzN.png" alt="" /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+</pre></td><td class="rouge-code"><pre>win10:
+  horizontal: true                  # true横排，false竖排
+  candidate_format: "%c %@  "       # 如果是竖排建议改为 "%c\u2005%@"
+  font_point: 17              # 候选文字大小
+  label_font_point: 16        # 候选编号大小
+  corner_radius: 0            # 候选条圆角
+  border_width: 6             # 窗口左右宽度
+  border_height: 6            # 窗口左右高度
+  margin_x: 12                # 字起始距左边距离
+  margin_y: 12                # 字上下边距
+  spacing: 10                 # 间距
+  candidate_spacing: 24       # 候选字间隔
+  line_spacing: 10            # 行间距(适用于竖排)
+  hilite_spacing: 8           # 序号和候选字之间的间隔
+  hilite_padding: 12          # 候选字背景色色块高度 若想候选字背景色块无边界填充候选框，仅需其高度和候选字上下边距一致即可
+  round_corner: 0             # 候选字背景色块圆角幅度
+  candidate_text_color: 0x000000          # 预选项文字颜色
+  comment_text_color: 0x888888            # 拼音等提示文字颜色
+  text_color: 0x000000                    # 拼音行文字颜色
+  back_color: 0xffffff                    # 候选条背景色，24位色值，16进制，BGR顺序
+  hilited_text_color: 0x000000            # 高亮拼音 (需要开启内嵌编码)
+  hilited_back_color: 0xffffff            # 第一候选项背景背景色
+  hilited_candidate_text_color: 0xffffff  # 第一候选项文字颜色
+  hilited_candidate_back_color: 0xcc8f29  # 候选文字背景色
+  hilited_comment_text_color: 0xffffff    # 注解文字高亮
+  hilited_label_color: 0xffffff           # 已选字的数字的颜色
+  label_color: 0x888888                   # 预选栏编号颜色
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+<h3 id="日光石--solarized_rock">日光石 / solarized_rock</h3>
+<p><img src="https://i.imgur.com/pWxTSMe.png" alt="" /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="rouge-code"><pre>solarized_rock:
+  name: 日光石
+  horizontal: true              # true横排，false竖排
+  candidate_format: "%c %@ "    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  corner_radius: 6                             # 窗口圆角 
+  font_point: 16                               # 候选文字大小
+  label_font_point: 15                         # 候选编号大小
+  line_spacing: 10                             # 行间距(适用于竖排)
+  font_face: "PingFangSC-Regular,HanaMinB"     # 候选词字体
+  text_color: 0x8236d3                     # 拼音行文字颜色
+  back_color: 0x362b00                     # 候选条背景色，24位色值，16进制，BGR顺序
+  candidate_text_color: 0x969483           # 预选项文字颜色
+  comment_text_color: 0xc098a12a           # 拼音等提示文字颜色
+  hilited_text_color: 0x98a12a             # 高亮拼音 (需要开启内嵌编码)
+  hilited_back_color: 0x444444             # 第一候选项背景背景色
+  hilited_candidate_label_color: 0xfafafa  # 第一候选项编号颜色
+  hilited_candidate_back_color: 0x8236d3   # 候选文字背景色
+  hilited_candidate_text_color: 0xffffff   # 第一候选项文字颜色
+  hilited_comment_text_color: 0x362b00     # 注解文字高亮 
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+<h3 id="夜光石--solarized_dark">夜光石 / solarized_dark</h3>
+<p><img src="https://i.imgur.com/M74AVYU.png" alt="" /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+</pre></td><td class="rouge-code"><pre>solarized_dark:
+  name: 夜光石
+  horizontal: true              # true横排，false竖排
+  candidate_format: "%c %@ "    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  corner_radius: 6                             # 窗口圆角 
+  font_point: 16                               # 候选文字大小
+  label_font_point: 15                         # 候选编号大小
+  line_spacing: 10                             # 行间距(适用于竖排)
+  font_face: "PingFangSC-Regular,HanaMinB"     # 候选词字体
+  text_color: 0xA1A095                     # 拼音行文字颜色
+  border_color: 0xf02A1F00                 # 边框颜色
+  label_color: 0xCC8947                    # 预选栏编号颜色
+  back_color: 0xf0352A0A                   # 候选条背景色，24位色值，16进制，BGR顺序
+  candidate_text_color: 0x989F52           # 预选项文字颜色
+  comment_text_color: 0x289989           # 拼音等提示文字颜色
+  hilited_text_color: 0x2C8BAE             # 高亮拼音 (需要开启内嵌编码)
+  hilited_back_color: 0x444444             # 第一候选项背景背景色
+  hilited_candidate_label_color: 0x2566C6  # 第一候选项编号颜色
+  hilited_candidate_back_color: 0xD7E8ED   # 候选文字背景色
+  hilited_candidate_text_color: 0x3942CB   # 第一候选项文字颜色
+  hilited_comment_text_color: 0x8144C2     # 注解文字高亮 
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+<h3 id="冷漠--apathy">冷漠 / apathy</h3>
+<p><img src="https://i.imgur.com/HLUhDoN.png" alt="" /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="rouge-code"><pre>apathy:
+  name: 冷漠
+  horizontal: true              # true横排，false竖排
+  back_color: 0xFFFFFF           # 候选条背景色，24位色值，16进制，BGR顺序
+  border_height: 0               # 窗口上下高度，大于圆角半径才生效
+  border_width: 8                # 窗口左右宽度
+  line_spacing: 10               # 行间距(适用于竖排)
+  candidate_format: "%c %@ "     # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  comment_text_color: 0x999999              # 拼音等提示文字颜色
+  corner_radius: 5                          # 窗口圆角
+  font_point: 17                            # 候选文字大小
+  hilited_candidate_back_color: 0xFFF0E4    # 候选文字背景色
+  hilited_candidate_text_color: 0xEE6E00    # 第一候选项文字颜色
+  inline_preedit: true
+  label_font_point: 12           # 候选编号大小
+  text_color: 0x424242           # 拼音行文字颜色
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+<h3 id="谷歌--google">谷歌 / google</h3>
+<p><img src="https://i.imgur.com/I07NTJg.png" alt="" /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="rouge-code"><pre>google:
+  name: 谷歌
+  horizontal: true              # true横排，false竖排
+  candidate_format: "%c %@ "    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  font_point: 16                           # 候选文字大小
+  label_font_point: 15                     # 候选编号大小
+  corner_radius: 6                         # 窗口圆角
+  line_spacing: 10                         # 行间距(适用于竖排)
+  text_color: 0x666666                     # 拼音行文字颜色
+  candidate_text_color: 0x000000           # 预选项文字颜色
+  back_color: 0xFFFFFF                     # 候选条背景色，24位色值，16进制，BGR顺序
+  border_color: 0xE2E2E2                   # 边框
+  hilited_text_color: 0x000000             # 高亮拼音 (需要开启内嵌编码)
+  hilited_back_color: 0xFFFFFF             # 第一候选项背景背景色
+  hilited_candidate_text_color: 0xffffff   # 第一候选项文字颜色
+  hilited_candidate_back_color: 0xCE7539   # 候选文字背景色 
+  comment_text_color: 0x6D6D6D             # 拼音等提示文字颜色
+  hilited_comment_text_color: 0xEBC6B0     # 注解文字高亮
+  hilited_candidate_label_color: 0xfafafa  # 第一候选项编号颜色
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+<h3 id="米兰--milan">米兰 / milan</h3>
+<p><img src="https://i.imgur.com/KJofh7W.png" alt="" /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td><td class="rouge-code"><pre>milan:
+  name: 米兰
+  horizontal: true              # true横排，false竖排
+  candidate_format: "%c %@ "    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  font_point: 16                           # 候选文字大小
+  label_font_point: 14                     # 候选编号大小
+  line_spacing: 10                         # 行间距(适用于竖排)
+  border_height: 4                             # 窗口上下高度，大于圆角半径才生效
+  border_width: 4                              # 窗口左右宽度，大于圆角半径才生效
+  corner_radius: 5                         # 窗口圆角
+  back_color: 0xFFFFFF                     # 候选条背景色
+  comment_text_color: 0x999999             # 拼音等提示文字颜色
+  hilited_candidate_back_color: 0xF5803B   # 候选文字背景色
+  hilited_candidate_text_color: 0xFFFFFF   # 第一候选项文字颜色
+  text_color: 0x424242                     # 拼音行文字颜色
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+<h3 id="墨池--ink">墨池 / ink</h3>
+<p><img src="https://i.imgur.com/pBQaOTS.png" alt="" /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="rouge-code"><pre>ink:
+  name: 墨池
+  horizontal: true              # true横排，false竖排
+  candidate_format: "%c %@ "    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  font_point: 16                           # 候选文字大小
+  label_font_point: 14                     # 候选编号大小
+  corner_radius: 5                         # 窗口圆角
+  line_spacing: 10                         # 行间距(适用于竖排)
+  text_color: 0x5a5a5a                     # 拼音等提示文字颜色
+  back_color: 0xeeffffff                   # 候选条背景色
+  candidate_text_color: 0x000000           # 第一候选项文字颜色
+  hilited_text_color: 0x000000             # 高亮拼音 (需要开启内嵌编码)
+  hilited_candidate_text_color: 0xffffff   # 第一候选项文字颜色
+  hilited_candidate_back_color: 0xcc000000 # 候选文字背景色
+  comment_text_color: 0x5a5a5a             # 拼音等提示文字颜色
+  hilited_comment_text_color: 0x808080     # 注解文字高亮
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+<h3 id="纯洁--purity">纯洁 / purity</h3>
+<p><img src="https://i.imgur.com/bgaAZCl.png" alt="" /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="rouge-code"><pre>purity:
+  name: 纯洁
+  horizontal: true              # true横排，false竖排
+  candidate_format: "%c %@ "    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  font_point: 16                           # 候选文字大小
+  label_font_point: 14                     # 候选编号大小
+  corner_radius: 5                         # 窗口圆角
+  line_spacing: 10                         # 行间距(适用于竖排)
+  text_color: 0xc2c2c2                     # 拼音等提示文字颜色
+  back_color: 0x444444                     # 候选条背景色
+  candidate_text_color: 0xeeeeee           # 第一候选项文字颜色
+  hilited_text_color: 0xeeeeee             # 高亮拼音 (需要开启内嵌编码)
+  hilited_back_color: 0x444444             # 第一候选项背景背景色
+  hilited_candidate_text_color: 0x000000   # 第一候选项文字颜色
+  hilited_candidate_back_color: 0xfafafa   # 候选文字背景色
+  comment_text_color: 0x808080             # 拼音等提示文字颜色
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+<h3 id="星际争霸--starcraft">星际争霸 / starcraft</h3>
+<p><img src="https://i.imgur.com/uqdMg9T.png" alt="" /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+</pre></td><td class="rouge-code"><pre>starcraft:
+  name: 星际争霸
+  horizontal: true              # true横排，false竖排
+  candidate_format: "%c %@ "    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  font_point: 16                           # 候选文字大小
+  label_font_point: 14                     # 候选编号大小
+  corner_radius: 5                         # 窗口圆角
+  line_spacing: 10                         # 行间距(适用于竖排)
+  text_color: 0xccaa88                     # 拼音等提示文字颜色
+  candidate_text_color: 0x30bb55           # 第一候选项文字颜色
+  back_color: 0xee000000                   # 候选条背景色
+  border_color: 0x1010a0                   # 边框色
+  hilited_text_color: 0xfecb96             # 高亮拼音 (需要开启内嵌编码)
+  hilited_back_color: 0x000000             # 第一候选项背景背景色
+  hilited_candidate_text_color: 0x70ffaf   # 第一候选项文字颜色
+  hilited_candidate_back_color: 0x000000   # 候选文字背景色
+  comment_text_color: 0x1010d0             # 拼音等提示文字颜色
+  hilited_comment_text_color: 0x1010f0     # 注解文字高亮
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<h3 id="北方浅色--nord_light">北方浅色 / nord_light</h3>
+<p><img src="https://i.imgur.com/m2kwAsN.png" alt="" /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="rouge-code"><pre>nord_light:
+  name: 北方浅色
+  horizontal: true              # true横排，false竖排
+  candidate_format: "%c %@ "    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  font_point: 16                           # 候选文字大小
+  label_font_point: 14                     # 候选编号大小
+  corner_radius: 5                         # 窗口圆角
+  line_spacing: 10                         # 行间距(适用于竖排)
+  back_color: 0xF4EFEC                     # 候选条背景色
+  border_color: 0xF4EFEC                   # 边框色
+  candidate_text_color: 0xC1A181           # 第一候选项文字颜色
+  comment_text_color: 0xD0C088             # 拼音等提示文字颜色
+  hilited_back_color: 0xF0E9E5             # 第一候选项背景背景色
+  hilited_candidate_back_color: 0xE9DED8   # 候选文字背景色
+  hilited_candidate_text_color: 0xAC815E   # 第一候选项文字颜色
+  hilited_text_color: 0xAD8EB4             # 高亮拼音 (需要开启内嵌编码)
+  text_color: 0x7087D0                     # 拼音等提示文字颜色
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<h3 id="北方深色--nord_dark">北方深色 / nord_dark</h3>
+<p><img src="https://i.imgur.com/mdP4Tnc.png" alt="" /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="rouge-code"><pre>nord_dark:
+  name: 北方深色
+  horizontal: true              # true横排，false竖排
+  candidate_format: "%c %@ "    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  font_point: 16                           # 候选文字大小
+  label_font_point: 14                     # 候选编号大小
+  corner_radius: 5                         # 窗口圆角
+  line_spacing: 10                         # 行间距(适用于竖排)
+  back_color: 0x473A33                     # 候选条背景色
+  border_color: 0x473A33                   # 边框色
+  candidate_text_color: 0xF5D887           # 第一候选项文字颜色
+  comment_text_color: 0xE6B687             # 拼音等提示文字颜色
+  hilited_back_color: 0x473A33             # 第一候选项背景背景色
+  hilited_candidate_back_color: 0x5D4C43   # 候选文字背景色
+  hilited_candidate_text_color: 0xC0E077   # 第一候选项文字颜色
+  hilited_text_color: 0x6EC8F5             # 高亮拼音 (需要开启内嵌编码)
+  text_color: 0x78E8F0                     # 拼音等提示文字颜色
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+
+                <hr style="visibility: hidden;">
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2022/01/08/paypal/" data-toggle="tooltip" data-placement="top" title="注册美国 PayPal 绑定美区 Apple ID">
+                        Previous<br>
+                        <span>注册美国 PayPal 绑定美区 Apple ID</span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2022/01/14/aliyundrive/" data-toggle="tooltip" data-placement="top" title="阿里云盘 WebDAV 搭配 Infuse 多平台观影">
+                        Next<br>
+                        <span>阿里云盘 WebDAV 搭配 Infuse 多平台观影</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <hr style="visibility: hidden;">
+
+                
+                <!-- disqus 评论框 start -->
+                <div class="comment">
+                    <div id="disqus_thread" class="disqus-thread"></div>
+                </div>
+                <!-- disqus 评论框 end -->
+                
+
+                
+
+            </div>  
+
+    <!-- Side Catalog Container -->
+        
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">目录</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+        
+
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+
+
+<section>
+    
+        <hr class="hidden-sm hidden-xs">
+    
+    <h5><a href="/archive/"></a></h5>
+    <div class="tags">
+        
+        
+        
+        
+        
+        
+                <a data-sort="0010" 
+                    href="/archive/?tag=%E8%BE%93%E5%85%A5%E6%B3%95"
+                    title="输入法"
+                    rel="5">输入法</a>
+        
+                <a data-sort="0011" 
+                    href="/archive/?tag=Mac"
+                    title="Mac"
+                    rel="4">Mac</a>
+        
+                <a data-sort="0012" 
+                    href="/archive/?tag=Rime"
+                    title="Rime"
+                    rel="3">Rime</a>
+        
+                <a data-sort="0012" 
+                    href="/archive/?tag=macOS"
+                    title="macOS"
+                    rel="3">macOS</a>
+        
+                <a data-sort="0013" 
+                    href="/archive/?tag=%E6%90%9C%E7%8B%97"
+                    title="搜狗"
+                    rel="2">搜狗</a>
+        
+                <a data-sort="0013" 
+                    href="/archive/?tag=%E9%BC%A0%E9%A1%BB%E7%AE%A1"
+                    title="鼠须管"
+                    rel="2">鼠须管</a>
+        
+                <a data-sort="0013" 
+                    href="/archive/?tag=Squirrel"
+                    title="Squirrel"
+                    rel="2">Squirrel</a>
+    </div>
+</section>
+
+
+                <!-- Friends Blog -->
+                
+<hr>
+<h5>友链</h5>
+<ul class="list-inline">
+  
+  <li><a href="https://t.me/V2EXPro/">V2EX 群</a></li>
+  
+  <li><a href="https://t.me/rimeim/">Rime 群</a></li>
+  
+  <li><a href="https://t.me/googleim/">Google 群</a></li>
+  
+  <li><a href="https://t.me/luyouqi/">路由器群</a></li>
+  
+  <li><a href="https://t.me/iPantherauncia/">出售 Google Voice</a></li>
+  
+</ul>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+<!-- add support for mathjax by voleking-->
+
+
+
+
+
+
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "ssnhd";
+    var disqus_identifier = "/2022/01/11/rime-skin";
+    var disqus_url = "http://localhost:4000/2022/01/11/rime-skin/";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus 公共JS代码 end -->
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'right',
+          // icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <!-- SNS Link -->
+                
+
+
+<ul class="list-inline text-center">
+
+
+  
+  
+  <li>
+    <a href="https://twitter.com/ssnhdcom">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+  
+  
+  
+  <li>
+    <a target="_blank" href="http://weibo.com/7621452513">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+  
+  
+  
+  <li>
+    <a target="_blank" href="https://github.com/ssnhd">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+  
+  
+</ul>
+
+                <p class="copyright text-muted">
+                    Copyright &copy; 三十年河東 2022
+                    <br>
+                    Powered by <a href="http://ssnhd.com">三十年河東</a> |
+                    <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="100px"
+                        height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=xhql&repo=xhql.github.io&type=star&count=true">
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<!-- Currently, only navbar scroll-down effect at desktop still depends on this -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+<!-- Simple Jekyll Search -->
+<script src="/js/simple-jekyll-search.min.js"></script>
+
+<!-- Service Worker -->
+
+<script src="/js/snackbar.js "></script>
+<script src="/js/sw-registration.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+        var d = document, t = 'script',
+            o = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        o.src = u;
+        if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+        s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+
+
+
+
+
+<!--fastClick.js -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function () {
+        var $nav = document.querySelector("nav");
+        if ($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-216485699-1';
+    var _gaDomain = 'auto';
+
+    // Originial
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+<!-- Side Catalog -->
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        // interop with multilangual 
+        if ('' == 'true') {
+            _containerSelector = 'div.post-container.active'
+        } else {
+            _containerSelector = 'div.post-container'
+        }
+
+        // init
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        // clean
+        $(selector).html('')
+
+        // appending
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    // toggle side catalog
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    /*
+     * Doc: https://github.com/davist11/jQuery-One-Page-Nav
+     * Fork by Hux to support padding
+     */
+    async("/js/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+<!-- Multi-Lingual -->
+
+
+<!-- Simple Jekyll Search -->
+<script>
+    // https://stackoverflow.com/questions/1912501/unescape-html-entities-in-javascript
+    function htmlDecode(input) {
+        var e = document.createElement('textarea');
+        e.innerHTML = input;
+        // handle case of empty input
+        return e.childNodes.length === 0 ? "" : e.childNodes[0].nodeValue;
+    }
+
+    SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('search-results'),
+        json: '/search.json',
+        searchResultTemplate: '<div class="post-preview item"><a href="{url}"><h2 class="post-title">{title}</h2><h3 class="post-subtitle">{subtitle}</h3><hr></a></div>',
+        noResultsText: 'No results',
+        limit: 50,
+        fuzzy: false,
+        // a hack to get escaped subtitle unescaped. for some reason, 
+        // post.subtitle w/o escape filter nuke entire search.
+        templateMiddleware: function (prop, value, template) {
+            if (prop === 'subtitle' || prop === 'title') {
+                if (value.indexOf("code")) {
+                    return htmlDecode(value);
+                } else {
+                    return value;
+                }
+            }
+        }
+    });
+
+    $(document).ready(function () {
+        var $searchPage = $('.search-page');
+        var $searchOpen = $('.search-icon');
+        var $searchClose = $('.search-icon-close');
+        var $searchInput = $('#search-input');
+        var $body = $('body');
+
+        $searchOpen.on('click', function (e) {
+            e.preventDefault();
+            $searchPage.toggleClass('search-active');
+            var prevClasses = $body.attr('class') || '';
+            setTimeout(function () {
+                $body.addClass('no-scroll');
+            }, 400)
+
+            if ($searchPage.hasClass('search-active')) {
+                $searchClose.on('click', function (e) {
+                    e.preventDefault();
+                    $searchPage.removeClass('search-active');
+                    $body.attr('class', prevClasses);  // from closure 
+                });
+                $searchInput.focus();
+            }
+        });
+    });
+</script>
+
+
+<!-- Image to hack wechat -->
+<img src="/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

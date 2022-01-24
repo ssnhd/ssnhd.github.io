@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="科技 数码 美术 设计 | 这里是河東的个人博客，与你一起发现更大的世界。">
+    <meta name="keywords" content="河東, ssnhd, @ssnhd, ssnhd.com, 河東的博客, 三十年河東, HD Blog, 博客, 个人网站">
+    <meta name="theme-color" content="#000000">
+    <base target="_blank" />
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+        content="Rime Squirrel 鼠须管输入法配置详解 - 三十年河東(SSNHD.COM)-生活、科技、博客">
+    
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="
+">
+    
+    <meta property="article:published_time" content=" 2022-01-06T00:00:00Z">
+    
+    
+    <meta property="article:author" content="河東">
+    
+    
+    <meta property="article:tag" content="Rime">
+    
+    <meta property="article:tag" content="Squirrel">
+    
+    <meta property="article:tag" content="鼠须管">
+    
+    <meta property="article:tag" content="输入法">
+    
+    <meta property="article:tag" content="Mac">
+    
+    
+    <meta property="og:image" content="http://localhost:4000/img/avatar-me.jpg">
+    <meta property="og:url" content="http://localhost:4000/2022/01/06/rime/">
+    <meta property="og:site_name" content="三十年河東(SSNHD.COM)-生活、科技、博客">
+
+    <title>Rime Squirrel 鼠须管输入法配置详解 - 三十年河東(SSNHD.COM)-生活、科技、博客</title>
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/pwa/manifest.json">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="http://localhost:4000/2022/01/06/rime/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href=" /css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href=" /css/hux-blog.min.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+
+    <!-- Google AdSense -->
+    <script data-ad-client="ca-pub-6487568398225121" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">三十年河東</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div id="huxblog_navbar">
+                <div class="navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="/">HOME</a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                        
+                        
+                        <li>
+                            <a href="/archive/">Archive</a>
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li class="search-icon">
+                            <a href="javascript:void(0)">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <script>
+        // Drop Bootstarp low-performance Navbar
+        // Use customize navbar with high-quality material design animation
+        // in high-perf jank-free CSS3 implementation
+        var $body = document.body;
+        var $toggle = document.querySelector('.navbar-toggle');
+        var $navbar = document.querySelector('#huxblog_navbar');
+        var $collapse = document.querySelector('.navbar-collapse');
+
+        var __HuxNav__ = {
+            close: function () {
+                $navbar.className = " ";
+                // wait until animation end.
+                setTimeout(function () {
+                    // prevent frequently toggle
+                    if ($navbar.className.indexOf('in') < 0) {
+                        $collapse.style.height = "0px"
+                    }
+                }, 400)
+            },
+            open: function () {
+                $collapse.style.height = "auto"
+                $navbar.className += " in";
+            }
+        }
+
+        // Bind Event
+        $toggle.addEventListener('click', function (e) {
+            if ($navbar.className.indexOf('in') > 0) {
+                __HuxNav__.close()
+            } else {
+                __HuxNav__.open()
+            }
+        })
+
+        /**
+         * Since Fastclick is used to delegate 'touchstart' globally
+         * to hack 300ms delay in iOS by performing a fake 'click',
+         * Using 'e.stopPropagation' to stop 'touchstart' event from 
+         * $toggle/$collapse will break global delegation.
+         * 
+         * Instead, we use a 'e.target' filter to prevent handler
+         * added to document close HuxNav.  
+         *
+         * Also, we use 'click' instead of 'touchstart' as compromise
+         */
+        document.addEventListener('click', function (e) {
+            if (e.target == $toggle) return;
+            if (e.target.className == 'icon-bar') return;
+            __HuxNav__.close();
+        })
+    </script>
+    <!-- Search -->
+<div class="search-page">
+  <div class="search-icon-close-container">
+    <span class="search-icon-close">
+      <i class="fa fa-chevron-down"></i>
+    </span>
+  </div>
+  <div class="search-main container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <form></form>
+        <input type="text" id="search-input" placeholder="$ grep...">
+        </form>
+        <div id="search-results" class="mini-post-list"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="/img/post-bg-mac.jpeg" width="0" height="0"> -->
+
+<!-- Post Header -->
+
+
+
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/img/post-bg-mac.jpeg');
+        background: ;
+    }
+
+    
+</style>
+
+<header class="intro-header" >
+
+    <div class="header-mask"></div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/archive/?tag=Rime" title="Rime">Rime</a>
+                        
+                        <a class="tag" href="/archive/?tag=Squirrel" title="Squirrel">Squirrel</a>
+                        
+                        <a class="tag" href="/archive/?tag=%E9%BC%A0%E9%A1%BB%E7%AE%A1" title="鼠须管">鼠须管</a>
+                        
+                        <a class="tag" href="/archive/?tag=%E8%BE%93%E5%85%A5%E6%B3%95" title="输入法">输入法</a>
+                        
+                        <a class="tag" href="/archive/?tag=Mac" title="Mac">Mac</a>
+                        
+                    </div>
+                    <h1>Rime Squirrel 鼠须管输入法配置详解</h1>
+                    
+                    <h2 class="subheading">好用的开源输入法，朙月拼音、小鹤双拼、自然码双拼</h2>
+                    <span class="meta">发布日期：2022-01-06</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <!-- Multi-Lingual -->
+                
+
+				<p><img src="/img/rime/milan.png" alt="" /></p>
+
+<p>配置仓库地址：<a href="https://github.com/ssnhd/rime">点击这里</a>，Rime 电报群：<a href="https://t.me/rimeim">@RIMEIM</a></p>
+
+<h3 id="特点">特点</h3>
+
+<ul>
+  <li>朙月拼音、小鹤双拼、自然码双拼</li>
+  <li>词库不丢失，支持多平台同步</li>
+  <li>词库自定义，目前包含搜狗官网 12 类别、聊天词</li>
+  <li>Emoji 与 Mac 同步</li>
+  <li>动态输入时间、日期、星期</li>
+  <li>速度快、开源、不联网保护隐私、自定义</li>
+</ul>
+
+<hr />
+
+<h3 id="安装">安装</h3>
+
+<p>下载 <a href="https://rime.im/" target="_blank">鼠须管</a>，安装后切换到 Rime 输入法，开始使用。<br />
+默认繁体输出，通过组合键 <code class="language-plaintext highlighter-rouge">Control+｀</code> 或 <code class="language-plaintext highlighter-rouge">F4</code> 键切换输入方案，例如选择【朙月拼音·简化字】简体输出。</p>
+
+<blockquote>
+  <p>注：建议 Mac 打开 Squirrel 通知，之后部署会提示是否成功。</p>
+</blockquote>
+
+<hr />
+
+<h3 id="备份初始配置可选">备份初始配置（可选）</h3>
+
+<p>防止操作不当配置无法恢复，可以为初始配置做个备份。在【终端】中输入以下命令，按回车键，会出现一个【Rime.bak】文件夹即备份。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>cp -r ~/Library/Rime ~/Library/Rime.bak
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><img src="https://i.imgur.com/1EFPjAK.png" alt="" /></p>
+
+<blockquote>
+  <p>还原：初始配置【Rime】文件夹清空，将【Rime.bak】内的文件复制粘贴过去，重新部署（修改任何文件都要重新部署生效）。</p>
+</blockquote>
+
+<hr />
+
+<h3 id="定制">定制</h3>
+
+<ol>
+  <li>下载 <a href="https://github.com/ssnhd/rime/archive/refs/heads/master.zip">配置</a> 解压得到【配置文件】和【花园明朝字体】，将字体安装到字体册，原因是 Mac 缺少部分生僻字。</li>
+  <li>点击菜单栏【ㄓ】-【用户设定】，将【配置文件】里所有文件粘贴进去，并选择覆盖。</li>
+  <li>点击菜单栏【ㄓ】-【重新部署】（快捷键 <code class="language-plaintext highlighter-rouge">Control+Option+｀</code>），至此完成定制配置，可以愉快的使用了。</li>
+</ol>
+
+<p><img src="/img/rime/xmind.png" alt="" /></p>
+
+<hr />
+
+<h3 id="全局设置">全局设置</h3>
+
+<p>全局设置文件 <code class="language-plaintext highlighter-rouge">default.custom.yaml</code>，包含输入方案、候选词个数、中英文切换、快捷键。</p>
+
+<blockquote>
+  <p>注：建议用 VSCode 软件打开文件，因分隔符问题还需要 <a href="https://ssnhd.com/2021/10/01/VSCode" target="_blank">修改 Tab 键</a>。</p>
+</blockquote>
+
+<h4 id="输入方案">输入方案</h4>
+
+<p>按 <code class="language-plaintext highlighter-rouge">Control+｀</code> 显示输入方案。假设您不用双拼或大写数字，可以将其连同配置里的对应文件一并删除；同理，您也可以添加其他方案，例如：<a href="https://github.com/rime/plum#essentials">五笔、地球拼音、袖珍拼音</a>。</p>
+
+<blockquote>
+  <p>注：输入方案都是以 <code class="language-plaintext highlighter-rouge">.schema.yaml</code> 命名，例如 <code class="language-plaintext highlighter-rouge">luna_pinyin_simp.schema.yaml</code>，可以修改该文件进行定制，但是输入法一旦更新，这个文件也会跟着更新，定制就会丢失。<br />
+解决办法是新建文件 <code class="language-plaintext highlighter-rouge">luna_pinyin_simp.custom.yaml</code>，然后在里面定制，所有方案对应的补丁名都是 <code class="language-plaintext highlighter-rouge">&lt;方案名&gt;.custom.yaml</code>。</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre>schema_list:
+  - schema: luna_pinyin_simp      # 朙月拼音
+  - schema: double_pinyin_flypy   # 小鹤双拼
+  - schema: double_pinyin         # 自然码双拼
+  - schema: numbers               # 大写数字
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h4 id="候选词个数">候选词个数</h4>
+
+<p>修改后面的数字更改候选词个数。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>menu/page_size: 7
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h4 id="中英文切换">中英文切换</h4>
+
+<p>下面代码表示使用 <code class="language-plaintext highlighter-rouge">Caps</code> 键切换大小写，使用 <code class="language-plaintext highlighter-rouge">Shift</code> 键切换中英文。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre>ascii_composer/good_old_caps_lock: true # 若为 true， Caps 只切换大小写
+ascii_composer/switch_key:
+  Caps_Lock: commit_code                # Caps 键
+  Shift_L: commit_code                  # 左 Shift，切换中英文
+  Shift_R: commit_code                  # 右 Shift，切换中英文
+  Control_L: noop                       # 左 Control，屏蔽该切换键
+  Control_R: noop                       # 右 Control，屏蔽该切换键
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<blockquote>
+  <p>注：如果 Caps 键不能切换大小写，打开 Mac 系统偏好设置 &gt; 键盘 &gt; 输入法 &gt; 取消[使用大写锁定键切换“美国”输入模式]。</p>
+</blockquote>
+
+<p>其他可选切换策略：</p>
+
+<ul>
+  <li><strong>inline_ascii</strong>：在输入法的临时英文编辑区内输入字母、数字、符号、空格等，回车上屏后自动复位到中文</li>
+  <li><strong>commit_text</strong>：已输入的候选文字上屏并切换至英文输入模式</li>
+  <li><strong>commit_code</strong>：已输入的编码字符上屏并切换至英文输入模式</li>
+  <li><strong>noop</strong>：屏蔽该切换键</li>
+</ul>
+
+<h4 id="翻页和快捷键">翻页和快捷键</h4>
+
+<ul>
+  <li><strong>when</strong>：有几种状态 <code class="language-plaintext highlighter-rouge">composing</code>、<code class="language-plaintext highlighter-rouge">has_menu</code>、<code class="language-plaintext highlighter-rouge">paging</code></li>
+  <li><strong>accept</strong>：控制接受的按键 <code class="language-plaintext highlighter-rouge">minus</code>、<code class="language-plaintext highlighter-rouge">equal</code>,、<code class="language-plaintext highlighter-rouge">period</code>、<code class="language-plaintext highlighter-rouge">comma</code>、<code class="language-plaintext highlighter-rouge">bracketleft</code>、<code class="language-plaintext highlighter-rouge">bracketright</code></li>
+  <li><strong>send</strong>：控制动作 <code class="language-plaintext highlighter-rouge">Page_Up</code>、<code class="language-plaintext highlighter-rouge">Page_Down</code>、<code class="language-plaintext highlighter-rouge">Escape</code>(清空输入码)</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+</pre></td><td class="rouge-code"><pre># 翻页
+- { when: has_menu, accept: Tab, send: Page_Down }            # "tab" 键翻页, 和下一条 "tab" 键分词只能二选一
+- { when: composing, accept: Shift+Tab, send: Shift+Left }    # "Shift+Tab" 键向左选拼音分词
+- { when: paging, accept: minus, send: Page_Up }              # "-" 上一页
+- { when: has_menu, accept: equal, send: Page_Down }          # "=" 下一页
+- { when: paging, accept: comma, send: Page_Up }              # "," 上一页
+- { when: has_menu, accept: period, send: Page_Down }         # "." 下一页
+- { when: paging, accept: bracketleft, send: Page_Up }        # "[" 上一页
+- { when: has_menu, accept: bracketright, send: Page_Down }   # "]" 下一页
+
+# 快捷键
+- { when: has_menu, accept: semicolon, send: 2 }              # ":" (分号)选择第 2 个候选词
+- { when: has_menu, accept: apostrophe, send: 3 }             # "'" (引号)选择第 3 个候选词
+- { when: composing, accept: Shift+Tab, send: Shift+Left }    # "Shift+Tab" 键向左选拼音分词
+- { when: composing, accept: Control+a, send: Home }          # "Control+a" 光标移至首
+- { when: composing, accept: Control+e, send: End }           # "Control+e" 光标移至尾
+- { when: composing, accept: Control+g, send: Escape }        # "Control+g" 清码
+- { when: composing, accept: Return, send: Escape }           # "Return" 回车清码
+- { when: always, accept: Control+Shift+1, select: .next }             # 切换输入方案
+- { when: always, accept: Control+Shift+2, toggle: ascii_mode }        # 中/英文切换
+- { when: always, accept: Control+Shift+3, toggle: full_shape }        # 全角/半角切换
+- { when: always, accept: Control+Shift+4, toggle: simplification }    # 繁简体切换
+- { when: always, accept: Control+Shift+5, toggle: extended_charset }  # 通用/增广切换（显示生僻字）
+- { when: composing, accept: Control+b, send: Left }           # "Control+b" 移动光标
+- { when: composing, accept: Control+f, send: Right }          # "Control+f" 向右选择候选词
+- { when: composing, accept: Control+h, send: BackSpace }      # "Control+h" 删除输入码
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<h3 id="词库-格式">词库 格式</h3>
+
+<p>新建文件命名格式为 <code class="language-plaintext highlighter-rouge">&lt;词库名&gt;.dict.yaml</code>。</p>
+
+<p>示例：朙月拼音 AV 女优词库 <code class="language-plaintext highlighter-rouge">luna_pinyin.av.dict.yaml</code>。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre># 日本 AV 女优
+
+---
+name: luna_pinyin.av  # 要和文件名一致
+version: "2021.12.21"
+sort: by_weight
+use_preset_vocabulary: false
+...
+                              # 此处空一行
+三上悠亞  san shang you ya  1  # 汉字和编码用 Tab 键间隔，拼音之间用空格键
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<h3 id="词库-外挂">词库 外挂</h3>
+
+<p>打开 <code class="language-plaintext highlighter-rouge">luna_pinyin.extended.dict.yaml</code>，将词库名添加。</p>
+
+<p>示例：AV 女优词库 <code class="language-plaintext highlighter-rouge">luna_pinyin.av.dict.yaml</code> 即输入 <code class="language-plaintext highlighter-rouge">luna_pinyin.av</code>。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre>import_tables:
+  - luna_pinyin
+  - luna_pinyin.av
+  - luna_pinyin.chat
+  - luna_pinyin.sogou
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<h3 id="词库-载入">词库 载入</h3>
+
+<p>打开 <code class="language-plaintext highlighter-rouge">luna_pinyin_simp.custom.yaml</code>，载入中英文词库，还可以修改英文候选词位置、Emoji 显示注释等。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+</pre></td><td class="rouge-code"><pre>patch:
+  # 启用罕见字過濾
+  engine/filters:
+    - simplifier
+    - simplifier@emoji_conversion
+    - uniquifier
+    - charset_filter@gbk # (※3) GBK 过滤
+    - single_char_filter
+
+  emoji_conversion:
+    opencc_config: emoji.json
+    option_name: show_emoji
+    tags: abc
+    #tips: all    # Emoji 显示注释
+
+  # 改写拼写运算，含英文的词汇（luna_pinyin.cn_en.dict.yaml）不影响简拼
+  "speller/algebra/@before 0": xform/^([b-df-hj-np-tv-z])$/$1_/
+
+  # 载入朙月拼音扩充词库
+  "translator/dictionary": luna_pinyin.extended
+
+  # 加载easy_en依赖
+  "schema/dependencies/@1": easy_en
+  # 载入翻译英文的码表翻译器，取名为 english
+  "engine/translators/@4": table_translator@english
+  # english翻译器的设定项
+  english:
+    dictionary: easy_en
+    spelling_hints: 9
+    enable_completion: false # 是否启用英文输入联想补全
+    enable_sentence: false # 混输时不出现带有图案的英文
+    initial_quality: -0.5 # 英文候选词的位置, 数值越大越靠前。
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<h3 id="模式转换">模式转换</h3>
+
+<p>打开 <code class="language-plaintext highlighter-rouge">luna_pinyin_simp.custom.yaml</code>，switches 列了：中文西文、全角半角、Emoji、简繁体、字节编码。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="rouge-code"><pre>patch:
+  switches:
+    - name: ascii_mode                   # 0 中文，1 英文
+      reset: 0
+      states: ["中文", "西文"]
+    - name: full_shape                   # 全角/半角符号开关
+      states: ["半角", "全角"]
+    - name: show_emoji                   # Emoji 开关
+      reset: 1
+      states: [ "🈚️️\uFE0E", "🈶️️\uFE0F" ]
+    - name: zh_simp                      # (※1) 繁简转换
+      reset: 1
+      states: ["漢字", "汉字"]
+    - options: ["utf8", "gbk", "gb2312"] # (※2)字符集选单
+      reset: 0                           # 默认 UTF8
+      states:
+        - UTF-8
+        - GBK
+        - GB2312
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<h3 id="搜狗词库转换">搜狗词库转换</h3>
+
+<p>转换方法：<a href="https://ssnhd.com/2022/01/06/sogou-dict/">点击这里</a>。本配置里的搜狗词库包含官网 12 个分类（城市、工程、农业、人文、社会、生活、艺术、医学、游戏、娱乐、运动、自然），满足绝大部份用户使用。</p>
+
+<hr />
+
+<h3 id="emoji">Emoji</h3>
+
+<p>打开 opencc 文件夹内 <code class="language-plaintext highlighter-rouge">emoji_word.txt</code>，规则：字符用 Tab 键间隔，其他用空格键，简体和繁体都要加入。</p>
+
+<p><img src="/img/rime/emojikaixin.png" alt="" /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>开心  开心 😄 😃 😺
+開心  開心 😄 😃 😺
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>按 <code class="language-plaintext highlighter-rouge">Control + ｀</code> 组合键，可以选择开启或关闭 Emoji。</p>
+
+<p><img src="/img/rime/emojioff.png" alt="" /></p>
+
+<hr />
+
+<h3 id="快捷符号">快捷符号</h3>
+
+<p>以朙月拼音为例，打开 <code class="language-plaintext highlighter-rouge">luna_pinyin_simp.custom.yaml</code>，自行添加修改。</p>
+
+<blockquote>
+  <p>注：打开【用户设定】-【build 文件夹】- <code class="language-plaintext highlighter-rouge">luna_pinyin_simp.schema.yaml</code> 里有超多快捷符号，将需要修改的快捷符号添加到下面区域。</p>
+</blockquote>
+
+<p><img src="/img/rime/emojikuaijie.png" alt="" /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+</pre></td><td class="rouge-code"><pre>"/fs": [½, ‰, ¼, ⅓, ⅔, ¾, ⅒ ]
+"/xh": [ ＊, ×, ✱, ★, ☆, ✩, ✧, ❋, ❊, ❉, ❈, ❅, ✿, ✲]
+"/dq": [🌍,🌎,🌏,🌐,🌑,🌒,🌓,🌔,🌕,🌖,🌗,🌘]
+"/sg": [🍇,🍉,🍌,🍍,🍎,🍏,🍑,🍒,🍓,🍗,🍦,🎂,🍺,🍻]
+"/dw": [🙈,🐵,🐈,🐷,🐨,🐼,🐾,🐔,🐬,🐠,🦋]
+"/bq": [😀,😁,😂,😃,😄,😅,😆,😉,😊,😋,😎,😍,😘,😗]
+"/ss": [💪,👈,👉,👆,👇,✋,👌,👍,👎,✊,👊,👋,👏,👐]
+"#": "#"
+"*": "*"
+"`": "`"
+"~": "~"
+"@": "@"
+"=": "="
+'\': "、"
+"%": "%"
+"$": ["¥", "$"]
+"|": ["|", "｜", "·"]
+"/": ["/", "÷"]
+"'": { pair: ["「", "」"] }  #表示一对
+"[": "【"
+"]": "】"
+"&lt;": "《"
+"&gt;": "》"
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<h3 id="模糊音-简拼-纠错">模糊音 简拼 纠错</h3>
+
+<p>打开 <code class="language-plaintext highlighter-rouge">luna_pinyin_simp.custom.yaml</code>，若关闭前面加 <code class="language-plaintext highlighter-rouge">#</code>。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+</pre></td><td class="rouge-code"><pre># 需要哪組就刪去行首的 # 號，單雙向任選
+- derive/^([zcs])h/$1/             # zh, ch, sh =&gt; z, c, s
+- derive/^([zcs])([^h])/$1h$2/     # z, c, s =&gt; zh, ch, sh
+- derive/^n/l/                     # n =&gt; l
+- derive/^l/n/                     # l =&gt; n
+
+# 這兩組一般是單向的
+- derive/^r/l/                     # r =&gt; l
+- derive/^ren/yin/                 # ren =&gt; yin, reng =&gt; ying
+- derive/^r/y/                     # r =&gt; y
+
+# 下面 hu &lt;=&gt; f 這組寫法複雜一些，分情況討論
+- derive/^hu$/fu/                  # hu =&gt; fu
+- derive/^hong$/feng/              # hong =&gt; feng
+- derive/^hu([in])$/fe$1/          # hui =&gt; fei, hun =&gt; fen
+- derive/^hu([ao])/f$1/            # hua =&gt; fa, ...
+- derive/^fu$/hu/                  # fu =&gt; hu
+- derive/^feng$/hong/              # feng =&gt; hong
+- derive/^fe([in])$/hu$1/          # fei =&gt; hui, fen =&gt; hun
+- derive/^f([ao])/hu$1/            # fa =&gt; hua, ...
+
+# 韻母部份
+- derive/^([bpmf])eng$/$1ong/      # meng = mong, ...
+- derive/([ei])n$/$1ng/            # en =&gt; eng, in =&gt; ing
+- derive/([ei])ng$/$1n/            # eng =&gt; en, ing =&gt; in
+
+# 超级简拼
+- abbrev/^([a-z]).+$/$1/           # 簡拼（首字母）
+- abbrev/^([zcs]h).+$/$1/          # 簡拼（zh, ch, sh）
+
+# 智能纠错
+- derive/([aeiou])ng$/$1gn/        # dagn =&gt; dang
+- derive/([dtngkhrzcs])o(u|ng)$/$1o/  # zho =&gt; zhong|zhou
+- derive/ong$/on/                  # zhonguo =&gt; zhong guo
+- derive/ao$/oa/                   # hoa =&gt; hao
+- derive/([iu])a(o|ng?)$/a$1$2/    # tain =&gt; tian
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<h3 id="动态时间-日期-星期">动态时间 日期 星期</h3>
+
+<p>打开 <code class="language-plaintext highlighter-rouge">Rime.lua</code>，默认编码如下，双拼用户时间和星期无效，建议改为不冲突编码，例如时间 <code class="language-plaintext highlighter-rouge">sj</code> 改为 <code class="language-plaintext highlighter-rouge">time</code>。</p>
+
+<ul>
+  <li>【日期】<code class="language-plaintext highlighter-rouge">rq</code> = <code class="language-plaintext highlighter-rouge">2022-01-14</code>、<code class="language-plaintext highlighter-rouge">2022年01月14日</code>、<code class="language-plaintext highlighter-rouge">01-14</code>、<code class="language-plaintext highlighter-rouge">2022/01/14</code></li>
+  <li>【时间】<code class="language-plaintext highlighter-rouge">sj</code> = <code class="language-plaintext highlighter-rouge">03:11</code>、<code class="language-plaintext highlighter-rouge">03:11:00</code></li>
+  <li>【星期】<code class="language-plaintext highlighter-rouge">xq</code> = <code class="language-plaintext highlighter-rouge">周五</code>、<code class="language-plaintext highlighter-rouge">星期五</code>、<code class="language-plaintext highlighter-rouge">礼拜五</code></li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre></td><td class="rouge-code"><pre>function date_translator(input, seg)
+    if (input == "rq") then
+        --- Candidate(type, start, end, text, comment)
+        yield(Candidate("date", seg.start, seg._end, os.date("%Y-%m-%d"), ""))
+        yield(Candidate("date", seg.start, seg._end, os.date("%Y年%m月%d日"), ""))
+        yield(Candidate("date", seg.start, seg._end, os.date("%m-%d"), ""))
+        yield(Candidate("date", seg.start, seg._end, os.date("%Y/%m/%d"), ""))
+    end
+    if (input == "sj") then
+        --- Candidate(type, start, end, text, comment)
+        yield(Candidate("time", seg.start, seg._end, os.date("%H:%M"), ""))
+        yield(Candidate("time", seg.start, seg._end, os.date("%H:%M:%S"), ""))
+    end
+    if (input == "xq") then
+        local weakTab = {'日', '一', '二', '三', '四', '五', '六'}
+        yield(Candidate("week", seg.start, seg._end, "周"..weakTab[tonumber(os.date("%w")+1)], ""))
+        yield(Candidate("week", seg.start, seg._end, "星期"..weakTab[tonumber(os.date("%w")+1)], ""))
+        yield(Candidate("week", seg.start, seg._end, "礼拜"..weakTab[tonumber(os.date("%w")+1)], ""))
+    end
+end
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>再将下面代码添加在对应的输入方案，例如：朙月拼音添加在 <code class="language-plaintext highlighter-rouge">luna_pinyin_simp.custom.yaml</code>。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>"engine/translators/@6": lua_translator@date_translator
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<h3 id="自定义短语文本替换">自定义短语（文本替换）</h3>
+
+<p>用文本编辑打开 <code class="language-plaintext highlighter-rouge">custom_phrase.txt</code>，规则：内容+编码+权重（可选），使用 Tab 键间隔。</p>
+
+<p>示例：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre>Rime  rime	4
+鼠须管	rime	3
+https://rime.im/	rime	2
+Squirrel	rime	1
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><img src="/img/rime/zidingyiduanyu.png" alt="" /></p>
+
+<hr />
+
+<h3 id="皮肤">皮肤</h3>
+
+<p>打开 <code class="language-plaintext highlighter-rouge">squirrel.custom.yaml</code>，将皮肤代码添加进去，按照下图里的提示更换皮肤。<br />
+查看皮肤效果：<a href="https://ssnhd.com/2022/01/11/rime-skin">点击这里</a>。</p>
+
+<p><img src="/img/rime/pifu.png" alt="" /></p>
+
+<p><strong>修改颜色</strong></p>
+
+<ul>
+  <li>每 8bit 一组，从低位到高位分别代表 Red、Green、Blue、Alpha，共 32bit。</li>
+  <li>Alpha 值（如果界面支持）是可选的，默认为 <code class="language-plaintext highlighter-rouge">0xF</code> F 即不透明。</li>
+  <li>把颜色值写为十六进制数，即 <code class="language-plaintext highlighter-rouge">0xAABBGGRR</code> 或 <code class="language-plaintext highlighter-rouge">0xBBGGRR</code>。</li>
+</ul>
+
+<p><img src="https://i.imgur.com/EG9rFyi.jpg" alt="" /></p>
+
+<hr />
+
+<h3 id="特定程序中英文">特定程序中英文</h3>
+
+<p>打开 <code class="language-plaintext highlighter-rouge">squirrel.custom.yaml</code>，将程序名称添加进去，并输入对应模式开启默认中英文。</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">ascii_mode: true</code>：默认英文</li>
+  <li><code class="language-plaintext highlighter-rouge">ascii_mode: false</code>：默认中文</li>
+  <li><code class="language-plaintext highlighter-rouge">ascii_punct: true</code>：开启英文标点</li>
+</ul>
+
+<p>示例：VSCode 默认英文输入，始终输出英文标点（半角）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>com.microsoft.VSCode:
+    ascii_mode: true
+    scii_punct: true
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><strong>延伸：如何获取程序名称？</strong></p>
+
+<ol>
+  <li>打开 Mac 活动监视器，选中程序，点击上方 <code class="language-plaintext highlighter-rouge">···</code> 里<strong>取样进程</strong>。</li>
+  <li>找到 <code class="language-plaintext highlighter-rouge">Identifier</code> 后面即为程序名称。</li>
+</ol>
+
+<p><img src="/img/rime/app.png" alt="" /></p>
+
+<hr />
+
+<h3 id="大写数字">大写数字</h3>
+
+<p>配置文件是 <code class="language-plaintext highlighter-rouge">numbers.schema.yaml</code>。切换输入方案选择大写数字，使用方法参照下表。</p>
+
+<table>
+<thead>
+<tr>
+<th>按键</th>
+<th>输出</th>
+<th>✂️</th>
+<th>按键（按住Shift）</th>
+<th>输出</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1234567890</td>
+<td>壹贰叁肆伍陆柒捌玖零</td>
+<td>✂️</td>
+<td>1234567890</td>
+<td>一二三四五六七八九〇</td>
+</tr>
+<tr>
+<td>wqbsjfd.</td>
+<td>万仟佰拾角分第点</td>
+<td>✂️</td>
+<td>wqbsjfd.</td>
+<td>万千百十角分第点</td>
+</tr>
+<tr>
+<td>z</td>
+<td>整之</td>
+<td>✂️</td>
+<td>z</td>
+<td>整之</td>
+</tr>
+<tr>
+<td>y</td>
+<td>元月亿</td>
+<td>✂️</td>
+<td>y</td>
+<td>元月亿</td>
+</tr>
+</tbody>
+</table>
+
+<p><img src="https://i.imgur.com/RQdg63e.gif" alt="" /></p>
+
+<hr />
+
+<h3 id="删除错词">删除错词</h3>
+
+<p>将光标（<code class="language-plaintext highlighter-rouge">↑</code> <code class="language-plaintext highlighter-rouge">↓</code>或<code class="language-plaintext highlighter-rouge">←</code> <code class="language-plaintext highlighter-rouge">→</code>）移到要删除的词组上，按 <code class="language-plaintext highlighter-rouge">Shift+Fn+Delete</code> 键（第三方键盘按 <code class="language-plaintext highlighter-rouge">Control+Delete</code>）。只能从用户词典中删除词组，词库里词组只会取消其调频顺序。</p>
+
+<hr />
+
+<h3 id="同步">同步</h3>
+
+<ol>
+  <li>打开 <code class="language-plaintext highlighter-rouge">installation.yaml</code>，修改 <code class="language-plaintext highlighter-rouge">installation_id</code> 后面的 ID，例如命名为 <code class="language-plaintext highlighter-rouge">Mac</code>。</li>
+  <li>添加路径代码，将命令中的 <code class="language-plaintext highlighter-rouge">admin</code> 替换为您的 Mac 用户名；再点击菜单栏【ㄓ】-【同步用户数据】完成，此时打开访达 iCloud 即可查看文件。</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre> sync_dir: "/Users/admin/Library/Mobile Documents/com~apple~CloudDocs/RimeSync"
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>示例：同步至 iCloud 云盘 RimeSync 文件夹内。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre>distribution_code_name: Squirrel
+distribution_name: "鼠鬚管"
+distribution_version: 0.15.2
+install_time: "Wed Dec  1 19:26:38 2021"
+installation_id: "Mac"
+sync_dir: "/Users/admin/Library/Mobile Documents/com~apple~CloudDocs/RimeSync"  # 路径
+rime_version: 1.7.3
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>更多同步方案：<a href="https://github.com/rime/home/wiki/UserGuide#同步用戶資料" target="_blank">点击这里</a>。</p>
+
+<blockquote>
+  <p>延伸：词库同步到其他设备</p>
+
+  <ol>
+    <li>将同步文件拷贝至 iCloud 云盘（同一 Apple ID 无需此步）。</li>
+    <li>打开 <code class="language-plaintext highlighter-rouge">installation.yaml</code>，将 <strong>ID</strong> 和 <strong>路径</strong> 修改和同步文件一至，点击【同步用户数据】即可。</li>
+  </ol>
+</blockquote>
+
+<hr />
+
+<h3 id="报错日志">报错日志</h3>
+
+<p>打开终端输入 <code class="language-plaintext highlighter-rouge">$TMPDIR/rime.Squirrel.INFO</code> 按回车键，复制路径地址在访达中打开。</p>
+
+<p><img src="https://i.imgur.com/t2YlmrY.jpg" alt="" /></p>
+
+<p>找到【rime.squirrel.INFO】文件，右击点选<strong>显示原身</strong>得到日志文件。</p>
+
+<p><img src="https://i.imgur.com/Ss0wEau.jpg" alt="" /></p>
+
+
+                <hr style="visibility: hidden;">
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2022/01/02/alfred/" data-toggle="tooltip" data-placement="top" title="Alfred Web Search 第三方搜索链接">
+                        Previous<br>
+                        <span>Alfred Web Search 第三方搜索链接</span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2022/01/06/sogou-dict/" data-toggle="tooltip" data-placement="top" title="搜狗词库转为 Rime 词库方法">
+                        Next<br>
+                        <span>搜狗词库转为 Rime 词库方法</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <hr style="visibility: hidden;">
+
+                
+                <!-- disqus 评论框 start -->
+                <div class="comment">
+                    <div id="disqus_thread" class="disqus-thread"></div>
+                </div>
+                <!-- disqus 评论框 end -->
+                
+
+                
+
+            </div>  
+
+    <!-- Side Catalog Container -->
+        
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">目录</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+        
+
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+
+
+<section>
+    
+        <hr class="hidden-sm hidden-xs">
+    
+    <h5><a href="/archive/"></a></h5>
+    <div class="tags">
+        
+        
+        
+        
+        
+        
+                <a data-sort="0010" 
+                    href="/archive/?tag=%E8%BE%93%E5%85%A5%E6%B3%95"
+                    title="输入法"
+                    rel="5">输入法</a>
+        
+                <a data-sort="0011" 
+                    href="/archive/?tag=Mac"
+                    title="Mac"
+                    rel="4">Mac</a>
+        
+                <a data-sort="0012" 
+                    href="/archive/?tag=Rime"
+                    title="Rime"
+                    rel="3">Rime</a>
+        
+                <a data-sort="0012" 
+                    href="/archive/?tag=macOS"
+                    title="macOS"
+                    rel="3">macOS</a>
+        
+                <a data-sort="0013" 
+                    href="/archive/?tag=%E6%90%9C%E7%8B%97"
+                    title="搜狗"
+                    rel="2">搜狗</a>
+        
+                <a data-sort="0013" 
+                    href="/archive/?tag=%E9%BC%A0%E9%A1%BB%E7%AE%A1"
+                    title="鼠须管"
+                    rel="2">鼠须管</a>
+        
+                <a data-sort="0013" 
+                    href="/archive/?tag=Squirrel"
+                    title="Squirrel"
+                    rel="2">Squirrel</a>
+    </div>
+</section>
+
+
+                <!-- Friends Blog -->
+                
+<hr>
+<h5>友链</h5>
+<ul class="list-inline">
+  
+  <li><a href="https://t.me/V2EXPro/">V2EX 群</a></li>
+  
+  <li><a href="https://t.me/rimeim/">Rime 群</a></li>
+  
+  <li><a href="https://t.me/googleim/">Google 群</a></li>
+  
+  <li><a href="https://t.me/luyouqi/">路由器群</a></li>
+  
+  <li><a href="https://t.me/iPantherauncia/">出售 Google Voice</a></li>
+  
+</ul>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+<!-- add support for mathjax by voleking-->
+
+
+
+
+
+
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "ssnhd";
+    var disqus_identifier = "/2022/01/06/rime";
+    var disqus_url = "http://localhost:4000/2022/01/06/rime/";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus 公共JS代码 end -->
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'right',
+          // icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <!-- SNS Link -->
+                
+
+
+<ul class="list-inline text-center">
+
+
+  
+  
+  <li>
+    <a href="https://twitter.com/ssnhdcom">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+  
+  
+  
+  <li>
+    <a target="_blank" href="http://weibo.com/7621452513">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+  
+  
+  
+  <li>
+    <a target="_blank" href="https://github.com/ssnhd">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+  
+  
+</ul>
+
+                <p class="copyright text-muted">
+                    Copyright &copy; 三十年河東 2022
+                    <br>
+                    Powered by <a href="http://ssnhd.com">三十年河東</a> |
+                    <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="100px"
+                        height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=xhql&repo=xhql.github.io&type=star&count=true">
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<!-- Currently, only navbar scroll-down effect at desktop still depends on this -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+<!-- Simple Jekyll Search -->
+<script src="/js/simple-jekyll-search.min.js"></script>
+
+<!-- Service Worker -->
+
+<script src="/js/snackbar.js "></script>
+<script src="/js/sw-registration.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+        var d = document, t = 'script',
+            o = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        o.src = u;
+        if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+        s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+
+
+
+
+
+<!--fastClick.js -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function () {
+        var $nav = document.querySelector("nav");
+        if ($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-216485699-1';
+    var _gaDomain = 'auto';
+
+    // Originial
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+<!-- Side Catalog -->
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        // interop with multilangual 
+        if ('' == 'true') {
+            _containerSelector = 'div.post-container.active'
+        } else {
+            _containerSelector = 'div.post-container'
+        }
+
+        // init
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        // clean
+        $(selector).html('')
+
+        // appending
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    // toggle side catalog
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    /*
+     * Doc: https://github.com/davist11/jQuery-One-Page-Nav
+     * Fork by Hux to support padding
+     */
+    async("/js/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+<!-- Multi-Lingual -->
+
+
+<!-- Simple Jekyll Search -->
+<script>
+    // https://stackoverflow.com/questions/1912501/unescape-html-entities-in-javascript
+    function htmlDecode(input) {
+        var e = document.createElement('textarea');
+        e.innerHTML = input;
+        // handle case of empty input
+        return e.childNodes.length === 0 ? "" : e.childNodes[0].nodeValue;
+    }
+
+    SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('search-results'),
+        json: '/search.json',
+        searchResultTemplate: '<div class="post-preview item"><a href="{url}"><h2 class="post-title">{title}</h2><h3 class="post-subtitle">{subtitle}</h3><hr></a></div>',
+        noResultsText: 'No results',
+        limit: 50,
+        fuzzy: false,
+        // a hack to get escaped subtitle unescaped. for some reason, 
+        // post.subtitle w/o escape filter nuke entire search.
+        templateMiddleware: function (prop, value, template) {
+            if (prop === 'subtitle' || prop === 'title') {
+                if (value.indexOf("code")) {
+                    return htmlDecode(value);
+                } else {
+                    return value;
+                }
+            }
+        }
+    });
+
+    $(document).ready(function () {
+        var $searchPage = $('.search-page');
+        var $searchOpen = $('.search-icon');
+        var $searchClose = $('.search-icon-close');
+        var $searchInput = $('#search-input');
+        var $body = $('body');
+
+        $searchOpen.on('click', function (e) {
+            e.preventDefault();
+            $searchPage.toggleClass('search-active');
+            var prevClasses = $body.attr('class') || '';
+            setTimeout(function () {
+                $body.addClass('no-scroll');
+            }, 400)
+
+            if ($searchPage.hasClass('search-active')) {
+                $searchClose.on('click', function (e) {
+                    e.preventDefault();
+                    $searchPage.removeClass('search-active');
+                    $body.attr('class', prevClasses);  // from closure 
+                });
+                $searchInput.focus();
+            }
+        });
+    });
+</script>
+
+
+<!-- Image to hack wechat -->
+<img src="/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

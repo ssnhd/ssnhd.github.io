@@ -1,0 +1,2724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>三十年河東</title>
+    <description>科技 数码 美术 设计 | 这里是河東的个人博客，与你一起发现更大的世界。</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 24 Jan 2022 00:27:13 +0800</pubDate>
+    <lastBuildDate>Mon, 24 Jan 2022 00:27:13 +0800</lastBuildDate>
+    <generator>Jekyll v4.2.1</generator>
+    
+      <item>
+        <title>通过恢复功能启动和 U 盘引导重新安装 macOS</title>
+        <description>&lt;h3 id=&quot;apple-芯片&quot;&gt;Apple 芯片&lt;/h3&gt;
+
+&lt;p&gt;Mac 开机并继续按住电源按钮，直至看到启动选项窗口。点击标有“选项”字样的齿轮图标，然后点按 &lt;strong&gt;继续&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;intel-芯片&quot;&gt;Intel 芯片&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;将 Mac 开机并立即按住 Command (⌘)-R，直至看到 Apple 标志或其他图像。&lt;/li&gt;
+  &lt;li&gt;待进度条走完出现实用工具窗口，选择 &lt;strong&gt;重新安装 macOS&lt;/strong&gt;，然后点击 &lt;strong&gt;继续&lt;/strong&gt; 并按照提示操作。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/macos/1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;小贴士&lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;如果无法识别硬盘，或者提示无法安装到电脑或宗卷上，需要先&lt;a href=&quot;https://support.apple.com/zh-cn/HT208496&quot;&gt;抹掉磁盘&lt;/a&gt;。&lt;/li&gt;
+    &lt;li&gt;如果让你选择是安装在“Macintosh HD”上还是在“Macintosh HD - Data”上，选择“Macintosh HD”。&lt;/li&gt;
+    &lt;li&gt;不要将 Mac 睡眠或合上上盖，以便安装完成。&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;其他选项&quot;&gt;其他选项&lt;/h4&gt;
+
+&lt;p&gt;适用于 Intel 的 Mac，除了上面 Command-R，还可以选择以下选项。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Shift-Option-Command-R&lt;/strong&gt;：初始自带或接近仍在提供的版本。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Option-Command-R&lt;/strong&gt;：兼容的最新版。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;u-盘安装&quot;&gt;U 盘安装&lt;/h3&gt;
+
+&lt;p&gt;下载：&lt;a href=&quot;https://apps.apple.com/cn/app/macos-monterey/id1576738294?mt=12&quot;&gt;Monterey&lt;/a&gt;、&lt;a href=&quot;https://apps.apple.com/cn/app/macos-big-sur/id1526878132?mt=12&quot;&gt;Big Sur&lt;/a&gt;、&lt;a href=&quot;https://apps.apple.com/cn/app/macos-catalina/id1466841314?mt=12&quot;&gt;Catalina&lt;/a&gt;、&lt;a href=&quot;https://apps.apple.com/cn/app/macos-mojave/id1398502828?mt=12&quot;&gt;Mojave&lt;/a&gt;、&lt;a href=&quot;https://apps.apple.com/cn/app/macos-high-sierra/id1246284741?mt=12&quot;&gt;High Sierra&lt;/a&gt;，安装包会下载到【应用程序】里，如果提示打开，请退出不要安装。&lt;/p&gt;
+
+&lt;h4 id=&quot;在终端中使用代码&quot;&gt;在【终端】中使用代码&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;U 盘（不低于 16 GB）连接 Mac 电脑。&lt;/li&gt;
+  &lt;li&gt;打开应用程序文件夹内实用工具里的【终端】。&lt;/li&gt;
+  &lt;li&gt;在【终端】里输入或粘贴以下代码之一。将代码中的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MyVolume&lt;/code&gt; 替换为你的 U 盘名称。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Monterey：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;sudo /Applications/Install\ macOS\ Monterey.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Big Sur：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Catalina：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Mojave：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;High Sierra：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;sudo /Applications/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;输入代码后：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;按下 Return 键。&lt;/li&gt;
+  &lt;li&gt;出现提示，输入管理员密码，再次按下 Return 键。输入密码不会显示任何字符。&lt;/li&gt;
+  &lt;li&gt;出现提示，输入 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Y&lt;/code&gt; 确认格式化 U 盘，按下 Return 键。会显示进度条。&lt;/li&gt;
+  &lt;li&gt;U 盘格式化后，会看到提醒，提示【终端】要访问文件。点击 &lt;strong&gt;好&lt;/strong&gt; 允许拷贝。&lt;/li&gt;
+  &lt;li&gt;当【终端】提示完成时，U 盘的名称将与你下载的 macOS 系统名称相同，例如 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Install macOS Monterey&lt;/code&gt;。现在可以退出【终端】并弹出 U 盘。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/macos/2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;安装-macos&quot;&gt;安装 macOS&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;Apple 芯片&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;将 U 盘插入 Mac。&lt;/li&gt;
+  &lt;li&gt;Mac 开机并继续按住电源键，直到看到启动选项窗口。&lt;/li&gt;
+  &lt;li&gt;选择 U 盘，点击 &lt;strong&gt;继续&lt;/strong&gt;。&lt;/li&gt;
+  &lt;li&gt;macOS 开始安装，按照屏幕上的说明操作。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Intel 芯片&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;将 U 盘插入 Mac。&lt;/li&gt;
+  &lt;li&gt;Mac 开机或重启，立即按住 Option (Alt) ⌥ 键。&lt;/li&gt;
+  &lt;li&gt;当你看到 U 盘黑屏时，松开 Option 键。&lt;/li&gt;
+  &lt;li&gt;选择 U 盘，按下 Return 键。（如果无法引导，请确保以允许 &lt;a href=&quot;https://support.apple.com/zh-cn/HT208198&quot;&gt;外部启动&lt;/a&gt;）。&lt;/li&gt;
+  &lt;li&gt;根据提示选择语言。&lt;/li&gt;
+  &lt;li&gt;从【实用工具】窗口中选择【安装 macOS】，点击 &lt;strong&gt;继续&lt;/strong&gt;，并按照屏幕上的说明操作。&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Sun, 23 Jan 2022 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2022/01/23/macos/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022/01/23/macos/</guid>
+        
+        <category>macOS</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Mac 修改启动台行列数、程序坞显示时间、允许任何来源、更改密码位数、关闭开启 SIP</title>
+        <description>&lt;h3 id=&quot;启动台行列&quot;&gt;启动台行列&lt;/h3&gt;
+
+&lt;p&gt;【终端】输入或粘贴以下命令，修改后面的数字更改行列数。&lt;/p&gt;
+
+&lt;p&gt;行数&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;defaults write com.apple.dock springboard-rows -int 9
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;列数&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;defaults write com.apple.dock springboard-columns -int 10
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;最后输入以下命令&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;killall Dock
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;程序坞显示时间&quot;&gt;程序坞显示时间&lt;/h3&gt;
+
+&lt;p&gt;如果你习惯隐藏程序坞，鼠标放在屏幕底部，默认显示程序坞非常慢，你可以在【终端】输入或粘贴下面命令，将数值改为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt;，这样，显示程序坞会变的很快。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;defaults write com.apple.dock autohide-delay -int 0
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;再输入下面命令。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;killall Dock
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;允许任何来源&quot;&gt;允许任何来源&lt;/h3&gt;
+
+&lt;p&gt;安装非 App Store 里应用，可能会出现无法安装的情况，需要打开任何来源。【终端】输入或粘贴以下命令，按回车键。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;sudo spctl --master-disable
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;密码位数&quot;&gt;密码位数&lt;/h3&gt;
+
+&lt;p&gt;管理员默认密码至少为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4&lt;/code&gt; 位，【终端】输入或粘贴以下命令支持将密码改为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt; 位。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;pwpolicy -clearaccountpolicies
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;深色主题显示浅色窗口&quot;&gt;深色主题显示浅色窗口&lt;/h3&gt;
+
+&lt;p&gt;程序坞和菜单栏深色，窗口是浅色。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;【终端】输入或粘贴以下命令，按回车键&lt;/li&gt;
+  &lt;li&gt;注销并重新登录 Mac&lt;/li&gt;
+  &lt;li&gt;系统偏好设置 - 通用 - 深色。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;defaults write -g NSRequiresAquaSystemAppearance -bool Yes
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;恢复&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;defaults delete -g NSRequiresAquaSystemAppearance
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;查看-sip-状态&quot;&gt;查看 SIP 状态&lt;/h3&gt;
+
+&lt;p&gt;【终端】输入 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;csrutil status&lt;/code&gt;，按回车键。&lt;/p&gt;
+
+&lt;h3 id=&quot;关闭-sip&quot;&gt;关闭 SIP&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Mac 开机立即按住 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Command-R&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;进入实用工具窗口，点击&lt;strong&gt;实用工具&lt;/strong&gt;里【终端】，输入下面命令按回车键，重启 Mac&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;csrutil disable
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;开启-sip&quot;&gt;开启 SIP&lt;/h3&gt;
+
+&lt;p&gt;同上，【终端】输入下面命令。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;csrutil enable
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Sun, 23 Jan 2022 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2022/01/23/macos-alter/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022/01/23/macos-alter/</guid>
+        
+        <category>Mac</category>
+        
+        <category>macOS</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>iMac 2017款 27英寸更换 CPU SSD 固态硬盘拆机教程</title>
+        <description>&lt;p&gt;早期 iMac 非定制款都是融合硬盘，也就是 28/32GB SSD + 机械盘，读写速度极慢，用户体验较差，今天给大家带来拆机方法，让你的 Mac 性能提升一个档次。&lt;/p&gt;
+
+&lt;p&gt;方案一：更换为 SATA 接口固态盘（下图左）。&lt;br /&gt;
+方案二：更换为 M.2 Pcle 接口固态盘（下图右），但不是所有机型都支持。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tvax4.sinaimg.cn/large/008eZBHKly1gowkic0w6tj31400u0tde.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;准备&quot;&gt;准备&lt;/h3&gt;
+
+&lt;p&gt;CPU、硅脂、SSD、转接卡（非原装 SSD 需要）、屏幕胶、螺丝刀&lt;/p&gt;
+
+&lt;h3 id=&quot;1分开显示屏与机身胶&quot;&gt;1、分开显示屏与机身胶&lt;/h3&gt;
+
+&lt;p&gt;从显示屏左方的缝隙中插入转盘滚轮，推着让转盘旋转（不要拉），多划几次，确保屏幕胶分离。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tvax4.sinaimg.cn/large/008eZBHKly1gowkilvngmj31400mimz7.jpg&quot; alt=&quot;1左面&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;上方划开显示屏。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tva3.sinaimg.cn/large/008eZBHKly1gowkj6crcxj31400mitab.jpg&quot; alt=&quot;2上面&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;右方划开显示屏。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tvax1.sinaimg.cn/large/008eZBHKly1gowkjc8p2fj31400midi4.jpg&quot; alt=&quot;3右面&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;2打开屏幕&quot;&gt;2、打开屏幕&lt;/h3&gt;
+
+&lt;p&gt;将 iMac 屏幕朝上放在桌面上，用一张塑料卡慢慢移动沿着显示屏划开（左、上、右）屏幕胶。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注：摄像头的位置不要划太深，防止损坏。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tvax4.sinaimg.cn/large/008eZBHKly1gowkjiouzsj31400mi0wa.jpg&quot; alt=&quot;4平放塑料卡&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;3断开电源数据线&quot;&gt;3、断开电源，数据线&lt;/h3&gt;
+
+&lt;p&gt;从顶部慢慢抬起显示屏，用一只手握住显示屏的同时，另一只手拔下电源线。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注：不要抬太高，里面有 2 根连接线。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tvax3.sinaimg.cn/large/008eZBHKly1gowkjo9g5sj31400miwin.jpg&quot; alt=&quot;5拔掉电源线&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;打开数据线上的金属盖片并拔下。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tvax2.sinaimg.cn/large/008eZBHKly1gowkju0gybj31400mijzx.jpg&quot; alt=&quot;6盖板&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;4取下显示屏&quot;&gt;4、取下显示屏&lt;/h3&gt;
+
+&lt;p&gt;将显示屏抬高到接近垂直的位置，此时底部仍有屏幕胶，上下慢慢抬放几次使屏幕胶松动。用手从一边撕掉（或塑料卡切割）屏幕胶，将显示屏取下。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注：一定要非常小心。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tva3.sinaimg.cn/large/008eZBHKly1gowkjzbqdmj31400mi0x5.jpg&quot; alt=&quot;7底屏幕胶&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;5卸底部螺丝&quot;&gt;5、卸底部螺丝&lt;/h3&gt;
+
+&lt;p&gt;卸下底部 9 颗螺丝，取出黑色长片（为了其他部件稍后不受阻挡）。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tva1.sinaimg.cn/large/008eZBHKly1gowkk7jfr1j31400u0tc3.jpg&quot; alt=&quot;8取下屏幕&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;6取左扬声器&quot;&gt;6、取左扬声器&lt;/h3&gt;
+
+&lt;p&gt;卸下 2 颗螺丝。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tvax1.sinaimg.cn/large/008eZBHKly1gowkkfanr8j30u00ngtck.jpg&quot; alt=&quot;9扬声器&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;将左侧扬声器的连接线从电源主板上拔出。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tvax3.sinaimg.cn/large/008eZBHKly1gowkkjeusgj31400migqj.jpg&quot; alt=&quot;10扬声器&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;使用撬棒切断电源线与主板之间的连接，沿着硬盘与主板的缝隙取出。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注：切勿触碰任何主板上的金属焊点。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tva1.sinaimg.cn/large/008eZBHKly1gowkkox5p9j31400min1r.jpg&quot; alt=&quot;11扬声器&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;将扬声器向上抬起，取出扬声器，连接线从扬声器的槽中取出。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tvax4.sinaimg.cn/large/008eZBHKly1gowkkt18x5j31400mitck.jpg&quot; alt=&quot;12卸扬声器&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;7取硬盘&quot;&gt;7、取硬盘&lt;/h3&gt;
+
+&lt;p&gt;将 SATA 电源线向上拉与硬盘断开连接，卸下 2 颗左硬盘支架上的螺丝。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tva1.sinaimg.cn/large/008eZBHKly1gowkkyccv9j31400migqh.jpg&quot; alt=&quot;13硬盘螺丝&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;拿住硬盘向左，取下硬盘。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注：原装是一块机械硬盘，我的已经被更换为 SATA 固态。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tvax1.sinaimg.cn/large/008eZBHKly1gowkl2sksqj31400mi75p.jpg&quot; alt=&quot;14硬盘&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;8取电源&quot;&gt;8、取电源&lt;/h3&gt;
+
+&lt;p&gt;拔掉右侧电源线，卸下电源上的 4 颗螺丝。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注：切勿触碰电源上的任何电容、导线以及焊点。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tva2.sinaimg.cn/large/008eZBHKly1gowkl6o5m8j31400miajy.jpg&quot; alt=&quot;15电源螺丝&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;将电源向左，使其能看到底部连接线，将 2 根连接线分别从主板和电源上拔出，取下电源。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注：连接线有卡扣，请小心谨慎，防止损坏。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tva1.sinaimg.cn/large/008eZBHKly1gowklc0bh0j31400midkb.jpg&quot; alt=&quot;16卸电源&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;9取右扬声器&quot;&gt;9、取右扬声器&lt;/h3&gt;
+
+&lt;p&gt;卸下 2 颗螺丝，轻轻向右摇晃扬声器，使其与主板松开。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tvax3.sinaimg.cn/large/008eZBHKly1gowklgstb1j314010fthj.jpg&quot; alt=&quot;17右扬声器螺丝&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;断开连接线，将扬声器向上抬起，并取出。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tva1.sinaimg.cn/large/008eZBHKly1gowkll2mxrj31400mi7c1.jpg&quot; alt=&quot;18卸右扬声器&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;10取风扇&quot;&gt;10、取风扇&lt;/h3&gt;
+
+&lt;p&gt;将风扇连接线与主板断开；卸下 3 颗螺丝，向下压风扇与排风管道相连的黑色带子会自动脱胶，取出风扇。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tva2.sinaimg.cn/large/008eZBHKly1gowklq0wjvj31400mitdn.jpg&quot; alt=&quot;19风扇&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;11取主板&quot;&gt;11、取主板&lt;/h3&gt;
+
+&lt;p&gt;将四个连接 AirPort 和蓝牙天线的连接线断开。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注：防止之后装机错乱，建议使用胶带固定。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tvax3.sinaimg.cn/large/008eZBHKly1gowklvlzwvj31400mijxe.jpg&quot; alt=&quot;20蓝牙线&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;掀开摄像头数据线的金属固定支架，将连接线朝 iMac 顶部方向拔出。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tvax1.sinaimg.cn/large/008eZBHKly1gowkmehh8sj31400mijwi.jpg&quot; alt=&quot;21摄像头线&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;将耳机孔连接线与主板上断开。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tva4.sinaimg.cn/large/008eZBHKly1gowkmihy12j31400miwk0.jpg&quot; alt=&quot;22麦克风&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;将硬盘 SATA 线从右侧硬盘支架拉出，放到右侧。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tvax1.sinaimg.cn/large/008eZBHKly1gowkmmoaacj31400miwj2.jpg&quot; alt=&quot;23SATA线&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;卸下散热片顶部 2 颗螺丝。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tva4.sinaimg.cn/large/008eZBHKly1gowkmqe07hj31400mi43q.jpg&quot; alt=&quot;24散热片&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;拔下麦克风线；卸下主板正面 8 颗螺丝，左侧 1 颗长行螺丝（T25 螺丝刀），取出主板。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注：麦克风连接线非常小，请仔细小心。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tvax1.sinaimg.cn/large/008eZBHKly1gowkmv986ij31400qwae5.jpg&quot; alt=&quot;25主板螺丝&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;12更换-ssd&quot;&gt;12、更换 SSD&lt;/h3&gt;
+
+&lt;p&gt;将主板翻过来，看到 SSD 固态硬盘位置。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tvax2.sinaimg.cn/large/008eZBHKly1gowkmzgj7uj31400midjl.jpg&quot; alt=&quot;26主板&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;卸下 SSD 上的 1 颗螺丝。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tvax4.sinaimg.cn/large/008eZBHKly1gowkn41b43j31400mi7b4.jpg&quot; alt=&quot;27SSD螺丝&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;将 SSD 从末端轻轻的抬起来并把它从主板上的插槽中拔出来，新 SSD 装上 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;转接卡&lt;/code&gt;。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注：防止损坏插槽，请不要过度抬高 SSD 的末端。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tva1.sinaimg.cn/large/008eZBHKly1gowkn7y8ezj31400q8wgt.jpg&quot; alt=&quot;28 转接卡&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;插入主板上插槽内，拧上螺丝。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tva2.sinaimg.cn/large/008eZBHKly1gowknbzpuhj31400miwl3.jpg&quot; alt=&quot;29装新SSD&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;13更换-cpu&quot;&gt;13、更换 CPU&lt;/h3&gt;
+
+&lt;p&gt;卸下 CPU 背面 4 颗螺丝。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tva4.sinaimg.cn/large/008eZBHKly1gowknglf21j31hc0u0wx3.jpg&quot; alt=&quot;30cpu螺丝&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;用撬棒将 CPU 取下。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tva2.sinaimg.cn/large/008eZBHKly1gowknlhfdqj31hc0u0qi1.jpg&quot; alt=&quot;31卸cpu&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;清除硅脂。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tvax3.sinaimg.cn/large/008eZBHKly1gowknpx7hbj31hc0u0dzp.jpg&quot; alt=&quot;32清除硅脂&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;将 CPU 放入原位。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注：iMac 2017 款 27 英文的 CPU 最高支持 7700K。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tvax1.sinaimg.cn/large/008eZBHKly1gowknv0waxj31hc0u019p.jpg&quot; alt=&quot;33装cpu&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;将硅脂涂在 CPU 表面。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tvax1.sinaimg.cn/large/008eZBHKly1gowko7ucaxj31hc0u07li.jpg&quot; alt=&quot;34涂硅脂&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;14装机&quot;&gt;14、装机&lt;/h3&gt;
+
+&lt;p&gt;按照拆机过程的倒序安装。安装主板时防止位置不对，可以在机身后方插个 U 盘；屏幕胶勿挡住麦克风。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注：装机前清理灰尘，屏幕胶先粘贴一面，待系统安装完成，检查完整性再撕掉另一面胶带合上屏幕。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tvax2.sinaimg.cn/large/008eZBHKly1gowkoc88trj31400midp3.jpg&quot; alt=&quot;36麦克风&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;15安装-macos&quot;&gt;15、安装 macOS&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;将 Mac 开机并立即按住 Command (⌘)-R，直至看到 Apple 标志 () 。&lt;/li&gt;
+  &lt;li&gt;待进度条走完，出现实用工具窗口，选择 &lt;strong&gt;重新安装 macOS&lt;/strong&gt;，然后点按 &lt;strong&gt;继续&lt;/strong&gt; 并按照屏幕上的说明操作。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注：如果无法识别硬盘，或者无法安装到宗卷上，需要先抹掉磁盘。&lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;如果让你选择是安装在“Macintosh HD”上还是在“Macintosh HD - Data”上，请选取“Macintosh HD”。&lt;/li&gt;
+    &lt;li&gt;不要将 Mac 置于睡眠状态，以便安装完成。Mac 可能会多次重新启动并显示进度条，并且屏幕可能每次持续几分钟处于空白状态。&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Sun, 16 Jan 2022 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2022/01/16/iMac/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022/01/16/iMac/</guid>
+        
+        <category>iMac</category>
+        
+        <category>SSD</category>
+        
+        <category>拆机</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>阿里云盘 WebDAV 搭配 Infuse 多平台观影</title>
+        <description>&lt;p&gt;阿里云盘不限速且容量大，被很多人用来存储自己喜爱的影视剧，但看剧不是特别方便，今天给大家介绍阿里云盘搭配 Infuse 播放器，影视剧自动载入海报，且支持多平台。&lt;/p&gt;
+
+&lt;p&gt;Infuse for Mac 效果：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/7P8M6CX.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;准备&quot;&gt;准备&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Infuse 软件。&lt;/li&gt;
+  &lt;li&gt;支持安装阿里云盘 WebDVA 插件的系统，例如 X86 OpenWrt 系统的路由器。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;获取-token&quot;&gt;获取 token&lt;/h3&gt;
+
+&lt;p&gt;打开阿里云盘网页端，鼠标右键选择【审查】出现代码页面，点击【Application】-【Local Storage】网址 -【token】下拉找找到 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;refresh token:&lt;/code&gt; 并复制后面的字符。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/RMq12OF.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;设置阿里云盘-webdav&quot;&gt;设置阿里云盘 WebDAV&lt;/h3&gt;
+
+&lt;p&gt;打开路由器后台插件阿里云盘 WebDAV，将上面复制的字符粘贴到 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Refresh Token&lt;/code&gt;，主机地址填写您路由器 IP，用户名、密码、端口自定义，勾选【启动】再点击【保存&amp;amp;应用】。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注：云盘根目录默认可访问所有文件，如果您只想访问某个文件夹，例如电影，可以输入&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/电影&lt;/code&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/YX1UkuP.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;设置-infuse&quot;&gt;设置 Infuse&lt;/h3&gt;
+
+&lt;p&gt;打开 Infuse，点击【新增文件来源】。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/fHj7O4J.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;点击【添加 WebDAV】。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/RmipUGe.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;名称自定义；&lt;/li&gt;
+  &lt;li&gt;位置输入路由器 IP 地址；&lt;/li&gt;
+  &lt;li&gt;用户名、密码、端口填入您刚在路由器设置的内容，点击【新增】。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/PoHPdCl.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;完成后可以将影视文件夹加入收藏，然后会自动加载封面显示。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/s3w5ObM.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 14 Jan 2022 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2022/01/14/aliyundrive/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022/01/14/aliyundrive/</guid>
+        
+        <category>Infuse</category>
+        
+        <category>阿里云盘</category>
+        
+        <category>WebDAV</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Rime 鼠须管输入法皮肤</title>
+        <description>&lt;p&gt;配置详解：&lt;a href=&quot;https://ssnhd.com/2022/01/06/rime/&quot;&gt;点击这里&lt;/a&gt;&lt;br /&gt;
+Rime 电报群：&lt;a href=&quot;https://t.me/rimeim&quot;&gt;@RIMEIM&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;使用方法：复制下面皮肤主题代码，粘贴到配置文件 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;squirrel.custom.yaml&lt;/code&gt;，然后更换主题即可，如果您对皮肤的细节不满意，可以自行修改数值进行调整。&lt;/p&gt;
+
+&lt;h3 id=&quot;mac浅色--mac_light&quot;&gt;Mac浅色 / mac_light&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/vqDW5La.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;mac_light:
+  name: Mac浅色
+  horizontal: true             # true横排，false竖排
+  candidate_format: &quot;%c %@ &quot;   # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  corner_radius: 5                             # 窗口圆角
+  hilited_corner_radius: 5                     # 高亮圆角
+  line_spacing: 10                             # 行间距(适用于竖排)
+  border_height: 4                             # 窗口上下高度，大于圆角半径才生效
+  border_width: 4                              # 窗口左右宽度，大于圆角半径才生效
+  font_face: &quot;PingFangSC&quot;                      # 候选词字体
+  font_point: 16                               # 候选字大小
+  label_font_point: 13                         # 候选编号大小
+  text_color: 0x424242                    # 拼音行文字颜色
+  back_color: 0xFFFFFF                    # 候选条背景色
+  border_color: 0xFFFFFF                  # 边框色
+  label_color: 0x999999                   # 预选栏编号颜色
+  candidate_text_color: 0x3c3c3c          # 预选项文字颜色
+  comment_text_color: 0x999999            # 拼音等提示文字颜色
+  hilited_text_color: 0x999999            # 高亮拼音 (需要开启内嵌编码)
+  hilited_back_color: 0xD75A00            # 第一候选项背景背景色
+  hilited_candidate_text_color: 0xFFFFFF  # 第一候选项文字颜色
+  hilited_candidate_label_color: 0xFFFFFF # 第一候选项编号颜色
+  hilited_comment_text_color: 0x999999    # 注解文字高亮
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;mac深色--mac_dark&quot;&gt;Mac深色 / mac_dark&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/DNu6P4z.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;mac_dark:
+  name: Mac深色
+  horizontal: true             # true横排，false竖排
+  candidate_format: &quot;%c %@ &quot;   # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  corner_radius: 5                             # 窗口圆角
+  hilited_corner_radius: 5                     # 高亮圆角
+  line_spacing: 10                             # 行间距(适用于竖排)
+  border_height: 4                             # 窗口上下高度，大于圆角半径才生效
+  border_width: 4                              # 窗口左右宽度，大于圆角半径才生效 
+  font_face: &quot;PingFangSC&quot;                      # 候选词字体
+  font_point: 16                               # 候选字大小
+  label_font_point: 13                         # 候选编号大小
+  text_color: 0x424242                    # 拼音行文字颜色
+  back_color: 0x252a2e                    # 候选条背景色
+  border_color: 0x050505                  # 边框色
+  label_color: 0x999999                   # 预选栏编号颜色
+  candidate_text_color: 0xe9e9ea          # 预选项文字颜色
+  comment_text_color: 0x999999            # 拼音等提示文字颜色
+  hilited_text_color: 0x999999            # 高亮拼音 (需要开启内嵌编码)
+  hilited_back_color: 0xD75A00            # 第一候选项背景背景色
+  hilited_candidate_text_color: 0xFFFFFF  # 第一候选项文字颜色
+  hilited_candidate_label_color: 0xFFFFFF # 第一候选项编号颜色
+  hilited_comment_text_color: 0x999999    # 注解文字高亮
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;mac绿--mac_green&quot;&gt;Mac绿 / mac_green&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/n1P6lUm.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;mac_green:
+  name: Mac绿色
+  horizontal: true             # true横排，false竖排
+  candidate_format: &quot;%c %@ &quot;   # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  corner_radius: 5                             # 窗口圆角
+  hilited_corner_radius: 5                     # 高亮圆角
+  line_spacing: 10                             # 行间距(适用于竖排)
+  border_height: 4                             # 窗口上下高度，大于圆角半径才生效
+  border_width: 4                              # 窗口左右宽度，大于圆角半径才生效
+  font_face: &quot;PingFangSC&quot;                      # 候选词字体
+  font_point: 16                               # 候选字大小
+  label_font_point: 13                         # 候选编号大小
+  text_color: 0x424242                    # 拼音行文字颜色
+  back_color: 0xFFFFFF                    # 候选条背景色
+  border_color: 0xFFFFFF                  # 边框色
+  label_color: 0x999999                   # 预选栏编号颜色
+  candidate_text_color: 0x3c3c3c          # 预选项文字颜色
+  comment_text_color: 0x999999            # 拼音等提示文字颜色
+  hilited_text_color: 0x999999            # 高亮拼音 (需要开启内嵌编码)
+  hilited_candidate_back_color: 0x32A14C  # 第一候选项背景色
+  hilited_candidate_text_color: 0xFFFFFF  # 第一候选项文字颜色
+  hilited_candidate_label_color: 0xFFFFFF # 第一候选项编号颜色
+  hilited_comment_text_color: 0x999999    # 注解文字高亮
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;mac橙--mac_orange&quot;&gt;Mac橙 / mac_orange&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/tCKKj1D.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;mac_orange:
+  name: Mac橙色
+  horizontal: true             # true横排，false竖排
+  candidate_format: &quot;%c %@ &quot;   # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  corner_radius: 5                             # 窗口圆角
+  hilited_corner_radius: 5                     # 高亮圆角
+  line_spacing: 10                             # 行间距(适用于竖排)
+  border_height: 4                             # 窗口上下高度，大于圆角半径才生效
+  border_width: 4                              # 窗口左右宽度，大于圆角半径才生效
+  font_face: &quot;PingFangSC&quot;                      # 候选词字体
+  font_point: 16                               # 候选字大小
+  label_font_point: 13                         # 候选编号大小
+  text_color: 0x424242                    # 拼音行文字颜色
+  back_color: 0xFFFFFF                    # 候选条背景色
+  border_color: 0xFFFFFF                  # 边框色
+  label_color: 0x999999                   # 预选栏编号颜色
+  candidate_text_color: 0x3c3c3c          # 预选项文字颜色
+  comment_text_color: 0x999999            # 拼音等提示文字颜色
+  hilited_text_color: 0x999999            # 高亮拼音 (需要开启内嵌编码)
+  hilited_candidate_back_color: 0x0E6BD8  # 第一候选项背景色
+  hilited_candidate_text_color: 0xFFFFFF  # 第一候选项文字颜色
+  hilited_candidate_label_color: 0xFFFFFF # 第一候选项编号颜色
+  hilited_comment_text_color: 0x999999    # 注解文字高亮
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;mac浅蓝--mac_blue&quot;&gt;Mac浅蓝 / mac_blue&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/V5KLI0z.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;mac_blue:
+  name: Mac浅蓝
+  horizontal: true              # true横排，false竖排
+  candidate_format: &quot;%c %@ &quot;    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  corner_radius: 5                             # 窗口圆角
+  font_face: &quot;PingFangSC&quot;                      # 候选词字体
+  font_point: 16                               # 候选字大小
+  label_font_point: 13                         # 候选编号大小
+  line_spacing: 10                             # 行间距(适用于竖排)
+  text_color: 0x424242                    # 拼音行文字颜色
+  back_color: 0xFFFFFF                    # 候选条背景色
+  border_color: 0xFFFFFF                  # 边框色
+  label_color: 0x999999                   # 预选栏编号颜色
+  candidate_text_color: 0x3c3c3c          # 预选项文字颜色
+  comment_text_color: 0x999999            # 拼音等提示文字颜色
+  hilited_text_color: 0x999999            # 高亮拼音 (需要开启内嵌编码)
+  hilited_back_color: 0xF8AA4D            # 第一候选项背景背景色
+  hilited_candidate_text_color: 0xFFFFFF  # 第一候选项文字颜色
+  hilited_candidate_label_color: 0xFFFFFF # 第一候选项编号颜色
+  hilited_comment_text_color: 0x999999    # 注解文字高亮
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;幽能--psionics&quot;&gt;幽能 / psionics&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/TEPA69Y.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;psionics:
+  name: 幽能
+  horizontal: true              # true横排，false竖排
+  candidate_format: &quot;%c %@ &quot;    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  corner_radius: 5                             # 窗口圆角 
+  font_point: 16                               # 候选文字大小
+  label_font_point: 14                         # 候选编号大小
+  font_face: &quot;PingFangSC-Regular,HanaMinB&quot;     # 候选词字体
+  line_spacing: 10                             # 行间距(适用于竖排)
+  text_color: 0xc2c2c2                     # 拼音行文字颜色
+  back_color: 0x444444                     # 候选条背景色，24位色值，16进制，BGR顺序
+  candidate_text_color: 0xeeeeee           # 预选项文字颜色
+  hilited_candidate_back_color: 0xd4bc00   # 候选文字背景色
+  comment_text_color: 0x808080             # 拼音等提示文字颜色
+  hilited_text_color: 0xeeeeee             # 高亮拼音 (需要开启内嵌编码)
+  hilited_back_color: 0x444444             # 第一候选项背景背景色
+  hilited_candidate_label_color: 0xfafafa  # 第一候选项编号颜色
+  hilited_candidate_text_color: 0xfafafa   # 第一候选项文字颜色
+  hilited_comment_text_color: 0x444444     # 注解文字高亮
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;windows--win10&quot;&gt;Windows / win10&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/HUt3OzN.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;win10:
+  horizontal: true                  # true横排，false竖排
+  candidate_format: &quot;%c %@  &quot;       # 如果是竖排建议改为 &quot;%c\u2005%@&quot;
+  font_point: 17              # 候选文字大小
+  label_font_point: 16        # 候选编号大小
+  corner_radius: 0            # 候选条圆角
+  border_width: 6             # 窗口左右宽度
+  border_height: 6            # 窗口左右高度
+  margin_x: 12                # 字起始距左边距离
+  margin_y: 12                # 字上下边距
+  spacing: 10                 # 间距
+  candidate_spacing: 24       # 候选字间隔
+  line_spacing: 10            # 行间距(适用于竖排)
+  hilite_spacing: 8           # 序号和候选字之间的间隔
+  hilite_padding: 12          # 候选字背景色色块高度 若想候选字背景色块无边界填充候选框，仅需其高度和候选字上下边距一致即可
+  round_corner: 0             # 候选字背景色块圆角幅度
+  candidate_text_color: 0x000000          # 预选项文字颜色
+  comment_text_color: 0x888888            # 拼音等提示文字颜色
+  text_color: 0x000000                    # 拼音行文字颜色
+  back_color: 0xffffff                    # 候选条背景色，24位色值，16进制，BGR顺序
+  hilited_text_color: 0x000000            # 高亮拼音 (需要开启内嵌编码)
+  hilited_back_color: 0xffffff            # 第一候选项背景背景色
+  hilited_candidate_text_color: 0xffffff  # 第一候选项文字颜色
+  hilited_candidate_back_color: 0xcc8f29  # 候选文字背景色
+  hilited_comment_text_color: 0xffffff    # 注解文字高亮
+  hilited_label_color: 0xffffff           # 已选字的数字的颜色
+  label_color: 0x888888                   # 预选栏编号颜色
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;日光石--solarized_rock&quot;&gt;日光石 / solarized_rock&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/pWxTSMe.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;solarized_rock:
+  name: 日光石
+  horizontal: true              # true横排，false竖排
+  candidate_format: &quot;%c %@ &quot;    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  corner_radius: 6                             # 窗口圆角 
+  font_point: 16                               # 候选文字大小
+  label_font_point: 15                         # 候选编号大小
+  line_spacing: 10                             # 行间距(适用于竖排)
+  font_face: &quot;PingFangSC-Regular,HanaMinB&quot;     # 候选词字体
+  text_color: 0x8236d3                     # 拼音行文字颜色
+  back_color: 0x362b00                     # 候选条背景色，24位色值，16进制，BGR顺序
+  candidate_text_color: 0x969483           # 预选项文字颜色
+  comment_text_color: 0xc098a12a           # 拼音等提示文字颜色
+  hilited_text_color: 0x98a12a             # 高亮拼音 (需要开启内嵌编码)
+  hilited_back_color: 0x444444             # 第一候选项背景背景色
+  hilited_candidate_label_color: 0xfafafa  # 第一候选项编号颜色
+  hilited_candidate_back_color: 0x8236d3   # 候选文字背景色
+  hilited_candidate_text_color: 0xffffff   # 第一候选项文字颜色
+  hilited_comment_text_color: 0x362b00     # 注解文字高亮 
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;夜光石--solarized_dark&quot;&gt;夜光石 / solarized_dark&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/M74AVYU.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;solarized_dark:
+  name: 夜光石
+  horizontal: true              # true横排，false竖排
+  candidate_format: &quot;%c %@ &quot;    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  corner_radius: 6                             # 窗口圆角 
+  font_point: 16                               # 候选文字大小
+  label_font_point: 15                         # 候选编号大小
+  line_spacing: 10                             # 行间距(适用于竖排)
+  font_face: &quot;PingFangSC-Regular,HanaMinB&quot;     # 候选词字体
+  text_color: 0xA1A095                     # 拼音行文字颜色
+  border_color: 0xf02A1F00                 # 边框颜色
+  label_color: 0xCC8947                    # 预选栏编号颜色
+  back_color: 0xf0352A0A                   # 候选条背景色，24位色值，16进制，BGR顺序
+  candidate_text_color: 0x989F52           # 预选项文字颜色
+  comment_text_color: 0x289989           # 拼音等提示文字颜色
+  hilited_text_color: 0x2C8BAE             # 高亮拼音 (需要开启内嵌编码)
+  hilited_back_color: 0x444444             # 第一候选项背景背景色
+  hilited_candidate_label_color: 0x2566C6  # 第一候选项编号颜色
+  hilited_candidate_back_color: 0xD7E8ED   # 候选文字背景色
+  hilited_candidate_text_color: 0x3942CB   # 第一候选项文字颜色
+  hilited_comment_text_color: 0x8144C2     # 注解文字高亮 
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;冷漠--apathy&quot;&gt;冷漠 / apathy&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/HLUhDoN.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;apathy:
+  name: 冷漠
+  horizontal: true              # true横排，false竖排
+  back_color: 0xFFFFFF           # 候选条背景色，24位色值，16进制，BGR顺序
+  border_height: 0               # 窗口上下高度，大于圆角半径才生效
+  border_width: 8                # 窗口左右宽度
+  line_spacing: 10               # 行间距(适用于竖排)
+  candidate_format: &quot;%c %@ &quot;     # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  comment_text_color: 0x999999              # 拼音等提示文字颜色
+  corner_radius: 5                          # 窗口圆角
+  font_point: 17                            # 候选文字大小
+  hilited_candidate_back_color: 0xFFF0E4    # 候选文字背景色
+  hilited_candidate_text_color: 0xEE6E00    # 第一候选项文字颜色
+  inline_preedit: true
+  label_font_point: 12           # 候选编号大小
+  text_color: 0x424242           # 拼音行文字颜色
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;谷歌--google&quot;&gt;谷歌 / google&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/I07NTJg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;google:
+  name: 谷歌
+  horizontal: true              # true横排，false竖排
+  candidate_format: &quot;%c %@ &quot;    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  font_point: 16                           # 候选文字大小
+  label_font_point: 15                     # 候选编号大小
+  corner_radius: 6                         # 窗口圆角
+  line_spacing: 10                         # 行间距(适用于竖排)
+  text_color: 0x666666                     # 拼音行文字颜色
+  candidate_text_color: 0x000000           # 预选项文字颜色
+  back_color: 0xFFFFFF                     # 候选条背景色，24位色值，16进制，BGR顺序
+  border_color: 0xE2E2E2                   # 边框
+  hilited_text_color: 0x000000             # 高亮拼音 (需要开启内嵌编码)
+  hilited_back_color: 0xFFFFFF             # 第一候选项背景背景色
+  hilited_candidate_text_color: 0xffffff   # 第一候选项文字颜色
+  hilited_candidate_back_color: 0xCE7539   # 候选文字背景色 
+  comment_text_color: 0x6D6D6D             # 拼音等提示文字颜色
+  hilited_comment_text_color: 0xEBC6B0     # 注解文字高亮
+  hilited_candidate_label_color: 0xfafafa  # 第一候选项编号颜色
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;米兰--milan&quot;&gt;米兰 / milan&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/KJofh7W.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;milan:
+  name: 米兰
+  horizontal: true              # true横排，false竖排
+  candidate_format: &quot;%c %@ &quot;    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  font_point: 16                           # 候选文字大小
+  label_font_point: 14                     # 候选编号大小
+  line_spacing: 10                         # 行间距(适用于竖排)
+  border_height: 4                             # 窗口上下高度，大于圆角半径才生效
+  border_width: 4                              # 窗口左右宽度，大于圆角半径才生效
+  corner_radius: 5                         # 窗口圆角
+  back_color: 0xFFFFFF                     # 候选条背景色
+  comment_text_color: 0x999999             # 拼音等提示文字颜色
+  hilited_candidate_back_color: 0xF5803B   # 候选文字背景色
+  hilited_candidate_text_color: 0xFFFFFF   # 第一候选项文字颜色
+  text_color: 0x424242                     # 拼音行文字颜色
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;墨池--ink&quot;&gt;墨池 / ink&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/pBQaOTS.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;ink:
+  name: 墨池
+  horizontal: true              # true横排，false竖排
+  candidate_format: &quot;%c %@ &quot;    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  font_point: 16                           # 候选文字大小
+  label_font_point: 14                     # 候选编号大小
+  corner_radius: 5                         # 窗口圆角
+  line_spacing: 10                         # 行间距(适用于竖排)
+  text_color: 0x5a5a5a                     # 拼音等提示文字颜色
+  back_color: 0xeeffffff                   # 候选条背景色
+  candidate_text_color: 0x000000           # 第一候选项文字颜色
+  hilited_text_color: 0x000000             # 高亮拼音 (需要开启内嵌编码)
+  hilited_candidate_text_color: 0xffffff   # 第一候选项文字颜色
+  hilited_candidate_back_color: 0xcc000000 # 候选文字背景色
+  comment_text_color: 0x5a5a5a             # 拼音等提示文字颜色
+  hilited_comment_text_color: 0x808080     # 注解文字高亮
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;纯洁--purity&quot;&gt;纯洁 / purity&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/bgaAZCl.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;purity:
+  name: 纯洁
+  horizontal: true              # true横排，false竖排
+  candidate_format: &quot;%c %@ &quot;    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  font_point: 16                           # 候选文字大小
+  label_font_point: 14                     # 候选编号大小
+  corner_radius: 5                         # 窗口圆角
+  line_spacing: 10                         # 行间距(适用于竖排)
+  text_color: 0xc2c2c2                     # 拼音等提示文字颜色
+  back_color: 0x444444                     # 候选条背景色
+  candidate_text_color: 0xeeeeee           # 第一候选项文字颜色
+  hilited_text_color: 0xeeeeee             # 高亮拼音 (需要开启内嵌编码)
+  hilited_back_color: 0x444444             # 第一候选项背景背景色
+  hilited_candidate_text_color: 0x000000   # 第一候选项文字颜色
+  hilited_candidate_back_color: 0xfafafa   # 候选文字背景色
+  comment_text_color: 0x808080             # 拼音等提示文字颜色
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;星际争霸--starcraft&quot;&gt;星际争霸 / starcraft&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/uqdMg9T.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;starcraft:
+  name: 星际争霸
+  horizontal: true              # true横排，false竖排
+  candidate_format: &quot;%c %@ &quot;    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  font_point: 16                           # 候选文字大小
+  label_font_point: 14                     # 候选编号大小
+  corner_radius: 5                         # 窗口圆角
+  line_spacing: 10                         # 行间距(适用于竖排)
+  text_color: 0xccaa88                     # 拼音等提示文字颜色
+  candidate_text_color: 0x30bb55           # 第一候选项文字颜色
+  back_color: 0xee000000                   # 候选条背景色
+  border_color: 0x1010a0                   # 边框色
+  hilited_text_color: 0xfecb96             # 高亮拼音 (需要开启内嵌编码)
+  hilited_back_color: 0x000000             # 第一候选项背景背景色
+  hilited_candidate_text_color: 0x70ffaf   # 第一候选项文字颜色
+  hilited_candidate_back_color: 0x000000   # 候选文字背景色
+  comment_text_color: 0x1010d0             # 拼音等提示文字颜色
+  hilited_comment_text_color: 0x1010f0     # 注解文字高亮
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;北方浅色--nord_light&quot;&gt;北方浅色 / nord_light&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/m2kwAsN.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;nord_light:
+  name: 北方浅色
+  horizontal: true              # true横排，false竖排
+  candidate_format: &quot;%c %@ &quot;    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  font_point: 16                           # 候选文字大小
+  label_font_point: 14                     # 候选编号大小
+  corner_radius: 5                         # 窗口圆角
+  line_spacing: 10                         # 行间距(适用于竖排)
+  back_color: 0xF4EFEC                     # 候选条背景色
+  border_color: 0xF4EFEC                   # 边框色
+  candidate_text_color: 0xC1A181           # 第一候选项文字颜色
+  comment_text_color: 0xD0C088             # 拼音等提示文字颜色
+  hilited_back_color: 0xF0E9E5             # 第一候选项背景背景色
+  hilited_candidate_back_color: 0xE9DED8   # 候选文字背景色
+  hilited_candidate_text_color: 0xAC815E   # 第一候选项文字颜色
+  hilited_text_color: 0xAD8EB4             # 高亮拼音 (需要开启内嵌编码)
+  text_color: 0x7087D0                     # 拼音等提示文字颜色
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;北方深色--nord_dark&quot;&gt;北方深色 / nord_dark&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/mdP4Tnc.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;nord_dark:
+  name: 北方深色
+  horizontal: true              # true横排，false竖排
+  candidate_format: &quot;%c %@ &quot;    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+  font_point: 16                           # 候选文字大小
+  label_font_point: 14                     # 候选编号大小
+  corner_radius: 5                         # 窗口圆角
+  line_spacing: 10                         # 行间距(适用于竖排)
+  back_color: 0x473A33                     # 候选条背景色
+  border_color: 0x473A33                   # 边框色
+  candidate_text_color: 0xF5D887           # 第一候选项文字颜色
+  comment_text_color: 0xE6B687             # 拼音等提示文字颜色
+  hilited_back_color: 0x473A33             # 第一候选项背景背景色
+  hilited_candidate_back_color: 0x5D4C43   # 候选文字背景色
+  hilited_candidate_text_color: 0xC0E077   # 第一候选项文字颜色
+  hilited_text_color: 0x6EC8F5             # 高亮拼音 (需要开启内嵌编码)
+  text_color: 0x78E8F0                     # 拼音等提示文字颜色
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Tue, 11 Jan 2022 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2022/01/11/rime-skin/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022/01/11/rime-skin/</guid>
+        
+        <category>Rime</category>
+        
+        <category>Squirrel</category>
+        
+        <category>鼠须管</category>
+        
+        <category>输入法</category>
+        
+        <category>皮肤</category>
+        
+        <category>Mac</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>注册美国 PayPal 绑定美区 Apple ID</title>
+        <description>&lt;h3 id=&quot;注册&quot;&gt;注册&lt;/h3&gt;
+
+&lt;p&gt;进入美国 &lt;a href=&quot;https://www.paypal.com/us/home&quot;&gt;PayPal&lt;/a&gt; 官网，点击右上角 &lt;strong&gt;Sign Up&lt;/strong&gt; ，选择 &lt;strong&gt;Personal Account&lt;/strong&gt; 个人账户，点击 &lt;strong&gt;next&lt;/strong&gt;。输入美国手机号验证，填写真实姓名、邮箱、密码、美国地址。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注：Voice 已不支持验证；&lt;a href=&quot;https://www.meiguodizhi.com/&quot;&gt;美国地址生成器&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;绑卡验证&quot;&gt;绑卡验证&lt;/h3&gt;
+
+&lt;p&gt;打开邮箱里 Paypal 邮件，点击 &lt;strong&gt;验证我的邮箱地址&lt;/strong&gt;，填写银行卡信息进行关联。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tvax2.sinaimg.cn/large/008eZBHKly1gow2echem3j30zy0mhaal.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;PayPal 首页点选 &lt;strong&gt;验证我的手机号码&lt;/strong&gt;，输入号码完成绑定。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tvax1.sinaimg.cn/large/008eZBHKly1gow2eqlz3dj30zy0hnwfp.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;绑定-apple-id&quot;&gt;绑定 Apple ID&lt;/h3&gt;
+
+&lt;p&gt;使用美区 Apple ID 登录 App Store，点按头像进入点选 &lt;strong&gt;Manage Payments&lt;/strong&gt; 管理付款。点选 &lt;strong&gt;Add Payment Method&lt;/strong&gt; 添加付款方式。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注：防止风控，建议 2-3 天后再关联。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tvax4.sinaimg.cn/large/008eZBHKly1gow2f51vutj315q0hijsd.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;点选 &lt;strong&gt;PayPal&lt;/strong&gt; 登陆完成绑定。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tva1.sinaimg.cn/large/008eZBHKly1gow2fa5dhgj315q0gudgy.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;风控&quot;&gt;风控&lt;/h3&gt;
+
+&lt;p&gt;新注册的 PayPal 有审核机制，绑定 Apple ID 可能会提示 &lt;strong&gt;很抱歉，我们暂时无法设置预核准付款&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;方法一：将提示语翻译成英文发邮件给 PayPal，请客服解决。&lt;/li&gt;
+  &lt;li&gt;方法二：等 1-2 天再重新绑定 Apple ID。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tvax3.sinaimg.cn/large/008eZBHKly1gow2ffvlbkj315q0gg3z0.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 08 Jan 2022 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2022/01/08/paypal/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022/01/08/paypal/</guid>
+        
+        <category>PayPal</category>
+        
+        <category>Apple ID</category>
+        
+        <category>美区</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>GitHub 搭建个人博客详细教程</title>
+        <description>&lt;h3 id=&quot;预览&quot;&gt;预览&lt;/h3&gt;
+
+&lt;p&gt;你目前停留的网站即为博客预览，文章内部分图片使用 imgur 图床，如不显示请开代理。&lt;/p&gt;
+
+&lt;h3 id=&quot;配置详解图&quot;&gt;配置详解图&lt;/h3&gt;
+
+&lt;p&gt;最常用到的几项。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/AaPmDp9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;注册-github&quot;&gt;注册 GitHub&lt;/h3&gt;
+
+&lt;p&gt;打开 &lt;a href=&quot;https://github.com/&quot;&gt;GitHub&lt;/a&gt; 官网，点击右上角【Sign up】，输入邮箱、密码、用户名，点击【Continue】完成注册。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/2b5iX1e.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;fork-博客模板&quot;&gt;Fork 博客模板&lt;/h3&gt;
+
+&lt;p&gt;GitHub 左上角搜索框输入 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssnhd.github.io&lt;/code&gt; 进入&lt;a href=&quot;https://github.com/ssnhd/ssnhd.github.io&quot;&gt;我的博客仓库&lt;/a&gt;，点击右上角【Fork】。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/IdvTkCt.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;修改仓库名&quot;&gt;修改仓库名&lt;/h3&gt;
+
+&lt;p&gt;点击【Settings】设置。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/BGcH89A.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;名称修改为【您的 GitHub 账户名.github.io】，点击【Rename】。&lt;/p&gt;
+
+&lt;p&gt;示例：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;maomiui.github.io&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/mNE30TW.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;预览博客&quot;&gt;预览博客&lt;/h3&gt;
+
+&lt;p&gt;此时，在浏览器地址栏输入 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;您的 GitHub 账户名.github.io&lt;/code&gt; 即可看到我的博客模板。&lt;/p&gt;
+
+&lt;p&gt;示例：浏览器输入 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;maomiui.github.io&lt;/code&gt; 打开下图样式。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;如果打不开有两种可能，一是仓库名错误，二是 GitHub 同步慢等待几分钟。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/j5pfc82.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;github-desktop&quot;&gt;GitHub Desktop&lt;/h3&gt;
+
+&lt;p&gt;使用 GitHub Desktop 管理博客仓库，相较于网页方便很多，打开 &lt;a href=&quot;https://desktop.github.com/&quot;&gt;GitHub Desktop&lt;/a&gt; 官网，点击下载并安装。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/34nPGAu.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;登陆&quot;&gt;登陆&lt;/h4&gt;
+
+&lt;p&gt;打开 GitHub Desktop 客户端，使用 GitHub 账号登陆。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/jfpsz6s.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;克隆仓库&quot;&gt;克隆仓库&lt;/h4&gt;
+
+&lt;p&gt;克隆仓库也就是将您的博客文件从 GitHub 网页端保存在本地，点击【Clone a Repository from the Internet…】。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/YNHdnEA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;选择博客仓库，设置保存在本地路径，点击【Clone】。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/cMIDXry.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;等待进度条走完，即博客文件已克隆保存在本地（在您上一步设置的路径处）。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/6G2ms7k.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;选择个人，点击【Continue】。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/okSDKSi.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;快捷键&quot;&gt;快捷键&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Command+Shift+A&lt;/code&gt; 在编辑器中打开仓库&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Command+Shift+F&lt;/code&gt; 在访达中打开仓库&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Command+Shift+G&lt;/code&gt; 在网页中打开仓库&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/59xAtAp.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;快捷键 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Command+Shift+F&lt;/code&gt;，即可在访达中查看博客文件。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/BM1CLUX.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;图片位置&quot;&gt;图片位置&lt;/h3&gt;
+
+&lt;p&gt;打开 &lt;strong&gt;img&lt;/strong&gt; 文件夹，图片都在这里，包括头像，各个分类背景图等。&lt;/p&gt;
+
+&lt;h3 id=&quot;头像描述ico-图标&quot;&gt;头像、描述、ico 图标&lt;/h3&gt;
+
+&lt;p&gt;将头像和 ico 图标添加到 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;img&lt;/code&gt; 文件夹内，最简单方法是命名和我的一样，粘贴并覆盖。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注：浏览器搜 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;在线生成 ICO 图标&lt;/code&gt;，将图片导入自动生成。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/4s5Pfrl.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;如果头像名称不一样，打开 &lt;strong&gt;_config.yml&lt;/strong&gt; 修改为您的自定义名称，同时头像下方的描述也在这里修改。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;sidebar: true
+sidebar-about-description: &quot;清迈，艺术设计师&quot;  # 描述
+sidebar-avatar: /img/avatar-me.jpg          # 头像
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;修改后打开 GitHub Desktop，可以看到 🟥 红色为删除，🟩 绿色为添加；&lt;br /&gt;
+按下图 ➊➋➌ 步骤操作提交（意思是将本地文件同步至服务器，也就是网页显示），等待几分钟，刷新网页博客显示为您的头像。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注：修改任何文件， GitHub Desktop 都要提交才生效，建议将所有内容全部修改完再提交，不建议修改一点就提交。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/M3fK0wI.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;博客名称背景图&quot;&gt;博客名称，背景图&lt;/h3&gt;
+
+&lt;p&gt;打开 &lt;strong&gt;_config.yml&lt;/strong&gt;，修改为您的资料，背景图可以使用我的默认图，也可以自行修改，图片放在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;img&lt;/code&gt; 文件夹，再将下面代码里的背景图全名修改为您的新图。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注：建议用 VSCode 软件打开这些格式文件。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;title: maomiui Blog            # 博客名称
+SEOTitle: 猫咪的博客 | MM Blog   # 显示在浏览器标签页上
+header-img: img/home-bg.jpeg    # 主页背景图
+email: admin@gmail.com          # 邮箱
+description: &quot;科技 数码&quot;         # 博客描述
+keyword: &quot;猫咪的博客, 个人网站&quot;    # 关键词
+url: &quot;http://您的 GitHub 用户名.github.io&quot; # 您的博客地址
+baseurl: &quot;&quot;                     # 不填
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;修改后打开 GitHub Desktop，按下图 ➊➋ 步骤提交代码，等待几分钟刷新网页，您的博客就会显示为您的名称。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/ksV3pg2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;社交账号&quot;&gt;社交账号&lt;/h3&gt;
+
+&lt;p&gt;您可以开启/关闭 RSS 订阅，显示社交平台，例如微博、知乎、Twitter 等，将对应的用户名添加，开启去掉前面的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#&lt;/code&gt;。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;RSS: false
+weibo_username:
+zhihu_username:
+github_username:    ssnhd
+twitter_username:   ssnhdcom
+facebook_username:
+linkedin_username:  firstname-lastname-idxxxx
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/Cb7OM9X.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;主页文章数量&quot;&gt;主页文章数量&lt;/h3&gt;
+
+&lt;p&gt;打开 &lt;strong&gt;_config.yml&lt;/strong&gt;，修改后面的数字即每页显示的帖子数量。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;paginate: 15
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;featured-tags-特色标签&quot;&gt;FEATURED TAGS 特色标签&lt;/h3&gt;
+
+&lt;p&gt;打开 &lt;strong&gt;_config.yml&lt;/strong&gt;，默认为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt;，意思是不同文章里的相同标签 ≥ 1 个才会显示在主页，如果想显示所有标签，将数字 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt; 改为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt;。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;featured-tags: true         # 开启
+featured-condition-size: 1  # 大于等于 1 才显示标签
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/coa63ym.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;about-me-关于我&quot;&gt;ABOUT ME 关于我&lt;/h3&gt;
+
+&lt;p&gt;打开 &lt;strong&gt;index.html&lt;/strong&gt;，修改为您自己的描述座右铭。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;layout: page
+description: &quot;在这个世界上，不是所有合理的和美好的都能按照自己的愿望存在或实现&quot;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/SLTt9QC.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;archive-存档&quot;&gt;Archive 存档&lt;/h3&gt;
+
+&lt;p&gt;打开 &lt;strong&gt;archive.html&lt;/strong&gt;，修改描述和背景图。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;title: Archive
+layout: default
+description: &quot;我干了什么 究竟拿了时间换了什么&quot;
+header-img: &quot;img/tag-bg.jpg&quot;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/XjUAfHy.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;friends-友链&quot;&gt;FRIENDS 友链&lt;/h3&gt;
+
+&lt;p&gt;打开 &lt;strong&gt;_config.yml&lt;/strong&gt;，将您的朋友们友链按照下面格式添加。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;# Friends
+{ title: &quot;V2EX 群&quot;, href: &quot;https://t.me/V2EXPro/&quot; }
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/BkSFxwJ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;文章&quot;&gt;文章&lt;/h3&gt;
+
+&lt;p&gt;打开 &lt;strong&gt;_posts&lt;/strong&gt; 文件夹，所有文章都在这里，删除我的文章，可以保留一个作为模板参考。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/K2E3Nr9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;文章格式&quot;&gt;文章格式&lt;/h4&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;---
+layout:     post
+title:      我的第一篇博客关于宋词   # 标题
+subtitle:   带你走进优美宋词世界     # 副标题
+date:       2022-1-8       # 日期
+author:     maomi          # 作者（本博客默认不显示）
+header-img: img/post-bg-blog.png # 背景图（在img文件夹）
+catalog: true       # 开启目录
+top: false          # true 开启置顶，false 关闭置顶
+tags:               # 标签
+    - 博客
+    - 宋词
+---
+                #此处空一格，在下面写文章
+### 《全宋词》
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注：文章支持 Markdown 格式，图片建议用图床载入（例如 &lt;a href=&quot;https://imgur.com/&quot;&gt;imgur&lt;/a&gt;），不会使用 Markdown 和图床的可以谷歌/百度搜索。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/tE2UalX.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;写完使用 GitHub Desktop 提交，等待几分钟刷新博客，即可查看到您的文章。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/KwoAH6X.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;about-自我介绍&quot;&gt;About 自我介绍&lt;/h3&gt;
+
+&lt;p&gt;打开 &lt;strong&gt;_includes&lt;/strong&gt; - &lt;strong&gt;about&lt;/strong&gt; 文件夹，里面有中英文两种。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;en.md 英文&lt;/li&gt;
+  &lt;li&gt;zh.md 中文&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;背景图描述&quot;&gt;背景图，描述&lt;/h4&gt;
+
+&lt;p&gt;打开 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;about.html&lt;/code&gt;，修改描述和背景图，是否开启多国语言。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;layout: page
+title: &quot;About&quot;
+description: &quot;千万不要放弃自己的爱好&quot;
+header-img: &quot;img/about-bg.jpg&quot;
+multilingual: true
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/2gC84jH.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;配置信息&quot;&gt;配置信息&lt;/h3&gt;
+
+&lt;p&gt;将一些基本资料修改为您的信息，例如标题、邮箱、GitHub 地址等。到这里基本上博客已经搭建完成。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/p5Ltq2H.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;新标签页打开&quot;&gt;新标签页打开&lt;/h3&gt;
+
+&lt;p&gt;【文章】：打开 &lt;strong&gt;index.xml&lt;/strong&gt;，在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;a href=&quot;{...&lt;/code&gt; 里添加 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;target=&quot;_blank&quot;&lt;/code&gt;，表示文章在新标签页打开。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;【超链接】：打开 &lt;strong&gt;_includes&lt;/strong&gt; - &lt;strong&gt;head.html&lt;/strong&gt;，在 head 头文件插入 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;base target=&quot;_blank&quot; /&amp;gt;&lt;/code&gt;，表示超链接在新标签页打开。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;评论功能&quot;&gt;评论功能&lt;/h3&gt;
+
+&lt;p&gt;打开 &lt;a href=&quot;https://disqus.com/&quot;&gt;Disqus&lt;/a&gt; 官网注册账号，进入&lt;a href=&quot;https://disqus.com/home/settings/profile/&quot;&gt;设置页面&lt;/a&gt;输入个人信息保存。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Avatar：头像&lt;/li&gt;
+  &lt;li&gt;Name：昵称&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/dchY44Y.png&quot; alt=&quot;&quot; /&gt;
+点击左侧【Account】，输入用户名和邮箱保存。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Username：GitHub 用户名&lt;/li&gt;
+  &lt;li&gt;Email：邮箱&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/GB1HvF2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;最后打开 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;，将 Username 填入进去并保存，GitHub Desktop 提交生效。&lt;/p&gt;
+
+&lt;p&gt;示例：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;# Disqus 评论
+disqus_username: qingmai
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/hKC4map.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;网页客户端&quot;&gt;网页客户端&lt;/h3&gt;
+
+&lt;p&gt;Chrome 浏览器支持将您的博客安装成独立的 App。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/NF3xHf6.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;打开 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pwa&lt;/code&gt; - &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;icons&lt;/code&gt; 文件夹，修改为您自己的图片。&lt;br /&gt;
+打开 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pwa&lt;/code&gt; 文件夹内 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;manifest.json&lt;/code&gt;，修改名称和描述等。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;{
+  &quot;name&quot;: &quot;QM Blog&quot;,
+  &quot;short_name&quot;: &quot;QM Blog&quot;,
+  &quot;description&quot;: &quot;About an engineer &amp;amp; designer who loves web.&quot;,
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;自定义域名&quot;&gt;自定义域名&lt;/h3&gt;
+
+&lt;p&gt;准备好您购买的域名，我是在 cloudflare 平台进行解析，添加记录：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;www&lt;/code&gt; 表示 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;www.ssnhd.com&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@&lt;/code&gt; 表示 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssnhd.com&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IP 地址&lt;/code&gt; 填入您博客网址的美国服务器地址（&lt;a href=&quot;https://ip.tool.chinaz.com/&quot;&gt;站长之家&lt;/a&gt;查询 IP 地址）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;打开 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CANME&lt;/code&gt;，将域名填入保存，GitHub Desktop 提交生效，等待几分钟浏览器输入您的域名即可打开博客。&lt;/p&gt;
+</description>
+        <pubDate>Sat, 08 Jan 2022 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2022/01/08/blog/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022/01/08/blog/</guid>
+        
+        <category>博客</category>
+        
+        <category>GitHub</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>搜狗输入法修改菜单栏图标</title>
+        <description>&lt;p&gt;搜狗输入法的图标设计其实也还行，辨识度极高，但部分用户不喜欢，那么今天就教大家修改为自己喜欢的图标，例如改为 Mac 原生输入法图标。&lt;/p&gt;
+
+&lt;h3 id=&quot;准备图标&quot;&gt;准备图标&lt;/h3&gt;
+
+&lt;p&gt;前往以下路径（自带输入法文件夹），找到 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.tiff&lt;/code&gt; 格式的图标。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;/System/Library/Input Methods/SCIM.app/Contents/PlugIns/SCIM_Extension.appex/Contents/Resources
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/yjW6EJi.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;用预览打开（例如拼音），会出现 2 个图标，删除较模糊的。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/4LRYiK8.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;点击菜单栏导出，名称及格式为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;menubarpinyin.pdf&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/ToWbL6P.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;更换图标&quot;&gt;更换图标&lt;/h3&gt;
+
+&lt;p&gt;前往以下路径（搜狗输入法文件夹），将 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;menubarpinyin.pdf&lt;/code&gt; 文件放进去并替换，退出 Mac 重新进入，更换完成。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;/Library/Input Methods/SogouInput.app/Contents/Resources
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/unIx33V.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 06 Jan 2022 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2022/01/06/sogou-logo/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022/01/06/sogou-logo/</guid>
+        
+        <category>搜狗</category>
+        
+        <category>输入法</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>搜狗词库转为 Rime 词库方法</title>
+        <description>&lt;p&gt;如果您使用 Rime 输入法，需要添加第三方词库（如搜狗百度），但需要将词库格式转换才能使用。本文以搜狗词库为例，教您如何转换。&lt;/p&gt;
+
+&lt;h3 id=&quot;下载词库&quot;&gt;下载词库&lt;/h3&gt;
+
+&lt;p&gt;打开 &lt;a href=&quot;https://pinyin.sogou.com/dict/cate/index/167?rf=dictindex&amp;amp;pos=dict_rcmd&quot;&gt;搜狗官网&lt;/a&gt; 下载词库，格式为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.scel&lt;/code&gt; 文件。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/sogoudict/02.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;安装转换工具&quot;&gt;安装转换工具&lt;/h3&gt;
+
+&lt;p&gt;下载深蓝词库转换工具 &lt;a href=&quot;https://github.com/studyzy/imewlconverter/releases&quot;&gt;imewlconverter_Windows.zip&lt;/a&gt; 并打开。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/sogoudict/03.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;开始转换&quot;&gt;开始转换&lt;/h3&gt;
+
+&lt;p&gt;点击 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;…&lt;/code&gt; 选择下载好的词库（可多选），再点击&lt;strong&gt;打开&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注意：如果不显示词库，将右下角改为&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;所有格式&lt;/code&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/sogoudict/04.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;转出项选择【Rime中州韵】。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/sogoudict/08.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;编码类型选择 &lt;strong&gt;拼音&lt;/strong&gt; 和 &lt;strong&gt;MacOS&lt;/strong&gt;，点击&lt;strong&gt;确定&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/sogoudict/05.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;点击&lt;strong&gt;转换&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/sogoudict/06.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;点击【是】保存到本地。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/sogoudict/07.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;保存后为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.txt&lt;/code&gt; 文件。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/sogoudict/09.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;改为-yaml-文件&quot;&gt;改为 yaml 文件&lt;/h3&gt;
+
+&lt;p&gt;将下面代码粘贴在文本最上方（&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;...&lt;/code&gt; 下面空一行），修改词库名（以 sogou 为例）并保存。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;# 可以将包含哪些词库写在此处，方便日后查看是否有重复。
+
+---
+name: luna_pinyin.sogou    # 词库名自定义
+version: &quot;0.9&quot;               
+sort: by_weight              
+use_preset_vocabulary: false
+...
+
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/sogoudict/10.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;将文件重命名。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/sogoudict/11.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;以 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.dict.yaml&lt;/code&gt; 为后缀，命名为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;luna_pinyin.sogou.dict.yaml&lt;/code&gt; 完成词库转换。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注：文件名前部分要和文件内 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;name&lt;/code&gt; 一致。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/sogoudict/12.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 06 Jan 2022 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2022/01/06/sogou-dict/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022/01/06/sogou-dict/</guid>
+        
+        <category>搜狗</category>
+        
+        <category>输入法</category>
+        
+        <category>Rime</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Rime Squirrel 鼠须管输入法配置详解</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/rime/milan.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;配置仓库地址：&lt;a href=&quot;https://github.com/ssnhd/rime&quot;&gt;点击这里&lt;/a&gt;，Rime 电报群：&lt;a href=&quot;https://t.me/rimeim&quot;&gt;@RIMEIM&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;特点&quot;&gt;特点&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;朙月拼音、小鹤双拼、自然码双拼&lt;/li&gt;
+  &lt;li&gt;词库不丢失，支持多平台同步&lt;/li&gt;
+  &lt;li&gt;词库自定义，目前包含搜狗官网 12 类别、聊天词&lt;/li&gt;
+  &lt;li&gt;Emoji 与 Mac 同步&lt;/li&gt;
+  &lt;li&gt;动态输入时间、日期、星期&lt;/li&gt;
+  &lt;li&gt;速度快、开源、不联网保护隐私、自定义&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;安装&quot;&gt;安装&lt;/h3&gt;
+
+&lt;p&gt;下载 &lt;a href=&quot;https://rime.im/&quot; target=&quot;_blank&quot;&gt;鼠须管&lt;/a&gt;，安装后切换到 Rime 输入法，开始使用。&lt;br /&gt;
+默认繁体输出，通过组合键 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Control+｀&lt;/code&gt; 或 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;F4&lt;/code&gt; 键切换输入方案，例如选择【朙月拼音·简化字】简体输出。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注：建议 Mac 打开 Squirrel 通知，之后部署会提示是否成功。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;备份初始配置可选&quot;&gt;备份初始配置（可选）&lt;/h3&gt;
+
+&lt;p&gt;防止操作不当配置无法恢复，可以为初始配置做个备份。在【终端】中输入以下命令，按回车键，会出现一个【Rime.bak】文件夹即备份。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;cp -r ~/Library/Rime ~/Library/Rime.bak
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/1EFPjAK.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;还原：初始配置【Rime】文件夹清空，将【Rime.bak】内的文件复制粘贴过去，重新部署（修改任何文件都要重新部署生效）。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;定制&quot;&gt;定制&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;下载 &lt;a href=&quot;https://github.com/ssnhd/rime/archive/refs/heads/master.zip&quot;&gt;配置&lt;/a&gt; 解压得到【配置文件】和【花园明朝字体】，将字体安装到字体册，原因是 Mac 缺少部分生僻字。&lt;/li&gt;
+  &lt;li&gt;点击菜单栏【ㄓ】-【用户设定】，将【配置文件】里所有文件粘贴进去，并选择覆盖。&lt;/li&gt;
+  &lt;li&gt;点击菜单栏【ㄓ】-【重新部署】（快捷键 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Control+Option+｀&lt;/code&gt;），至此完成定制配置，可以愉快的使用了。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/rime/xmind.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;全局设置&quot;&gt;全局设置&lt;/h3&gt;
+
+&lt;p&gt;全局设置文件 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;default.custom.yaml&lt;/code&gt;，包含输入方案、候选词个数、中英文切换、快捷键。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注：建议用 VSCode 软件打开文件，因分隔符问题还需要 &lt;a href=&quot;https://ssnhd.com/2021/10/01/VSCode&quot; target=&quot;_blank&quot;&gt;修改 Tab 键&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;输入方案&quot;&gt;输入方案&lt;/h4&gt;
+
+&lt;p&gt;按 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Control+｀&lt;/code&gt; 显示输入方案。假设您不用双拼或大写数字，可以将其连同配置里的对应文件一并删除；同理，您也可以添加其他方案，例如：&lt;a href=&quot;https://github.com/rime/plum#essentials&quot;&gt;五笔、地球拼音、袖珍拼音&lt;/a&gt;。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注：输入方案都是以 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.schema.yaml&lt;/code&gt; 命名，例如 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;luna_pinyin_simp.schema.yaml&lt;/code&gt;，可以修改该文件进行定制，但是输入法一旦更新，这个文件也会跟着更新，定制就会丢失。&lt;br /&gt;
+解决办法是新建文件 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;luna_pinyin_simp.custom.yaml&lt;/code&gt;，然后在里面定制，所有方案对应的补丁名都是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;方案名&amp;gt;.custom.yaml&lt;/code&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;schema_list:
+  - schema: luna_pinyin_simp      # 朙月拼音
+  - schema: double_pinyin_flypy   # 小鹤双拼
+  - schema: double_pinyin         # 自然码双拼
+  - schema: numbers               # 大写数字
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;候选词个数&quot;&gt;候选词个数&lt;/h4&gt;
+
+&lt;p&gt;修改后面的数字更改候选词个数。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;menu/page_size: 7
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;中英文切换&quot;&gt;中英文切换&lt;/h4&gt;
+
+&lt;p&gt;下面代码表示使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Caps&lt;/code&gt; 键切换大小写，使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Shift&lt;/code&gt; 键切换中英文。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;ascii_composer/good_old_caps_lock: true # 若为 true， Caps 只切换大小写
+ascii_composer/switch_key:
+  Caps_Lock: commit_code                # Caps 键
+  Shift_L: commit_code                  # 左 Shift，切换中英文
+  Shift_R: commit_code                  # 右 Shift，切换中英文
+  Control_L: noop                       # 左 Control，屏蔽该切换键
+  Control_R: noop                       # 右 Control，屏蔽该切换键
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注：如果 Caps 键不能切换大小写，打开 Mac 系统偏好设置 &amp;gt; 键盘 &amp;gt; 输入法 &amp;gt; 取消[使用大写锁定键切换“美国”输入模式]。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;其他可选切换策略：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;inline_ascii&lt;/strong&gt;：在输入法的临时英文编辑区内输入字母、数字、符号、空格等，回车上屏后自动复位到中文&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;commit_text&lt;/strong&gt;：已输入的候选文字上屏并切换至英文输入模式&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;commit_code&lt;/strong&gt;：已输入的编码字符上屏并切换至英文输入模式&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;noop&lt;/strong&gt;：屏蔽该切换键&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;翻页和快捷键&quot;&gt;翻页和快捷键&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;when&lt;/strong&gt;：有几种状态 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;composing&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;has_menu&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;paging&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;accept&lt;/strong&gt;：控制接受的按键 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;minus&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;equal&lt;/code&gt;,、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;period&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;comma&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bracketleft&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bracketright&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;send&lt;/strong&gt;：控制动作 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Page_Up&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Page_Down&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Escape&lt;/code&gt;(清空输入码)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;# 翻页
+- { when: has_menu, accept: Tab, send: Page_Down }            # &quot;tab&quot; 键翻页, 和下一条 &quot;tab&quot; 键分词只能二选一
+- { when: composing, accept: Shift+Tab, send: Shift+Left }    # &quot;Shift+Tab&quot; 键向左选拼音分词
+- { when: paging, accept: minus, send: Page_Up }              # &quot;-&quot; 上一页
+- { when: has_menu, accept: equal, send: Page_Down }          # &quot;=&quot; 下一页
+- { when: paging, accept: comma, send: Page_Up }              # &quot;,&quot; 上一页
+- { when: has_menu, accept: period, send: Page_Down }         # &quot;.&quot; 下一页
+- { when: paging, accept: bracketleft, send: Page_Up }        # &quot;[&quot; 上一页
+- { when: has_menu, accept: bracketright, send: Page_Down }   # &quot;]&quot; 下一页
+
+# 快捷键
+- { when: has_menu, accept: semicolon, send: 2 }              # &quot;:&quot; (分号)选择第 2 个候选词
+- { when: has_menu, accept: apostrophe, send: 3 }             # &quot;&apos;&quot; (引号)选择第 3 个候选词
+- { when: composing, accept: Shift+Tab, send: Shift+Left }    # &quot;Shift+Tab&quot; 键向左选拼音分词
+- { when: composing, accept: Control+a, send: Home }          # &quot;Control+a&quot; 光标移至首
+- { when: composing, accept: Control+e, send: End }           # &quot;Control+e&quot; 光标移至尾
+- { when: composing, accept: Control+g, send: Escape }        # &quot;Control+g&quot; 清码
+- { when: composing, accept: Return, send: Escape }           # &quot;Return&quot; 回车清码
+- { when: always, accept: Control+Shift+1, select: .next }             # 切换输入方案
+- { when: always, accept: Control+Shift+2, toggle: ascii_mode }        # 中/英文切换
+- { when: always, accept: Control+Shift+3, toggle: full_shape }        # 全角/半角切换
+- { when: always, accept: Control+Shift+4, toggle: simplification }    # 繁简体切换
+- { when: always, accept: Control+Shift+5, toggle: extended_charset }  # 通用/增广切换（显示生僻字）
+- { when: composing, accept: Control+b, send: Left }           # &quot;Control+b&quot; 移动光标
+- { when: composing, accept: Control+f, send: Right }          # &quot;Control+f&quot; 向右选择候选词
+- { when: composing, accept: Control+h, send: BackSpace }      # &quot;Control+h&quot; 删除输入码
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;词库-格式&quot;&gt;词库 格式&lt;/h3&gt;
+
+&lt;p&gt;新建文件命名格式为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;词库名&amp;gt;.dict.yaml&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;示例：朙月拼音 AV 女优词库 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;luna_pinyin.av.dict.yaml&lt;/code&gt;。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;# 日本 AV 女优
+
+---
+name: luna_pinyin.av  # 要和文件名一致
+version: &quot;2021.12.21&quot;
+sort: by_weight
+use_preset_vocabulary: false
+...
+                              # 此处空一行
+三上悠亞  san shang you ya  1  # 汉字和编码用 Tab 键间隔，拼音之间用空格键
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;词库-外挂&quot;&gt;词库 外挂&lt;/h3&gt;
+
+&lt;p&gt;打开 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;luna_pinyin.extended.dict.yaml&lt;/code&gt;，将词库名添加。&lt;/p&gt;
+
+&lt;p&gt;示例：AV 女优词库 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;luna_pinyin.av.dict.yaml&lt;/code&gt; 即输入 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;luna_pinyin.av&lt;/code&gt;。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;import_tables:
+  - luna_pinyin
+  - luna_pinyin.av
+  - luna_pinyin.chat
+  - luna_pinyin.sogou
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;词库-载入&quot;&gt;词库 载入&lt;/h3&gt;
+
+&lt;p&gt;打开 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;luna_pinyin_simp.custom.yaml&lt;/code&gt;，载入中英文词库，还可以修改英文候选词位置、Emoji 显示注释等。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;patch:
+  # 启用罕见字過濾
+  engine/filters:
+    - simplifier
+    - simplifier@emoji_conversion
+    - uniquifier
+    - charset_filter@gbk # (※3) GBK 过滤
+    - single_char_filter
+
+  emoji_conversion:
+    opencc_config: emoji.json
+    option_name: show_emoji
+    tags: abc
+    #tips: all    # Emoji 显示注释
+
+  # 改写拼写运算，含英文的词汇（luna_pinyin.cn_en.dict.yaml）不影响简拼
+  &quot;speller/algebra/@before 0&quot;: xform/^([b-df-hj-np-tv-z])$/$1_/
+
+  # 载入朙月拼音扩充词库
+  &quot;translator/dictionary&quot;: luna_pinyin.extended
+
+  # 加载easy_en依赖
+  &quot;schema/dependencies/@1&quot;: easy_en
+  # 载入翻译英文的码表翻译器，取名为 english
+  &quot;engine/translators/@4&quot;: table_translator@english
+  # english翻译器的设定项
+  english:
+    dictionary: easy_en
+    spelling_hints: 9
+    enable_completion: false # 是否启用英文输入联想补全
+    enable_sentence: false # 混输时不出现带有图案的英文
+    initial_quality: -0.5 # 英文候选词的位置, 数值越大越靠前。
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;模式转换&quot;&gt;模式转换&lt;/h3&gt;
+
+&lt;p&gt;打开 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;luna_pinyin_simp.custom.yaml&lt;/code&gt;，switches 列了：中文西文、全角半角、Emoji、简繁体、字节编码。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;patch:
+  switches:
+    - name: ascii_mode                   # 0 中文，1 英文
+      reset: 0
+      states: [&quot;中文&quot;, &quot;西文&quot;]
+    - name: full_shape                   # 全角/半角符号开关
+      states: [&quot;半角&quot;, &quot;全角&quot;]
+    - name: show_emoji                   # Emoji 开关
+      reset: 1
+      states: [ &quot;🈚️️\uFE0E&quot;, &quot;🈶️️\uFE0F&quot; ]
+    - name: zh_simp                      # (※1) 繁简转换
+      reset: 1
+      states: [&quot;漢字&quot;, &quot;汉字&quot;]
+    - options: [&quot;utf8&quot;, &quot;gbk&quot;, &quot;gb2312&quot;] # (※2)字符集选单
+      reset: 0                           # 默认 UTF8
+      states:
+        - UTF-8
+        - GBK
+        - GB2312
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;搜狗词库转换&quot;&gt;搜狗词库转换&lt;/h3&gt;
+
+&lt;p&gt;转换方法：&lt;a href=&quot;https://ssnhd.com/2022/01/06/sogou-dict/&quot;&gt;点击这里&lt;/a&gt;。本配置里的搜狗词库包含官网 12 个分类（城市、工程、农业、人文、社会、生活、艺术、医学、游戏、娱乐、运动、自然），满足绝大部份用户使用。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;emoji&quot;&gt;Emoji&lt;/h3&gt;
+
+&lt;p&gt;打开 opencc 文件夹内 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;emoji_word.txt&lt;/code&gt;，规则：字符用 Tab 键间隔，其他用空格键，简体和繁体都要加入。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/rime/emojikaixin.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;开心  开心 😄 😃 😺
+開心  開心 😄 😃 😺
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;按 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Control + ｀&lt;/code&gt; 组合键，可以选择开启或关闭 Emoji。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/rime/emojioff.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;快捷符号&quot;&gt;快捷符号&lt;/h3&gt;
+
+&lt;p&gt;以朙月拼音为例，打开 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;luna_pinyin_simp.custom.yaml&lt;/code&gt;，自行添加修改。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注：打开【用户设定】-【build 文件夹】- &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;luna_pinyin_simp.schema.yaml&lt;/code&gt; 里有超多快捷符号，将需要修改的快捷符号添加到下面区域。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/rime/emojikuaijie.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&quot;/fs&quot;: [½, ‰, ¼, ⅓, ⅔, ¾, ⅒ ]
+&quot;/xh&quot;: [ ＊, ×, ✱, ★, ☆, ✩, ✧, ❋, ❊, ❉, ❈, ❅, ✿, ✲]
+&quot;/dq&quot;: [🌍,🌎,🌏,🌐,🌑,🌒,🌓,🌔,🌕,🌖,🌗,🌘]
+&quot;/sg&quot;: [🍇,🍉,🍌,🍍,🍎,🍏,🍑,🍒,🍓,🍗,🍦,🎂,🍺,🍻]
+&quot;/dw&quot;: [🙈,🐵,🐈,🐷,🐨,🐼,🐾,🐔,🐬,🐠,🦋]
+&quot;/bq&quot;: [😀,😁,😂,😃,😄,😅,😆,😉,😊,😋,😎,😍,😘,😗]
+&quot;/ss&quot;: [💪,👈,👉,👆,👇,✋,👌,👍,👎,✊,👊,👋,👏,👐]
+&quot;#&quot;: &quot;#&quot;
+&quot;*&quot;: &quot;*&quot;
+&quot;`&quot;: &quot;`&quot;
+&quot;~&quot;: &quot;~&quot;
+&quot;@&quot;: &quot;@&quot;
+&quot;=&quot;: &quot;=&quot;
+&apos;\&apos;: &quot;、&quot;
+&quot;%&quot;: &quot;%&quot;
+&quot;$&quot;: [&quot;¥&quot;, &quot;$&quot;]
+&quot;|&quot;: [&quot;|&quot;, &quot;｜&quot;, &quot;·&quot;]
+&quot;/&quot;: [&quot;/&quot;, &quot;÷&quot;]
+&quot;&apos;&quot;: { pair: [&quot;「&quot;, &quot;」&quot;] }  #表示一对
+&quot;[&quot;: &quot;【&quot;
+&quot;]&quot;: &quot;】&quot;
+&quot;&amp;lt;&quot;: &quot;《&quot;
+&quot;&amp;gt;&quot;: &quot;》&quot;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;模糊音-简拼-纠错&quot;&gt;模糊音 简拼 纠错&lt;/h3&gt;
+
+&lt;p&gt;打开 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;luna_pinyin_simp.custom.yaml&lt;/code&gt;，若关闭前面加 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#&lt;/code&gt;。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;# 需要哪組就刪去行首的 # 號，單雙向任選
+- derive/^([zcs])h/$1/             # zh, ch, sh =&amp;gt; z, c, s
+- derive/^([zcs])([^h])/$1h$2/     # z, c, s =&amp;gt; zh, ch, sh
+- derive/^n/l/                     # n =&amp;gt; l
+- derive/^l/n/                     # l =&amp;gt; n
+
+# 這兩組一般是單向的
+- derive/^r/l/                     # r =&amp;gt; l
+- derive/^ren/yin/                 # ren =&amp;gt; yin, reng =&amp;gt; ying
+- derive/^r/y/                     # r =&amp;gt; y
+
+# 下面 hu &amp;lt;=&amp;gt; f 這組寫法複雜一些，分情況討論
+- derive/^hu$/fu/                  # hu =&amp;gt; fu
+- derive/^hong$/feng/              # hong =&amp;gt; feng
+- derive/^hu([in])$/fe$1/          # hui =&amp;gt; fei, hun =&amp;gt; fen
+- derive/^hu([ao])/f$1/            # hua =&amp;gt; fa, ...
+- derive/^fu$/hu/                  # fu =&amp;gt; hu
+- derive/^feng$/hong/              # feng =&amp;gt; hong
+- derive/^fe([in])$/hu$1/          # fei =&amp;gt; hui, fen =&amp;gt; hun
+- derive/^f([ao])/hu$1/            # fa =&amp;gt; hua, ...
+
+# 韻母部份
+- derive/^([bpmf])eng$/$1ong/      # meng = mong, ...
+- derive/([ei])n$/$1ng/            # en =&amp;gt; eng, in =&amp;gt; ing
+- derive/([ei])ng$/$1n/            # eng =&amp;gt; en, ing =&amp;gt; in
+
+# 超级简拼
+- abbrev/^([a-z]).+$/$1/           # 簡拼（首字母）
+- abbrev/^([zcs]h).+$/$1/          # 簡拼（zh, ch, sh）
+
+# 智能纠错
+- derive/([aeiou])ng$/$1gn/        # dagn =&amp;gt; dang
+- derive/([dtngkhrzcs])o(u|ng)$/$1o/  # zho =&amp;gt; zhong|zhou
+- derive/ong$/on/                  # zhonguo =&amp;gt; zhong guo
+- derive/ao$/oa/                   # hoa =&amp;gt; hao
+- derive/([iu])a(o|ng?)$/a$1$2/    # tain =&amp;gt; tian
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;动态时间-日期-星期&quot;&gt;动态时间 日期 星期&lt;/h3&gt;
+
+&lt;p&gt;打开 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rime.lua&lt;/code&gt;，默认编码如下，双拼用户时间和星期无效，建议改为不冲突编码，例如时间 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sj&lt;/code&gt; 改为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;time&lt;/code&gt;。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;【日期】&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rq&lt;/code&gt; = &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2022-01-14&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2022年01月14日&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;01-14&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2022/01/14&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;【时间】&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sj&lt;/code&gt; = &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;03:11&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;03:11:00&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;【星期】&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xq&lt;/code&gt; = &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;周五&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;星期五&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;礼拜五&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;function date_translator(input, seg)
+    if (input == &quot;rq&quot;) then
+        --- Candidate(type, start, end, text, comment)
+        yield(Candidate(&quot;date&quot;, seg.start, seg._end, os.date(&quot;%Y-%m-%d&quot;), &quot;&quot;))
+        yield(Candidate(&quot;date&quot;, seg.start, seg._end, os.date(&quot;%Y年%m月%d日&quot;), &quot;&quot;))
+        yield(Candidate(&quot;date&quot;, seg.start, seg._end, os.date(&quot;%m-%d&quot;), &quot;&quot;))
+        yield(Candidate(&quot;date&quot;, seg.start, seg._end, os.date(&quot;%Y/%m/%d&quot;), &quot;&quot;))
+    end
+    if (input == &quot;sj&quot;) then
+        --- Candidate(type, start, end, text, comment)
+        yield(Candidate(&quot;time&quot;, seg.start, seg._end, os.date(&quot;%H:%M&quot;), &quot;&quot;))
+        yield(Candidate(&quot;time&quot;, seg.start, seg._end, os.date(&quot;%H:%M:%S&quot;), &quot;&quot;))
+    end
+    if (input == &quot;xq&quot;) then
+        local weakTab = {&apos;日&apos;, &apos;一&apos;, &apos;二&apos;, &apos;三&apos;, &apos;四&apos;, &apos;五&apos;, &apos;六&apos;}
+        yield(Candidate(&quot;week&quot;, seg.start, seg._end, &quot;周&quot;..weakTab[tonumber(os.date(&quot;%w&quot;)+1)], &quot;&quot;))
+        yield(Candidate(&quot;week&quot;, seg.start, seg._end, &quot;星期&quot;..weakTab[tonumber(os.date(&quot;%w&quot;)+1)], &quot;&quot;))
+        yield(Candidate(&quot;week&quot;, seg.start, seg._end, &quot;礼拜&quot;..weakTab[tonumber(os.date(&quot;%w&quot;)+1)], &quot;&quot;))
+    end
+end
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;再将下面代码添加在对应的输入方案，例如：朙月拼音添加在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;luna_pinyin_simp.custom.yaml&lt;/code&gt;。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&quot;engine/translators/@6&quot;: lua_translator@date_translator
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;自定义短语文本替换&quot;&gt;自定义短语（文本替换）&lt;/h3&gt;
+
+&lt;p&gt;用文本编辑打开 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;custom_phrase.txt&lt;/code&gt;，规则：内容+编码+权重（可选），使用 Tab 键间隔。&lt;/p&gt;
+
+&lt;p&gt;示例：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;Rime  rime	4
+鼠须管	rime	3
+https://rime.im/	rime	2
+Squirrel	rime	1
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/rime/zidingyiduanyu.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;皮肤&quot;&gt;皮肤&lt;/h3&gt;
+
+&lt;p&gt;打开 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;squirrel.custom.yaml&lt;/code&gt;，将皮肤代码添加进去，按照下图里的提示更换皮肤。&lt;br /&gt;
+查看皮肤效果：&lt;a href=&quot;https://ssnhd.com/2022/01/11/rime-skin&quot;&gt;点击这里&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/rime/pifu.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;修改颜色&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;每 8bit 一组，从低位到高位分别代表 Red、Green、Blue、Alpha，共 32bit。&lt;/li&gt;
+  &lt;li&gt;Alpha 值（如果界面支持）是可选的，默认为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0xF&lt;/code&gt; F 即不透明。&lt;/li&gt;
+  &lt;li&gt;把颜色值写为十六进制数，即 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0xAABBGGRR&lt;/code&gt; 或 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0xBBGGRR&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/EG9rFyi.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;特定程序中英文&quot;&gt;特定程序中英文&lt;/h3&gt;
+
+&lt;p&gt;打开 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;squirrel.custom.yaml&lt;/code&gt;，将程序名称添加进去，并输入对应模式开启默认中英文。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ascii_mode: true&lt;/code&gt;：默认英文&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ascii_mode: false&lt;/code&gt;：默认中文&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ascii_punct: true&lt;/code&gt;：开启英文标点&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;示例：VSCode 默认英文输入，始终输出英文标点（半角）。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;com.microsoft.VSCode:
+    ascii_mode: true
+    scii_punct: true
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;延伸：如何获取程序名称？&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;打开 Mac 活动监视器，选中程序，点击上方 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;···&lt;/code&gt; 里&lt;strong&gt;取样进程&lt;/strong&gt;。&lt;/li&gt;
+  &lt;li&gt;找到 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Identifier&lt;/code&gt; 后面即为程序名称。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/rime/app.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;大写数字&quot;&gt;大写数字&lt;/h3&gt;
+
+&lt;p&gt;配置文件是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;numbers.schema.yaml&lt;/code&gt;。切换输入方案选择大写数字，使用方法参照下表。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;按键&lt;/th&gt;
+&lt;th&gt;输出&lt;/th&gt;
+&lt;th&gt;✂️&lt;/th&gt;
+&lt;th&gt;按键（按住Shift）&lt;/th&gt;
+&lt;th&gt;输出&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;壹贰叁肆伍陆柒捌玖零&lt;/td&gt;
+&lt;td&gt;✂️&lt;/td&gt;
+&lt;td&gt;1234567890&lt;/td&gt;
+&lt;td&gt;一二三四五六七八九〇&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;wqbsjfd.&lt;/td&gt;
+&lt;td&gt;万仟佰拾角分第点&lt;/td&gt;
+&lt;td&gt;✂️&lt;/td&gt;
+&lt;td&gt;wqbsjfd.&lt;/td&gt;
+&lt;td&gt;万千百十角分第点&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;z&lt;/td&gt;
+&lt;td&gt;整之&lt;/td&gt;
+&lt;td&gt;✂️&lt;/td&gt;
+&lt;td&gt;z&lt;/td&gt;
+&lt;td&gt;整之&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;y&lt;/td&gt;
+&lt;td&gt;元月亿&lt;/td&gt;
+&lt;td&gt;✂️&lt;/td&gt;
+&lt;td&gt;y&lt;/td&gt;
+&lt;td&gt;元月亿&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/RQdg63e.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;删除错词&quot;&gt;删除错词&lt;/h3&gt;
+
+&lt;p&gt;将光标（&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;↑&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;↓&lt;/code&gt;或&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;←&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;→&lt;/code&gt;）移到要删除的词组上，按 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Shift+Fn+Delete&lt;/code&gt; 键（第三方键盘按 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Control+Delete&lt;/code&gt;）。只能从用户词典中删除词组，词库里词组只会取消其调频顺序。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;同步&quot;&gt;同步&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;打开 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;installation.yaml&lt;/code&gt;，修改 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;installation_id&lt;/code&gt; 后面的 ID，例如命名为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Mac&lt;/code&gt;。&lt;/li&gt;
+  &lt;li&gt;添加路径代码，将命令中的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;admin&lt;/code&gt; 替换为您的 Mac 用户名；再点击菜单栏【ㄓ】-【同步用户数据】完成，此时打开访达 iCloud 即可查看文件。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt; sync_dir: &quot;/Users/admin/Library/Mobile Documents/com~apple~CloudDocs/RimeSync&quot;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;示例：同步至 iCloud 云盘 RimeSync 文件夹内。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;distribution_code_name: Squirrel
+distribution_name: &quot;鼠鬚管&quot;
+distribution_version: 0.15.2
+install_time: &quot;Wed Dec  1 19:26:38 2021&quot;
+installation_id: &quot;Mac&quot;
+sync_dir: &quot;/Users/admin/Library/Mobile Documents/com~apple~CloudDocs/RimeSync&quot;  # 路径
+rime_version: 1.7.3
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;更多同步方案：&lt;a href=&quot;https://github.com/rime/home/wiki/UserGuide#同步用戶資料&quot; target=&quot;_blank&quot;&gt;点击这里&lt;/a&gt;。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;延伸：词库同步到其他设备&lt;/p&gt;
+
+  &lt;ol&gt;
+    &lt;li&gt;将同步文件拷贝至 iCloud 云盘（同一 Apple ID 无需此步）。&lt;/li&gt;
+    &lt;li&gt;打开 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;installation.yaml&lt;/code&gt;，将 &lt;strong&gt;ID&lt;/strong&gt; 和 &lt;strong&gt;路径&lt;/strong&gt; 修改和同步文件一至，点击【同步用户数据】即可。&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;报错日志&quot;&gt;报错日志&lt;/h3&gt;
+
+&lt;p&gt;打开终端输入 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$TMPDIR/rime.Squirrel.INFO&lt;/code&gt; 按回车键，复制路径地址在访达中打开。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/t2YlmrY.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;找到【rime.squirrel.INFO】文件，右击点选&lt;strong&gt;显示原身&lt;/strong&gt;得到日志文件。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/Ss0wEau.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 06 Jan 2022 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2022/01/06/rime/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022/01/06/rime/</guid>
+        
+        <category>Rime</category>
+        
+        <category>Squirrel</category>
+        
+        <category>鼠须管</category>
+        
+        <category>输入法</category>
+        
+        <category>Mac</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

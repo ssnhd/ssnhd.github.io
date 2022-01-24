@@ -1,0 +1,100 @@
+# 站点设置
+title: 三十年河東 # 名称
+SEOTitle: 三十年河東(SSNHD.COM)-生活、科技、博客 # 网页标签上显示的小标题
+header-img: img/home-bg.jpg
+email: liuour@gmail.com
+description: "科技 数码 美术 设计 | 这里是河東的个人博客，与你一起发现更大的世界。"
+keyword: "河東, ssnhd, @ssnhd, ssnhd.com, 河東的博客, 三十年河東, HD Blog, 博客, 个人网站" # 关键词
+url: "http://ssnhd.github.io" # 博客链接地址
+baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
+
+# 发布具有未来日期的帖子或收藏文档
+future: true
+
+# SNS 设置
+RSS: false
+weibo_username: 7621452513
+#zhihu_username:
+github_username: ssnhd
+twitter_username: ssnhdcom
+#facebook_username:
+#linkedin_username:  firstname-lastname-idxxxx
+
+# Build settings
+# 从2016年起, GitHub 不支持 'pygments'，使用 'rouge' 突出显示.
+highlighter: rouge
+permalink: pretty
+paginate: 15 # 一页中的帖子数
+exclude:
+  [
+    "less",
+    "node_modules",
+    "Gruntfile.js",
+    "package.json",
+    "README.md",
+    "README.zh.md",
+  ]
+anchorjs: true # if you want to customize anchor. check out line:181 of `post.html`
+# If you have timezone issue (e.g. #68) in China, uncomment to use this:
+#timezone: CN
+
+# Gems
+# 从PR#40开始，支持Jekyll 3.0的本地预览
+# 确保已安装 gem
+#`$ gem install jekyll-paginate`  # 安装
+#plugins: [jekyll-paginate]       # 插件
+gems: [jekyll-paginate]
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM # use Github Flavored Markdown !important
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+# Disqus 评论系统
+disqus_username: ssnhd
+
+# Netease settings
+netease_comment: false
+
+# Analytics settings 百度统计
+# Baidu Analytics
+# ba_track_id: [your track id]
+
+# Google Analytics 谷歌统计
+ga_track_id: "UA-216485699-1" # 你用 Google 账号去注册一个就会给你一个这样的 id
+ga_domain: auto # 默认的是 auto, 你如果没有自己的域名，需要改成auto
+
+# 侧边栏设置
+sidebar: true
+sidebar-about-description: "河東，设计师、GIA钻石鉴定师"
+sidebar-avatar: /img/avatar-me.jpg # 头像
+
+# Featured Tags 主页右侧特色标签
+featured-tags: true # whether or not using Feature-Tags
+featured-condition-size: 1 # 0显示所有标签，1表示相同标签数大于 1 才会显示
+
+# 网页应用程序
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+# 布局的 MathJax 渲染：页面（例如后期预览）
+page-mathjax: false
+
+# Friends 友链
+friends:
+  [
+    { title: "V2EX 群", href: "https://t.me/V2EXPro/" },
+    { title: "Rime 群", href: "https://t.me/rimeim/" },
+    { title: "Google 群", href: "https://t.me/googleim/" },
+    { title: "路由器群", href: "https://t.me/luyouqi/" },
+    { title: "出售 Google Voice", href: "https://t.me/iPantherauncia/" },
+  ]
