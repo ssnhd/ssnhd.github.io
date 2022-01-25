@@ -21,7 +21,7 @@ tags:
 Just My Socks 是加拿大 BandwagonHost（俗称搬瓦工，VPS 商家）官方出的机场，相较于自己搭建服务器有个最大优点，不需要自己维护，路线坏了自动更换 IP。除此之外，支持多条路线，按月付费。
 
 
-
+**注册地址：[点击这里](https://justmysocks.net/members/aff.php?aff=12029)**
 
 
 ## 注册与购买
