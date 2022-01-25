@@ -98,9 +98,3 @@ friends:
     { title: "路由器电报群：@luyouqi", href: "https://t.me/luyouqi/" },
     { title: "Google 电报群：@Googleim", href: "https://t.me/googleim/" },
   ]
-
-## 侧边栏广告位
-[[params.ads]]
-  title = "Google Voice 低至一折"
-  url = "https://t.me/iPantherauncia"
-  img = "https://i.imgur.com/DS23Tdh.png"
