@@ -92,7 +92,7 @@ page-mathjax: false
 # Friends 友链
 friends:
   [
-    { title: "出售 Google Voice", href: "https://t.me/iPantherauncia/", img: "https://i.imgur.com/DS23Tdh.png" },
+    { title: "出售 Google Voice", href: "https://t.me/iPantherauncia/", },
     { title: "V2EX 电报群：@V2EXPro", href: "https://t.me/V2EXPro/" },
     { title: "Rime 电报群：@Rimeim", href: "https://t.me/rimeim/" },
     { title: "路由器电报群：@luyouqi", href: "https://t.me/luyouqi/" },
