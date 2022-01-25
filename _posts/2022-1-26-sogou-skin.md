@@ -16,11 +16,9 @@ tags:
 
 随着年纪增长，越来越喜欢极简风格，输入法也不例外。
 
-皮肤下载：[点击这里](https://github.com/ssnhd/sogou-skin/archive/refs/heads/main.zip)
-
 * 特点：极简  
-* 安装：下载后双击 `.mssf` 文件
-* 硬件：适用于 Retina 屏幕 Mac（反之会出现显示异常），不支持 Windows
+* 安装：[下载](https://github.com/ssnhd/sogou-skin/archive/refs/heads/main.zip)皮肤，双击 `.mssf` 文件
+* 设备：适用于 Retina 屏幕（反之会出现显示异常），不支持 Windows
 
 
 ![](/img/sogou/01.png)
