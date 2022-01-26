@@ -14,9 +14,7 @@ tags:
     - Mac
 ---
 
-当一件作品的内容被减至最低限度时所散发的完美感觉，即极简主义，此风格也应该应用于输入法。
-
-如果对字体和颜色不满意，可以用[皮肤编辑器](https://pinyin.sogou.com/mac/skineditor.php)进行修改，背景图可以用 [Sketch](https://www.sketch.com/) 设计。
+当一件作品的内容被减至最低限度时所散发的完美感觉，即极简主义，此风格也应该应用于输入法。对字体或颜色不满意，用[皮肤编辑器](https://pinyin.sogou.com/mac/skineditor.php)进行修改，背景图建议用 [Sketch](https://www.sketch.com/) 矢量图设计。
  
 * 安装：[下载](https://github.com/ssnhd/sogou-skin/archive/refs/heads/main.zip)皮肤，双击 `.mssf` 文件
 * 设备：适用于 Retina 屏幕（反之会出现显示异常），不支持 Windows
