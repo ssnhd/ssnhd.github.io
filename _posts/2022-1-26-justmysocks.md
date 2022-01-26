@@ -2,7 +2,7 @@
 layout:     post
 title:      Just My Socks 机场代理购买及使用
 subtitle:   被墙了没法工作，你需要这个
-date:       2021-12-14
+date:       2022-1-26
 author:     河東
 header-img: img/post-bg-JustMySocks.png
 catalog: true
