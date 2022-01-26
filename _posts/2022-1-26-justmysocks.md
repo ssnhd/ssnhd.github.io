@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Just My Socks 机场代理注册及使用
+title:      Just My Socks 机场代理注册与使用
 subtitle:   被墙了无法工作，你需要这个
 date:       2022-1-26
 author:     河東
