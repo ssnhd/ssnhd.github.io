@@ -93,9 +93,9 @@ page-mathjax: false
 friends:
   [
     { title: "出售 Google Voice", href: "https://t.me/gv188/", },
-    { title: "V2EX 电报群", href: "https://t.me/V2EXPro/" },
-    { title: "Rime 电报群", href: "https://t.me/rimeim/" },
-    { title: "路由器电报群", href: "https://t.me/luyouqi/" },
-    { title: "Google 电报群", href: "https://t.me/googleim/" },
+    { title: "V2EX 电报群：V2EXPro", href: "https://t.me/V2EXPro/" },
+    { title: "Rime 电报群：Rimeim", href: "https://t.me/rimeim/" },
+    { title: "路由器电报群：LuYouQi", href: "https://t.me/luyouqi/" },
+    { title: "Google 电报群：GoogleCHN", href: "https://t.me/googlechn/" },
   ]
 
