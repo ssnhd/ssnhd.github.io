@@ -36,8 +36,8 @@ tags:
 
 ![](/img/sogou/浅色蓝.png)
 
-## 浅色蓝
-![](/img/sogou/浅色蓝.png)
+## 浅色绿
+![](/img/sogou/浅色绿.png)
 
 ## 浅色紫
 ![](/img/sogou/浅色紫.png)
