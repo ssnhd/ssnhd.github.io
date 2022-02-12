@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 搜狗输入法 for Mac 极简皮肤
-subtitle: 回归自然
+subtitle: 简约，简单实用
 date: 2022-1-26
 author: 河東
 header-img: img/macos/post-bg-macos.jpeg
