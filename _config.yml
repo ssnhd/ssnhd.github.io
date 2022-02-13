@@ -97,7 +97,5 @@ friends:
     { title: "Rime 电报群：Rimeim", href: "https://t.me/rimeim/" },
     { title: "路由器电报群：LuYouQi", href: "https://t.me/luyouqi/" },
     { title: "Google 电报群：GoogleCHN", href: "https://t.me/googlechn/" },
-  ]
-
-menu:       
-  archives: /archives   //归档  
+  ] 
+  
