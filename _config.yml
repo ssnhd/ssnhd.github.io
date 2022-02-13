@@ -99,3 +99,5 @@ friends:
     { title: "Google 电报群：GoogleCHN", href: "https://t.me/googlechn/" },
   ]
 
+menu:       
+  archives: /archives   //归档  
