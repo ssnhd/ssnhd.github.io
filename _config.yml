@@ -13,7 +13,7 @@ future: true
 
 # SNS 设置
 RSS: false
-weibo_username: 7621452513
+#weibo_username:
 #zhihu_username:
 github_username: ssnhd
 twitter_username: ssnhdcom
