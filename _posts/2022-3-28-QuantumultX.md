@@ -43,7 +43,7 @@ Quantumult X 设置 - 打开重写。
 
 1. Quantumult X 设置 - 开启 MitM - 生成证书 - 配置证书。
 2. 跳转到浏览器下载配置证书。
-3. 打开 iPhone 设置安装证书。
-4. 安装好在点击通用 - VPN与设备管理打开刚刚安装的 Quantumult X 配置证书。
+3. iPhone 设置会显示配置证书并安装它。
+4. 通用 - VPN与设备管理，打开刚刚安装的 Quantumult X 配置证书。
 
 完成配置安装，打开 Quantumult X 愉快的享用。
