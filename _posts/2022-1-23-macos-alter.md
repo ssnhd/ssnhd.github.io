@@ -88,7 +88,7 @@ defaults delete -g NSRequiresAquaSystemAppearance
 
 【终端】输入 `csrutil status`，按回车键。
 
-## 关闭 SIP
+### 关闭 SIP
 
 1. Mac 开机立即按住 `Command-R`
 2. 进入实用工具窗口，点击**实用工具**里【终端】，输入下面命令按回车键，重启 Mac
@@ -97,7 +97,7 @@ defaults delete -g NSRequiresAquaSystemAppearance
 csrutil disable
 ```
 
-## 开启 SIP
+### 开启 SIP
 
 同上，【终端】输入下面命令。
 
