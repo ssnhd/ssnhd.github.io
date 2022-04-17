@@ -33,3 +33,6 @@ tags:
 重启电脑。
 
 ![I](https://i.imgur.com/JvzQHNH.png)
+## 还原
+
+打开系统偏好设置 - 键盘 - 输入法 - 添加美国🇺🇸英文或 ABC 英文即可。
