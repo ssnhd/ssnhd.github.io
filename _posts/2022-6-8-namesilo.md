@@ -14,7 +14,7 @@ tags:
 
 很多人当时注册域名，支付的是一年费用，那么快到期了如何续费呢？
 
-## 登录 Namesilo
+## 登录官网
 
 打开 [Namesilo](https://www.namesilo.com/) 官网并登录，点击右上角 **Manage My Domains**。
 
@@ -35,6 +35,6 @@ tags:
 
 ![](https://i.imgur.com/3mg0Bwc.png)
 
-3、勾选接收条款，点击 **PAY** 跳转到支付扫码页面，完成支付续费。
+3、勾选接受条款，点击 **PAY** 跳转到支付扫码页面，完成支付续费。
 
 ![](https://i.imgur.com/nuHhHoT.png)
