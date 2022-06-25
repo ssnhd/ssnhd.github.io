@@ -92,7 +92,7 @@ page-mathjax: false
 # Friends 友链
 friends:
   [
-    { title: "出售 Google Voice", href: "https://t.me/gv188/" },
-    { title: "V2EX Telegram 社群", href: "https://t.me/V2EXPro/" },
-    { title: "Rime Telegram 社群", href: "https://t.me/rimeim/" },
+    { title: "出售 Google Voice", href: "https://t.me/hedong/" },
+    { title: "V2EX 交流群", href: "https://t.me/V2EXPro/" },
+    { title: "Rime 鼠须管交流群", href: "https://t.me/rimeim/" },
   ]
