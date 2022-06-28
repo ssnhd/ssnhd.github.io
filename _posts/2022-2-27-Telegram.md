@@ -19,9 +19,9 @@ Telegram（非正式简称TG）是跨平台的即时通信软件。因其开放�
 - Rime Squirrel 鼠须管：<https://t.me/rimeim>
 - Google 交流群：<https://t.me/googlechn>
 - 路由器交流群：<https://t.me/luyouqi>
-- Apple iOS macOS 交流群：<https://t.me/applechn>
-- Free 中文频道：<https://t.me/freechinese>
-- 疑难杂症频道：<https://t.me/yinanzazheng>
+- Apple 果粉：<https://t.me/applechn>
+- Free 中文：<https://t.me/freechinese>
+- 疑难杂症：<https://t.me/yinanzazheng>
 
 # 软件
 
