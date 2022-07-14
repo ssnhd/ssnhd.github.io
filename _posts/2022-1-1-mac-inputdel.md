@@ -28,7 +28,7 @@ tags:
 
 ![](https://i.imgur.com/qhpNu0q.png)
 
-2、前往 `~/Library/Preferences/` 文件夹，找到 `com.apple.HIToolbox.plist` 文件并用 [Xcode](https://apps.apple.com/cn/app/xcode/id497799835?mt=12) 软件打开。
+2、前往 `~/Library/Preferences/` 文件夹，找到 `com.apple.HIToolbox.plist` 文件并用 [Xcode](https://apps.apple.com/cn/app/xcode/id497799835?mt=12) 软件打开。\
 3、删除所有 `KeyboardLayout Name String U.S.` 并保存。
 
 ![](https://i.imgur.com/q9xTLLL.png)
