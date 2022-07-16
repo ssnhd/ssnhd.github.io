@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2022 注册 Google Voice 方法
+title: 注册 Google Voice 教程方法
 subtitle: 拥有美国电话号码
 date: 2022-7-16
 author: 河東
