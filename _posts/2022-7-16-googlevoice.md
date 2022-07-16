@@ -62,7 +62,7 @@ Google Voice 是谷歌推出的虚拟号码，0 月租、免费拨打美加电�
 ## 购买 Google Voice
 
 如果您无法注册可以选择购买成品号，本站提供的号码不仅质量高，而且发货快。\
-通过以下方式联系，下面扫码支付；同时也出售谷歌 Gmail 账号。
+先通过以下方式联系，再扫码支付；同时也出售谷歌 Gmail 账号。
 
 - Telegram 私聊：[hedong](https://t.me/hedong) 
 - Telegram 群组：[V2EX](https://t.me/V2EXPro)
