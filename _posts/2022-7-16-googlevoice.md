@@ -12,7 +12,7 @@ tags:
   - Voice
 ---
 
-Google Voice（简称 GV）是谷歌推出的虚拟号码，0 月租、免费拨打美加电话，免费接收短信。支持注册 Telegram、Twitter、Clubhouse、 B 站等平台。
+Google Voice 是谷歌推出的虚拟号码，0 月租、免费拨打美加电话，免费接收短信。支持注册 Telegram、Twitter、Clubhouse、 B 站等平台。
 
 ## 准备
 
