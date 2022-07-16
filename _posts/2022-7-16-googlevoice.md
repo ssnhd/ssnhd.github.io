@@ -45,11 +45,11 @@ Google Voice 是谷歌推出的虚拟号码，0 月租、免费拨打美加电�
 
 5、输入美国实体 SIM 卡手机号，点击**发送代码**。
 
-![](https://i.imgur.com/Pbi18UY.png)
+![](https://i.imgur.com/YaaDoPh.png)
 
 6、输入美国手机号收到的 `6` 位数验证码，点击**验证**。
 
-![](https://i.imgur.com/a4gjoHW.png)
+![](https://i.imgur.com/HsrRSfl.png)
 
 7、验证通过后号码会显示在右上角，注册完成。
 
