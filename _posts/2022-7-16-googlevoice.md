@@ -69,8 +69,10 @@ Google Voice 是谷歌推出的虚拟号码，0 月租、免费拨打美加电�
 
 ## 购买 Google Voice
 
-如果您无法注册可以选择购买成品号，本站提供的号码不仅质量高，而且发货快。同时也出售谷歌 Gmail 账号。
+全网最优质 GV，欢迎选购！先联系再返回这里支付，同时也出售谷歌 Gmail 账号。
 
 - Telegram 私聊：[hedong](https://t.me/hedong) 
 - Telegram 群组：[V2EX](https://t.me/V2EXPro)
 - E-mail：<ahezuo@gmail.com>
+
+![](https://i.imgur.com/eXaKhtv.png)
