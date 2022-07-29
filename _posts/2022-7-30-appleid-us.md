@@ -11,8 +11,6 @@ tags:
   - Apple ID
 ---
 
-# 注册美区 Apple ID 方法
-
 众所周知，美区 App Store 应用最全，且 iCloud 云盘不是放在云上贵州，今天教大家如何注册美区 Apple ID。
 
 ## 创建 Apple ID
