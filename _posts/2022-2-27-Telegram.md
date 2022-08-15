@@ -15,8 +15,6 @@ tags:
 
 ## 推荐 ★★★
 - V2EX 交流群：<https://t.me/V2EXPro>
-- 闲鱼群组：<https://t.me/ixianyu>
-- 闲鱼频道：<https://t.me/iixianyu>
 - Rime 鼠须管：<https://t.me/rimeim>
 - Apple 果粉：<https://t.me/applechn>
 - Free 中文：<https://t.me/freechinese>
@@ -24,6 +22,8 @@ tags:
 - 疑难杂症：<https://t.me/yinanzazheng>
 - Google 群组：<https://t.me/googlechn>
 - 路由器交流群：<https://t.me/luyouqi>
+- 闲鱼群组：<https://t.me/ixianyu>
+- 闲鱼频道：<https://t.me/iixianyu>
 
 ## 软件
 - Surge：<https://t.me/loveapps>
