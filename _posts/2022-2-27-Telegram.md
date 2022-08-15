@@ -20,6 +20,7 @@ tags:
 - Rime 鼠须管：<https://t.me/rimeim>
 - Apple 果粉：<https://t.me/applechn>
 - Free 中文：<https://t.me/freechinese>
+- Tesla 特斯拉：<https://t.me/tesla_chn>
 - 疑难杂症：<https://t.me/yinanzazheng>
 - Google 群组：<https://t.me/googlechn>
 - 路由器交流群：<https://t.me/luyouqi>
