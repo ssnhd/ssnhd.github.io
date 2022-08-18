@@ -73,5 +73,3 @@ Telegram 私聊：[GV188](https://t.me/GV188)\
 Telegram 群组：[V2EX](https://t.me/V2EXPro)\
 E-mail：<ahezuo@gmail.com>
 ![](https://i.imgur.com/UyZKAr1.png)
-
-![](https://i.imgur.com/UyZKAr1.png)
