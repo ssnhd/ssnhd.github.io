@@ -29,9 +29,6 @@ Google Voice 是谷歌推出的虚拟号码，0 月租、免费拨打美加电�
 
 
 ## 注册
-
-`以下操作全程使用美国原生 IP`
-
 1、打开 [Google Voice](https://voice.google.com/) 并用谷歌账号登录。
 
 ![](https://i.imgur.com/iroLUt8.png)
