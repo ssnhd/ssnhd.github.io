@@ -11,7 +11,7 @@ tags:
   - Telegram
 ---
 
-群组频道投稿：[GV188](https://t.me/)
+如果你有更好的群组，欢迎发邮件到 <ahezuo@gmail.com>
 
 ## 推荐 ★★★
 - V2EX 交流群：<https://t.me/V2EXPro>
