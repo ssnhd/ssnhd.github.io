@@ -16,14 +16,9 @@ tags:
 ## 推荐 ★★★
 - V2EX 交流群：<https://t.me/V2EXPro>
 - Rime 鼠须管：<https://t.me/rimeim>
-- Apple 果粉：<https://t.me/applechn>
 - Free 中文：<https://t.me/freechinese>
-- Tesla 特斯拉：<https://t.me/tesla_chn>
-- 疑难杂症：<https://t.me/yinanzazheng>
-- Google 群组：<https://t.me/googlechn>
-- 路由器交流群：<https://t.me/luyouqi>
-- 闲鱼群组：<https://t.me/ixianyu>
-- 闲鱼频道：<https://t.me/iixianyu>
+
+
 
 ## 软件
 - Surge：<https://t.me/loveapps>
@@ -36,17 +31,32 @@ tags:
 - Price Tag App 限免频道：<https://t.me/appfans>
 
 
-## 代理网络
+## 网络
+- 路由器交流群：<https://t.me/luyouqi>
 - koolcenter 梅林固件：<https://t.me/xbchat>
 - koolcenter LEDE 固件：<https://t.me/joinchat/ERO9vEMMVu1dzQ-F8nP6kA>
 - Duyao 毒药速测：<https://t.me/DuyaoSS>
+
+## Apple
+- Apple 果粉：<https://t.me/applechn>
+
+## 互联网
+- Google 交流群：<https://t.me/googlechn>
+
+## 新闻
+- Free 中文：<https://t.me/freechinese>
 
 ## 博主
 - eSir 群组：<https://t.me/joinchat/JjxmyRZZXJWb74I-sCrryA>
 - eSir 频道：<https://t.me/esirplayground>
 - BIGdongdong 群组：<https://t.me/bigdongdongGroup>
 
-## 合租
+## 汽车
+- Tesla 特斯拉：<https://t.me/tesla_chn>
+
+## 闲鱼/拼车
+- 闲鱼群组：<https://t.me/ixianyu>
+- 闲鱼频道：<https://t.me/iixianyu>
 - 合租频道：<https://t.me/hezu2>
 - 合租群组：<https://t.me/hezu1>
 
@@ -56,3 +66,4 @@ tags:
 ## 其他
 - Durov's Channel 电报创始人：<https://t.me/durov>
 - V2EX 实时推送：<https://t.me/v2ex_notice>
+- 疑难杂症：<https://t.me/yinanzazheng>
