@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Telegram 群组频道汇总
-subtitle: 开启新方式
+subtitle: 聊天新方式
 date: 2022-2-27
 author: 河東
 header-img: img/post-bg-mac.jpeg
@@ -16,7 +16,8 @@ tags:
 ## 推荐 ★★★
 - V2EX 交流群：<https://t.me/V2EXPro>
 - Rime 鼠须管：<https://t.me/rimeim>
-- Free 中文：<https://t.me/freechinese>
+- 路由器交流群：<https://t.me/luyouqi>
+- Free 中文（新闻）：<https://t.me/freechinese>
 
 
 
