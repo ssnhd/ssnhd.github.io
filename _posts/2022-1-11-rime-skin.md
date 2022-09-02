@@ -8,8 +8,6 @@ header-img: img/post-bg-skin.jpeg
 catalog: true
 top: false
 tags:
-    - Rime
-    - Squirrel
     - 鼠须管
     - 输入法
 ---
