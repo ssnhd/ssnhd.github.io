@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Namesilo 域名续费教程
-subtitle: 支持多种支付方式
+title: Namesilo 域名续费步骤
+subtitle: 
 date: 2022-6-8
 author: 河東
 header-img: img/post-bg-VSCode.jpeg

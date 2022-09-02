@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 注册美区 Apple ID 方法
-subtitle: 美国苹果账号
+title: 美区 Apple ID 注册方法
+subtitle: 
 date: 2022-7-30
 author: 河東
 header-img: img/usa.jpg

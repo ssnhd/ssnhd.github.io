@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      搜狗输入法图标 Logo
-subtitle:   自定义 Logo
+title:      搜狗输入法修改 Logo
+subtitle:   
 date:       2022-1-6
 author:     河東
 header-img: img/post-bg-huise.jpg

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Quantumult X 分流配置设置详解
-subtitle: iOS 端代理工具
+title: Quantumult X 分流配置详解
+subtitle: 
 date: 2022-3-28
 author: 河東
 header-img: img/post-bg-net.jpeg

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Google Voice 注册方法
-subtitle: 拥有美国电话号码
+subtitle: 
 date: 2022-7-16
 author: 河東
 header-img: img/usa.jpg

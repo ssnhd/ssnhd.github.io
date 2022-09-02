@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 阿里云盘配合 Infuse 观影
-subtitle: 影视剧自动添加海报
+subtitle: 
 date: 2022-1-14
 author: 河東
 header-img: img/post-bg-film.jpg

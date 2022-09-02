@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      搜狗词库转换方法（支持多家输入法）
-subtitle:   强大的词库转换功能
+subtitle:   
 date:       2022-1-6
 author:     河東
 header-img: img/post-bg-rime.png

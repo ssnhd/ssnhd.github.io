@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Mac 删除原生英文 ABC
-subtitle:   摆脱切换输入法频繁出错的困扰
+subtitle:   
 date:       2022-1-1
 author:     河東
 header-img: img/post-bg-mac.jpeg
