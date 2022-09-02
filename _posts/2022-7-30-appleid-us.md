@@ -9,6 +9,7 @@ catalog: true
 top: false
 tags:
   - Apple ID
+  - PayPal
 ---
 
 美区 App Store 应用最全，且 iCloud 云盘不是放在云上贵州。
@@ -39,10 +40,25 @@ tags:
 
 ![](https://i.imgur.com/V8i8Hb6.jpg)
 
-4、付款方式选择**无**（代理必须是全局美国才会显示`无`），如果有美区 PayPal 也可以选择。\
+4、付款方式选择**无**（代理必须是全局美国才会显示`无`）。\
 5、输入英文名字、美国地址、邮编、电话。\
 6、点击**继续**，到此美区 Apple ID 已经可以使用。
 
 > 注：如果没有美国地址，可以使用[美国地址生成器](https://www.meiguodizhi.com/)。
 
 ![](https://i.imgur.com/XzXAFXm.jpg)
+
+## 支付
+
+方案一：购买美区礼品卡充值\
+方案二：绑定美区 PayPal
+
+登录 App Store，点击头像 → 管理付款方式 → 添加付款方式。
+
+>⚠️ 注册美区 PayPal 方法：[点击这里](https://ssnhd.com/2022/01/08/paypal/)
+
+![](https://tvax4.sinaimg.cn/large/008eZBHKly1gow2f51vutj315q0hijsd.jpg)
+
+点击 PayPal 并登陆完成绑定。
+
+![](https://tva1.sinaimg.cn/large/008eZBHKly1gow2fa5dhgj315q0gudgy.jpg)
