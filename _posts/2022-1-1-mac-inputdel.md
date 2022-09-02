@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Mac 删除原生 ABC 英文输入法
+title:      Mac 删除原生英文 ABC
 subtitle:   摆脱切换输入法频繁出错的困扰
 date:       2022-1-1
 author:     河東

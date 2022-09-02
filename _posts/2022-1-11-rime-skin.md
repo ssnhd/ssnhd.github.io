@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Rime 鼠须管输入法皮肤效果
+title:      Rime Squirrel 鼠须管输入法皮肤效果
 subtitle:   热门皮肤 UI
 date:       2022-1-11
 author:     河東

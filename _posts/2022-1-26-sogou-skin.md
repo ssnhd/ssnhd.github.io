@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 搜狗输入法 for Mac 极简皮肤
-subtitle: 简约，简单实用
+title: 搜狗输入法极简皮肤
+subtitle: 适用于 Mac
 date: 2022-1-26
 author: 河東
 header-img: img/macos/post-bg-macos.jpeg

@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      搜狗输入法修改菜单栏图标
+title:      搜狗输入法图标 Logo
 subtitle:   自定义 Logo
 date:       2022-1-6
 author:     河東
