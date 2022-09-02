@@ -8,7 +8,6 @@ header-img: img/macos/post-bg-macos.jpeg
 catalog: true
 top: false
 tags:
-  - 搜狗
   - 输入法
 ---
 

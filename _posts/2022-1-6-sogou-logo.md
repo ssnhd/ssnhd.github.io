@@ -7,7 +7,6 @@ author:     河東
 header-img: img/post-bg-huise.jpg
 catalog: true
 tags:
-    - 搜狗
     - 输入法
 --- 
 

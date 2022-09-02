@@ -8,7 +8,6 @@ header-img: img/post-bg-VSCode.jpeg
 catalog: true
 top: false
 tags:
-  - Namesilo
   - 域名
 ---
 

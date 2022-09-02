@@ -8,7 +8,6 @@ header-img: img/post-bg-skin.jpeg
 catalog: true
 top: false
 tags:
-    - 鼠须管
     - 输入法
 ---
 
