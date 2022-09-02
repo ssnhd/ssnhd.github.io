@@ -38,7 +38,6 @@ Quantumult X 是一款不错的 iOS 端应用，但对于初接触者而言有�
 
 > 注：如不显示分流配置，长按右下角红黄蓝按钮，左侧出现白色刷新按钮。
 
-![](https://i.imgur.com/1i4vIdr.jpg) 
 
 
 ## 四、开启重写和 MitM
