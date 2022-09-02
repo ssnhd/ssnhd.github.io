@@ -12,8 +12,6 @@ tags:
     - Squirrel
     - 鼠须管
     - 输入法
-    - 皮肤
-    - Mac
 ---
 
 配置详解：[点击这里](https://ssnhd.com/2022/01/06/rime/)，Rime 电报群：[@RIMEIM](https://t.me/rimeim)
