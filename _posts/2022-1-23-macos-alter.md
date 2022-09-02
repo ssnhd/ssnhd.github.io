@@ -9,7 +9,6 @@ catalog: true
 top: false
 tags:
   - Mac
-  - macOS
 ---
 
 新买的 Mac 你可能需要对下列几项进行设置。

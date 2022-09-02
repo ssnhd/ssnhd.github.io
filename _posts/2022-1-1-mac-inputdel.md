@@ -10,7 +10,6 @@ top: false
 tags:
     - 输入法
     - Mac
-    - macOS
 ---
 
 
