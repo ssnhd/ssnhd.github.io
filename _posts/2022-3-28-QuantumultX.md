@@ -8,7 +8,7 @@ header-img: img/post-bg-net.jpeg
 catalog: true
 top: false
 tags:
-  - Quantumult X
+  - 机场代理
 ---
 
 Quantumult X 是一款不错的 iOS 端应用，但对于初接触者而言有点难上手，今天为大家介绍如何添加配置。
