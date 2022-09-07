@@ -67,4 +67,4 @@ Google Voice 是谷歌推出的虚拟号码，0 月租、免费拨打美加电�
 全网最优质 GV，同时出售谷歌 Gmail 账号，欢迎选购！\
 Telegram 私聊：[GV188](https://t.me/GV188)\
 Telegram 群组：[V2EX](https://t.me/V2EXPro)\
-E-mail：<ahezuo@gmail.com>（电报无法私聊，请发邮件）
+E-mail：<ahezuo@gmail.com>（如果电报无法私聊，请发邮件）
