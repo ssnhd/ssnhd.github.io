@@ -16,8 +16,8 @@ tags:
 ## 推荐 ★★★
 - V2EX 交流群：<https://t.me/V2EXPro>
 - Rime 鼠须管：<https://t.me/rimeim>
-- 路由器交流群：<https://t.me/luyouqi>
-- Free 中文（新闻）：<https://t.me/freechinese>
+- 路由器群：<https://t.me/luyouqi>
+- 刚刚新闻：<https://t.me/freechinese>
 
 
 
