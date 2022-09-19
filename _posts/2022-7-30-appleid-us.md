@@ -51,11 +51,9 @@ tags:
 ## 支付
 
 方案一：购买美区礼品卡充值\
-方案二：绑定美区 PayPal
+方案二：绑定[美区 PayPal](https://ssnhd.com/2022/01/08/paypal/)
 
 登录 App Store，点击头像 → 管理付款方式 → 添加付款方式。
-
->⚠️ 注册美区 PayPal 方法：[点击这里](https://ssnhd.com/2022/01/08/paypal/)
 
 ![](https://tvax4.sinaimg.cn/large/008eZBHKly1gow2f51vutj315q0hijsd.jpg)
 
