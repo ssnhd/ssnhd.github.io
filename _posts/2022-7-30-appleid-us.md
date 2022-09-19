@@ -14,7 +14,7 @@ tags:
 
 美区 App Store 应用最全，且 iCloud 云盘不是放在云上贵州。
 
-## 创建 Apple ID
+## 创建
 
 1、打开 [Apple](https://appleid.apple.com/account) 官网，创建您的 Apple ID，输入名字、国家`美国`、邮箱、密码、电话号码，点击**继续**。
 
@@ -32,7 +32,7 @@ tags:
 
 ![](https://i.imgur.com/vOHGsX8.png)
 
-## 完善 Apple ID
+## 完善
 
 1、iPhone 打开美国代理（全局模式），App Store 登录刚注册的 Apple ID。\
 2、因为账号尚未使用过，所以需要验证，点击**检查**。\
@@ -63,8 +63,7 @@ tags:
 
 ![](https://tva1.sinaimg.cn/large/008eZBHKly1gow2fa5dhgj315q0gudgy.jpg)
 
- ## 购买 Apple ID
- 
+ ## 购买账号
  美、日、韩、港、台区 Apple ID 均有。
  
  - Telegram：[GV188](https://t.me/gv188)
