@@ -62,3 +62,10 @@ tags:
 点击 PayPal 并登陆完成绑定。
 
 ![](https://tva1.sinaimg.cn/large/008eZBHKly1gow2fa5dhgj315q0gudgy.jpg)
+
+ ## 购买 Apple ID
+ 
+ 美、日、韩、港、台区 Apple ID 均有。
+ 
+ - Telegram：[GV188](https://t.me/gv188)
+ - E-mail：<ahezuo@gmail.com>
