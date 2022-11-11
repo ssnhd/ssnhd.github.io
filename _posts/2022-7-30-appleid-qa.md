@@ -13,7 +13,7 @@ tags:
 
 重要提示：
 1. 务必要先修改邮箱和密码
-2. App Store 里退出其他账号，登录新账号安装 App（不建议登录设置里的 iCloud，万一要登录请先关闭 iPhone 查找功能）
+2. App Store 里退出其他账号，登录新账号安装 App（不建议登录设置里的 iCloud）
 
 ## 修改邮箱和密码
 1. 网页打开 <https://appleid.apple.com/sign-in> 输入 Apple ID 账号密码，再输入密保答案登录
