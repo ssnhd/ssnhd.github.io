@@ -15,9 +15,9 @@ future: true
 RSS: false
 #weibo_username:
 #zhihu_username:
-github_username: ssnhd
-twitter_username: muzhilau
-facebook_username: muzlau
+#github_username:
+#twitter_username:
+#facebook_username:
 #linkedin_username:  firstname-lastname-idxxxx
 
 # Build settings
