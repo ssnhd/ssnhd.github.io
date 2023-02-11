@@ -45,4 +45,4 @@ App Store 点击右上角空白头像，输入 Apple ID 账号密码登录。登
 
 - Telegram 频道：[Google Voice 商店](https://t.me/GVStore)
 - Telegram 群组：[V2EX](https://t.me/V2EXPro)
-- E-mail：<ahezuo@outlook.com>（电报无法私聊请发邮件）
+- E-mail：<ahezuo@gmail.com>（电报无法私聊请发邮件）

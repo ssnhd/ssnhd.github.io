@@ -65,4 +65,4 @@ tags:
 美、日、韩、、土、港、台区 Apple ID 均有。
  
  - Telegram：[商店](https://t.me/gvstore)
- - E-mail：<ahezuo@outlook.com>
+ - E-mail：<ahezuo@gmail.com>
