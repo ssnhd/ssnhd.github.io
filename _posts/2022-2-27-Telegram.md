@@ -14,7 +14,7 @@ tags:
 欢迎优质群组/频道发邮件到 <ahezuo@gmail.com>
 
 ## 推荐 ★★★
-- V2EX 交流群：<https://t.me/V2EXPro>
+- V2EX 交流群：<https://t.me/V2EXO>
 - Rime 鼠须管：<https://t.me/rimeim>
 - 路由器群：<https://t.me/luyouqi>
 - 刚刚新闻：<https://t.me/freechinese>
