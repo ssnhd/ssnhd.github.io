@@ -34,7 +34,9 @@ Mac 常遇到想输入中文却输出英文，反之亦然，多次切换很麻�
 
 ![](https://i.imgur.com/q9xTLLL.png)
 
-4、重启 Mac 即可
+4、重启 Mac
+
+此时只有一个输入法，切换中英文只需要按 Shift，再也不必担心出错。
 
 ![I](https://i.imgur.com/zoyqOsr.png)
 > 发现的弊端：设置 - 网络 - 修改 DNS 时可能会无法输入数字，可以选择粘贴进去，不必担心。
