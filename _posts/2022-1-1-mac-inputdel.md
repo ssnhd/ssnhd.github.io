@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Mac 删除原生英文 ABC
+title:      解决 Mac 切换中英文频繁出错（删除原生英文 ABC）
 subtitle:   
 date:       2022-1-1
 author:     河東
