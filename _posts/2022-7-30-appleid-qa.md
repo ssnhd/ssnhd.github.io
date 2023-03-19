@@ -40,8 +40,5 @@ App Store 点击右上角空白头像，输入 Apple ID 账号密码登录。登
 
 
 
-## 账号购买与充值
-全网最优质 Google Voice、Gmail 、美/日/韩/港/台/土区 Apple ID 和礼品卡。
-
-- Telegram 频道：[Google Voice 商店](https://t.me/GVStore)
-- E-mail：<ahezuo@gmail.com>（电报无法私聊请发邮件）
+## 出售 Apple ID 礼品卡
+商店：<https://ssnhd.com/2023/03/19/store>

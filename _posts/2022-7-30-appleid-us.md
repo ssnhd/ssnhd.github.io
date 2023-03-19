@@ -61,8 +61,5 @@ tags:
 
 ![](https://tva1.sinaimg.cn/large/008eZBHKly1gow2fa5dhgj315q0gudgy.jpg)
 
-## 购买账号
-美、日、韩、、土、港、台区 Apple ID 均有。
- 
- - Telegram：[商店](https://t.me/gvstore)
- - E-mail：<ahezuo@gmail.com>
+## 出售 Apple ID 礼品卡
+商店：<https://ssnhd.com/2023/03/19/store>
