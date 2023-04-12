@@ -35,7 +35,7 @@ Mac 常遇到想输入中文却输出英文，反之亦然，多次切换很麻�
 /Users/XXX/Library/Preferences/com.apple.HIToolbox.plist
 ```
 
-3、删除所有包含 `U.S.` 后缀的文件（例如`KeyboardLayout Name String U.S.`）并保存。
+3、删除所有包含 `U.S.` 的文件并保存。
 
 ![](https://i.imgur.com/q9xTLLL.png)
 
