@@ -29,7 +29,12 @@ Mac 常遇到想输入中文却输出英文，反之亦然，多次切换很麻�
 
 ![](https://i.imgur.com/qhpNu0q.png)
 
-2、访达前往文件夹（快捷键：Command-Shift-G） `~/Library/Preferences/`，找到 `com.apple.HIToolbox.plist` 并用 [Xcode](https://apps.apple.com/cn/app/xcode/id497799835?mt=12) 软件打开。\
+2、访达前往文件夹（快捷键：Command-Shift-G）输入下面路径并用 [Xcode](https://apps.apple.com/cn/app/xcode/id497799835?mt=12) 软件打开 
+（路径里 `XXX` 替换为 Mac 用户名）。
+```
+/Users/XXX/Library/Preferences/com.apple.HIToolbox.plist
+```
+
 3、删除所有包含 `U.S.` 后缀的文件（例如`KeyboardLayout Name String U.S.`）并保存。
 
 ![](https://i.imgur.com/q9xTLLL.png)
