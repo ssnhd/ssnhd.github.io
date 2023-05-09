@@ -65,11 +65,11 @@ sudo spctl --master-disable
 pwpolicy -clearaccountpolicies
 ```
 
-## 深色主题显示浅色窗口
+## 深色显示浅色窗口
 
 程序坞和菜单栏深色，窗口是浅色。
 
-1. 【终端】输入或粘贴以下命令，按回车键
+1. 终端输入或粘贴以下命令，按回车键
 2. 注销并重新登录 Mac
 3. 系统偏好设置 - 通用 - 深色。
 
@@ -83,7 +83,7 @@ defaults write -g NSRequiresAquaSystemAppearance -bool Yes
 defaults delete -g NSRequiresAquaSystemAppearance
 ```
 
-## 查看 SIP 状态
+## SIP 状态
 
 【终端】输入 `csrutil status`，按回车键。
 
@@ -103,3 +103,16 @@ csrutil disable
 ```
 csrutil enable
 ```
+
+## 网页显示方框里带问号
+
+安装新字体时字体冲突，导致浏览器网页中字体显示成方块里带问号，需要清一下字体缓存。
+![](https://i.imgur.com/Lkk0Gja.png)
+
+1. 关闭所有 app
+2. 打开终端 Terminal
+3. 终端输入：`sudo atsutil databases -remove`
+4. 输入电脑密码，按回车
+5. 终端输入：`atsutil server -shutdown`
+6. 终端输入：`atsutil server -ping`
+7. 重启电脑
