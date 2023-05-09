@@ -13,11 +13,9 @@ tags:
 
 重要提示：
 1. 务必要先修改邮箱和密码
-2. App Store 里退出其他账号，登录新账号安装 App（不建议登录设置里的 iCloud）
+2. App Store 里退出其他账号，登录新账号安装 App
 
 ## 修改邮箱和密码
-
-一定要修改账号，重要！！！
 
 1. 打开 <https://appleid.apple.com/sign-in> 按提示输入账号、密码、密保答案登录
 2. 先修改 Apple ID 账号邮箱（`重要`）
