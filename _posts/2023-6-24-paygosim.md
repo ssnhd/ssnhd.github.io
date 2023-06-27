@@ -1,14 +1,15 @@
 ---
 layout: post
-title: Ultra Mobile PayGo 激活教程
+title: Ultra Mobile PayGo 使用教程
 subtitle: 美国手机卡，每月 3 美元
 date: 2023-6-24
 author: 河東
 header-img: img/usa.jpg
 catalog: true
-top: true
+top: false
 tags:
   - PayGO
+  - Ultra Mobile
 ---
 
 美国 Ultra Mobile PayGo 实体 SIM 卡，因为月租很便宜（3 美元/月），加上信号稳定，是目前最适合中国大陆用户长期使用的美国卡。\
@@ -16,33 +17,9 @@ tags:
 
 `教程里含有图片，如果不显示，网络开全局。`
 
-## 一、激活
 
-1、开启代理，打开[官网](https://my.ultramobile.com/paygo/activation)右上角选择**中文**，输入卡背面右上角 ACT CODE 11 位代码，输完点击**开始或恢复激活**。
-![](https://i.imgur.com/v3hdUjF.png)
 
-2、检查设备兼容性页面，点击**跳过**。
-![](https://i.imgur.com/48sRIDH.png)
-
-3、输入一个美国邮政编码，勾选**使用条款**，点击**激活新号码**。
-
->**示例**
->- 纽约号码：输入邮编 10008
->- 华盛顿号码：输入邮编 20001
->- 西雅图号码：输入邮编 90016
->
->号码归属地由邮编决定，由于美国一个城市有多个区号，所以不能保证你输入的邮编一定分配到指定的区号。
-
-![](https://i.imgur.com/fJEx4vH.png)
-
-4、激活成功，号码会显示在右侧，无需添加付款信息，点击**先跳过**。
-![](https://i.imgur.com/ET05Fz4.png)
-5、【用户资料】任意填写，【访问网上账户】用户名和密码务必牢记！密码至少 8 位，包含一个大写、小写、数字和字符。然后点击**提交信息**。
-![](https://i.imgur.com/VZOvijw.png)
-6、网页激活过程已完成。
-![](https://i.imgur.com/PHL1Emr.png)
-
-## 二、手机 Wi-Fi 通话
+## 一、手机 Wi-Fi 通话
 【安卓】不支持 Wi-Fi 通话功能，一次打开设置 > 通话设置 > WLAN 通话 > 拨号偏好 > WLAN 优选即可。\
 【苹果】支持 Wi-Fi 通话功能，享受 100 分钟免费接打通话、100 条免费收发短信。
 
@@ -76,7 +53,7 @@ ZIP CODE（邮编）：91748
 
 ![](https://i.imgur.com/4640m95.jpg)
 
-## 三、资费
+## 二、资费
 
 | 类别                     | 费用                                     |
 | ------------------------ | ---------------------------------------- |
@@ -88,7 +65,7 @@ ZIP CODE（邮编）：91748
 | **Wi-Fi Calling 环境下** | 苹果享 100 分钟免费接打通话，100 条免费收发短信。安卓正常收费 |
 
 
-## 四、手机充值（推荐）
+## 三、手机充值（推荐）
 
 【苹果】美区 App Store 安装 [Ultra Mobile](https://apps.apple.com/us/app/ultra-mobile/id1463041935?l=zh)。（如果没有美区苹果账号[点击这里购买](https://ssnhd.com/2023/03/19/store)）\
 【安卓】打开谷歌框架，美区 Google Play 安装 [Ultra Mobile](https://play.google.com/store/apps/details?id=com.uvnv.ultramobile)，或者下载 [APK](https://apkpure.com/cn/ultra-mobile/com.uvnv.ultramobile) 文件安装。
@@ -97,7 +74,7 @@ ZIP CODE（邮编）：91748
 2、ACCOUNT（账户） > Payment Method（支付方式）填写你的信用卡信息，然后选择金额充值。
 ![](https://i.imgur.com/VEJ42Ts.jpg)
 
-## 五、网页充值
+## 四、网页充值
 
 关闭代理，打开[官网个人后台](https://my.ultramobile.com/account/paygo)并登录，点击**加载 PayGo 钱包**，选择金额，填写你的信用卡信息充值。
 
@@ -105,7 +82,7 @@ ZIP CODE（邮编）：91748
 
 
 
-## 六、常见问题
+## 五、常见问题
 
 **1、网页激活过程中遇到报错，或者等待时间太长，中途关闭了网页**\
 可以再次打开官网重新激活，如果提示「This sim has already been activated」说明卡已经激活成功。插卡到手机等待有信号，看是否能收到激活成功的短信。
