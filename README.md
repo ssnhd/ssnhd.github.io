@@ -1,5 +1,3 @@
-# 三十年河東 [www.ssnhd.com](https://ssnhd.com)
-
 本博客搭建学习自 [Hux](https://github.com/Huxpro/huxpro.github.io)，表示感谢！在此基础上稍加修改。
 
 * 【修改】取消斜体
