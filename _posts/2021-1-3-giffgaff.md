@@ -28,39 +28,14 @@ tags:
 
 ## 激活
 
-1、打开[官网](https://www.giffgaff.com/activate)，输入 SIM 卡上 6 位激活码或背面 13 位序列号，点击【Activate your SIM】
-
-![](https://i.imgur.com/HygZdkd.png)
-
-2、输入你的邮箱，点击【Next】
-
-![](https://i.imgur.com/gW46Cnq.png)
-
-3、创建密码，点击【Register】
-
-![](https://i.imgur.com/s8ocEgU.png)
-
-4、选择是否接受邮件和短信广告，不需要的话选择右边的【No,thanks】，点击【Continue】
-
-![](https://i.imgur.com/m0Aygl7.png)
-
-5、选择套餐（如果暂时没有套餐需求，将网页拉至最下方），选择【Pay as you go】，点击【Continue】
-
-![](https://i.imgur.com/40dya4C.png)
-
-6、激活首次需要充值至少 10 英镑，选择金额，点击【Pay now】
-
-![](https://i.imgur.com/qJvAkPh.png)
-
-7、输入信用卡和地址信息，勾选同意，点击【Activate your SIM】
-
-> 注：付款支持 VISA / MasterCard 的借记卡或信用卡
-
-![](https://i.imgur.com/fbBJHoy.png)
-
-8、付款成功后，页面上出现分配给你的电话号码（英国区号 `+44`）
-
-`注：电话号码和会员名要牢记！`
+1. 打开[官网](https://www.giffgaff.com/activate)，输入 SIM 卡上 6 位激活码或背面 13 位序列号，点击【Activate your SIM】
+2. 输入你的邮箱，点击【Next】
+3. 创建密码，点击【Register】
+4. 选择是否接受邮件和短信广告，不需要的话选择右边的【No,thanks】，点击【Continue】
+5. 选择套餐（如果暂时没有套餐需求，将网页拉至最下方），选择【Pay as you go】，点击【Continue】
+6. 激活首次需要充值至少 10 英镑，选择金额，点击【Pay now】
+7. 输入信用卡（例如 VISA）和地址信息，勾选同意，点击【Activate your SIM】
+8. 付款成功后，页面上出现号码（英国区号 +44）`电话号码和会员名要牢记！`
 
 ![](https://i.imgur.com/xbNyy4g.png)
 
