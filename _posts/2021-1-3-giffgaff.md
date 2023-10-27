@@ -15,8 +15,6 @@ tags:
 
 ## 资费
 
-以下为在中国使用的资费，查看其他国家资费[点击这里](https://www.giffgaff.com/roaming-charges)。
-
 |  类别   | 费用  |
 |  ----  | ----  |
 | **月租**  |  0 |
@@ -30,30 +28,52 @@ tags:
 
 ## 激活
 
-**图文教程点击[这里](https://github.com/ssnhd/Giffgaff/wiki/激活（图文教程）)**
+1. 打开[官网](https://www.giffgaff.com/activate)，输入 SIM 卡上 6 位激活码或背面 13 位序列号，点击【Activate your SIM】
 
-1. 网页打开[官网激活页面](https://www.giffgaff.com/activate)，输入 SIM 卡上 6 位激活码或背面 13 位序列号，点击 **Activate your SIM**
-2. 输入你的邮箱，点击 **Next**
-3. 创建密码，点击 **Register**
-4. 选择是否接受邮件和短信广告，不需要的话选择右边的【No,thanks】，点击 **Continue**
-5. 选择套餐（如果暂时没有套餐需求，将网页拉至最下方），选择【Pay as you go】，点击 **Continue**
-6. 激活首次需要充值至少 10 英镑，选择金额，点击 **Pay now**。
-7. 输入信用卡（支持 VISA / MasterCard 的借记卡或信用卡）和地址（随便填），勾选同意，点击 **Activate your SIM**
+![](https://i.imgur.com/HygZdkd.png)
+
+2. 输入你的邮箱，点击【Next】
+
+![](https://i.imgur.com/gW46Cnq.png)
+
+3. 创建密码，点击【Register】
+
+![](https://i.imgur.com/s8ocEgU.png)
+
+4. 选择是否接受邮件和短信广告，不需要的话选择右边的【No,thanks】，点击【Continue】
+
+![](https://i.imgur.com/m0Aygl7.png)
+
+5. 选择套餐（如果暂时没有套餐需求，将网页拉至最下方），选择【Pay as you go】，点击【Continue】
+
+![](https://i.imgur.com/40dya4C.png)
+
+6. 激活首次需要充值至少 10 英镑，选择金额，点击【Pay now】
+
+![](https://i.imgur.com/qJvAkPh.png)
+
+7. 输入信用卡和地址信息，勾选同意，点击【Activate your SIM】
+
+> 注：付款支持 VISA / MasterCard 的借记卡或信用卡
+
+![](https://i.imgur.com/fbBJHoy.png)
+
 8. 付款成功后，页面上出现分配给你的电话号码（英国区号 `+44`，电话号码和会员名要牢记，将来登录官网会用到）
 
+![](https://i.imgur.com/xbNyy4g.png)
+
 ## 充值
-1. 打开[官网](https://www.giffgaff.com)，点击右上角 **Log in**
+1. 打开[官网](https://www.giffgaff.com)，点击右上角【Log in】
 2. 输入号码（号码前面有 0）和密码登录
-3. 点击页面里的 **Add credit** 选择金额进行充值
+3. 点击页面里的【Add credit】选择金额充值
 
 ## 转为 eSIM
+检查手机是否支持 eSIM，Giffgaff App 版本 12.13.0-v337 或更高
 
-1. 检查手机是否支持 eSIM
-2. Giffgaff App 版本 12.13.0-v337 或更高版本
-3. 打开 Giffgaff App，【Account】→【SIM】→【Replace my SIM】→【Switch to a new eSIM】
-4. 勾选【I understand and accept this】→ 点击【Start the switch】
-5. 输入收到的 6 位数验证码，点击【Confirm】
-6. 回到主页【Home】，点击【Install eSIM】，按提示操作，最后出现【We're activating your eSIM】，激活时间快的话约 30 分钟，慢的话 24 小时。
+1. 打开 Giffgaff App，【Account】→【SIM】→【Replace my SIM】→【Switch to a new eSIM】
+2. 勾选【I understand and accept this】→ 点击【Start the switch】
+3. 输入收到的 6 位数验证码，点击【Confirm】
+4. 回到主页【Home】，点击【Install eSIM】，按提示操作，最后出现【We're activating your eSIM】，激活时间快的话约 30 分钟，慢的话 24 小时。
 
 ## 常见问题
 
