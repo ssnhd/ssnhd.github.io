@@ -36,7 +36,7 @@ tags:
 7. 输入支持美元的信用卡（例如 VISA）和地址（随便填），勾选同意，点击【Activate your SIM】
 8. 付款成功后，页面上出现号码（英国区号 +44）`号码和会员名要牢记！`
 
-![](https://i.imgur.com/xbNyy4g.png)
+![](https://i.imgur.com/Q9cZKmj.png)
 
 ## 充值
 1. 打开[官网](https://www.giffgaff.com) 点击右上角【Log in】
