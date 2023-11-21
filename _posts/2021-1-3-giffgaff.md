@@ -39,9 +39,9 @@ tags:
 ![](https://i.imgur.com/Q9cZKmj.png)
 
 ## 充值
-1. 打开[官网](https://www.giffgaff.com) 点击右上角【Log in】
-2. 输入号码（号码前面有 0）和密码登录
-3. 点击页面里的【Add credit】，选择金额充值
+
+- 网页端：打开[官网](https://www.giffgaff.com)并登录，点击页面里的【Add credit】，按提示操作充值。
+- 手机端：打开 giffgaff App 并登录，点击主页【Add credit】，按提示操作充值。
 
 ## 保号
 每 6 个月余额发生变化，自动延迟 6 个月，也就是每 6 个月请执行以下任一操作：
