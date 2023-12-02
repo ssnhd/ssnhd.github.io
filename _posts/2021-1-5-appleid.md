@@ -11,8 +11,7 @@ tags:
   - Apple ID
 ---
 
-⚠️务必要先修改邮箱和密码\
-⚠️不要在设置里登录 iCloud，而是在 App Store 登录使用
+⚠️在 App Store 登录使用，不要在设置里登录 iCloud
 
 ## 修改邮箱和密码
 
@@ -38,8 +37,3 @@ tags:
 ## 商店
 
 商店地址：[点击这里](https://ssnhd.github.io/2023/03/19/store/)
-- GV
-- Gmail 靓号
-- 🇺🇸美国、🇬🇧英国、🇳🇿新西兰手机卡
-- Apple ID、礼品卡
-- Telegram、Twitter、ChatGPT
