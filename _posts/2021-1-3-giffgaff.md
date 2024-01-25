@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 英国实体卡 Giffgaff 激活使用教程
-subtitle: 美国手机卡，每月 3 美元
+subtitle: 适合接码注册
 date: 2021-1-3
 author: 河東
 header-img: img/uk.png
