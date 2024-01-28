@@ -55,7 +55,7 @@ tags:
 2. 打开 Giffgaff App，**Account** → **SIM** → **Replace my SIM** → **Switch to a new eSIM**
 3. 勾选 **I understand and accept this** → 点击 **Start the switch**
 4. 输入收到的 6 位数验证码，点击 **Confirm**
-5. 回到主页 **Home**，点击 **Install eSIM**，按提示操作，最后出现 **We're activating your eSIM**，激活时间快的话约 30 分钟，慢的话 24 小时。
+5. 点击 **Install eSIM**，按提示操作，最后出现 **We're activating your eSIM**，激活时间快的话 30 分钟内，慢的话 24 小时内。
 
 ## 默认有话费吗？
 没有话费，自助充值。
