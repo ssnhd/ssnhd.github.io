@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 英国实体卡 Giffgaff 激活使用教程
+title: 英国实体卡 giffgaff 激活使用教程
 subtitle: 适合接码注册
 date: 2021-1-3
 author: 河東
@@ -8,7 +8,7 @@ header-img: img/uk.png
 catalog: true
 top: true
 tags:
-  - Giffgaff
+  - giffgaff
 ---
 
 注：请遵守当地法律法规，禁止用于违法犯罪行为，否则后果自负。
@@ -51,8 +51,8 @@ tags:
 
 
 ## eSIM
-1. 检查手机是否支持 eSIM，Giffgaff App 升级到最新版本
-2. 打开 Giffgaff App，**Account** → **SIM** → **Replace my SIM** → **Switch to a new eSIM**
+1. 检查手机是否支持 eSIM，giffgaff App 升级到最新版本
+2. 打开 giffgaff App，**Account** → **SIM** → **Replace my SIM** → **Switch to a new eSIM**
 3. 勾选 **I understand and accept this** → 点击 **Start the switch**
 4. 输入收到的 6 位数验证码，点击 **Confirm**
 5. 点击 **Install eSIM**，按提示操作，最后出现 **We're activating your eSIM**，激活时间快的话 30 分钟内，慢的话 24 小时内。
@@ -63,13 +63,13 @@ tags:
 ## 无法登录
 ①登录官网或 App 电话号码用 `07xxxxxxx` 格式；\
 ②其他平台电话号码格式用 `7xxxxxxx`，国际区号根据需要选择 UK（英国）或添加 `+44` 为前缀；\
-③发送短信到 Giffgaff 用 `0044+7xxxxxxx` 的格式，注意 44 后面去掉 0。
+③发送短信到 giffgaff 用 `0044+7xxxxxxx` 的格式，注意 44 后面去掉 0。
 
 ## 不能发短信和打电话
 1、手机设置里取消**运营商自动选择**，改为手动切换信号到中国移动，并重启手机。\
 2、格式：例如给中国号 `138****8888` 发短信格式为 `0086138****8888`，拨打电话为 `+86138****8888`。\
 3、确保余额充足。\
-4、经众多卡友实践，即便切换信号到中国移动，如果对方是中国移动的手机号码，由于国内防电信欺诈的原因，通常收不到你发的短信。目前联通及电信的手机号码，还是能接收 Giffgaff 发出的国际短信。
+4、经众多卡友实践，即便切换信号到中国移动，如果对方是中国移动的手机号码，由于国内防电信欺诈的原因，通常收不到你发的短信。目前联通及电信的手机号码，还是能接收 giffgaff 发出的国际短信。
 
 ## 插卡后没信号
 插卡后，手机会读取 SIM 卡数据并上传到运营商做漫游登记，由于海外运营商与国内运营商之间的漫游对接有很多环节和验证过程，等待 1-5 分钟。
@@ -84,13 +84,13 @@ tags:
 插卡开机后，建议不要点击接受开通 iMessage/Facetime 功能，因为一旦确认，苹果系统会给后台发出一条短信，因此会被扣费 0.3 英磅。
 
 ## 查余额
-首选登录官网或 Giffgaff App 查询，也可以拨打 `*100#` 查询余额。
+首选登录官网或 giffgaff App 查询，也可以拨打 `*100#` 查询余额。
 
 ## 换号码
 号码是在您首次充值后，系统随机分配，后续可以到官网申请更换 2 次（也是随机分配），点击[这里](https://www.giffgaff.com/auth/login?redirect=%2Fprofile%2Fdetails%2Fgetnumber)申请更换.
 
 ## 关闭语音信箱
-由于 Giffgaff 默认开通了语音信箱功能，拒接来电后将会自动接入语音信箱产生费用，如需要避免，手机拨号输入 `##002#` 并拨打，即可关闭语音信箱。
+由于 giffgaff 默认开通了语音信箱功能，拒接来电后将会自动接入语音信箱产生费用，如需要避免，手机拨号输入 `##002#` 并拨打，即可关闭语音信箱。
 
 ## 商店
 
