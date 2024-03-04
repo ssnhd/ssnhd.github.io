@@ -13,15 +13,13 @@ tags:
 
 ⚠️ 在 App Store 登录，不要在设置里登录！！！
 
-## 修改邮箱、密码
+## 在网页上更改邮箱和密码
 
-登录前先修改`邮箱`和`密码`，密保可不改
+1、登录 [appleid.apple.com](https://appleid.apple.com/)
+2、在“登录和安全”部分，选择“Apple ID”更改邮箱，选择“密码”更改密码。
+![](https://i.imgur.com/CEM6qcF.png)
 
-- 修改邮箱：<https://support.apple.com/zh-cn/109353>
-- 修改密码：<https://support.apple.com/zh-cn/HT201355>
-- 修改密保：<https://support.apple.com/zh-cn/102349>
-
-## 登录 App Store
+## 在 iPhone、iPad 上登录
 
 1、打开 App Store，点击右上角**头像**，下滑至底部点击**退出登录**\
 2、输入新 Apple ID 账号和密码，点击**登录**，登录后即可安装 App
