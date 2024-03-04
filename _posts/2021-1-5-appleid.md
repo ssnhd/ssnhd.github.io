@@ -11,12 +11,13 @@ tags:
   - Apple ID
 ---
 
-⚠️ 在 App Store 登录，不要在设置里登录！！！
+⚠️在 App Store 登录，不要在设置里登录！！！
 
 ## 在网页上更改邮箱和密码
 
-1、登录 [appleid.apple.com](https://appleid.apple.com/)
+1、登录 [appleid.apple.com](https://appleid.apple.com/)\
 2、在“登录和安全”部分，选择“Apple ID”更改邮箱，选择“密码”更改密码。
+
 ![](https://i.imgur.com/CEM6qcF.png)
 
 ## 在 iPhone、iPad 上登录
