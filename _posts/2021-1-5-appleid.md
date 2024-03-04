@@ -11,17 +11,21 @@ tags:
   - Apple ID
 ---
 
-⚠️ 在 App Store 登录，不要在设置里登录 iCloud，如果登录错误后果自负。
+⚠️ 在 App Store 登录，不要在设置里登录！！！
+
+## 修改邮箱、密码
+
+建议登录前先修改邮箱和密码
+
+- 修改邮箱：https://support.apple.com/zh-cn/109353
+- 修改密码：https://support.apple.com/zh-cn/HT201355
+- 修改密保：https://support.apple.com/zh-cn/102349
 
 ## 登录 App Store
 
-1. App Store 里点击**头像**，下滑至底部点击**退出登录**
-2. 登录新 Apple ID 即可安装 App
-
-## 修改邮箱和密码
-
-1. App Store 里点击**头像** → 点击**头像** → 点击 **Apple ID 邮箱** → 跳转到 Safari 浏览器
-2. 登录 Apple ID 账号后修改邮箱和密码
+1、打开 App Store，点击右上角**头像**，下滑至底部点击**退出登录**\
+2、输入新 Apple ID 账号和密码，点击**登录**，登录后即可安装 App
+>注：关于提醒绑定手机号（双重认证）说明，建议绑定更安全
 
 ## 注意
 
