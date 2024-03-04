@@ -15,11 +15,11 @@ tags:
 
 ## 修改邮箱、密码
 
-建议登录前先修改邮箱和密码
+登录前先修改`邮箱`和`密码`，密保可不改
 
-- 修改邮箱：https://support.apple.com/zh-cn/109353
-- 修改密码：https://support.apple.com/zh-cn/HT201355
-- 修改密保：https://support.apple.com/zh-cn/102349
+- 修改邮箱：<https://support.apple.com/zh-cn/109353>
+- 修改密码：<https://support.apple.com/zh-cn/HT201355>
+- 修改密保：<https://support.apple.com/zh-cn/102349>
 
 ## 登录 App Store
 
