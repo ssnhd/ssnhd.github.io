@@ -89,9 +89,6 @@ tags:
 ## 换号码
 号码是在您首次充值后，系统随机分配，后续可以到官网申请更换 2 次（也是随机分配），点击[这里](https://www.giffgaff.com/auth/login?redirect=%2Fprofile%2Fdetails%2Fgetnumber)申请更换.
 
-## 关闭语音信箱
-由于 giffgaff 默认开通了语音信箱功能，拒接来电后将会自动接入语音信箱产生费用，如需要避免，手机拨号输入 `##002#` 并拨打，即可关闭语音信箱。
-
 ## 商店
 
 商店地址：[点击这里](https://ssnhd.github.io/2023/03/19/store/)
