@@ -31,7 +31,7 @@ tags:
 5. 网页下拉至底部选择【Pay as you go】，点击【Continue】
 6. 选择充值话费金额（至少 10 英镑），点击【Pay now】
 7. 输入地址（随便填）和信用卡（支持美元的实体卡），勾选同意，点击【Activate your SIM】
-8. 付款成功后，页面上出现号码（下图），插卡使用。
+8. 付款成功后，页面上出现号码（下图），插卡使用
 
 >注：➊号码、密码和会员名要牢记，➋号码 `079XXXXX557` 前面的 `0` 登陆时用到，日常是区号 + 号码，示例 `+44 79XXXXX557`
 
@@ -39,8 +39,8 @@ tags:
 
 ## 充值
 
-- 网页端：打开[官网](https://www.giffgaff.com)并登录，点击页面里的【Add credit】，按提示操作充值。
-- 手机端：打开 giffgaff App 并登录，点击主页【Add credit】，按提示操作充值。
+网页端：打开[官网](https://www.giffgaff.com)并登录，点击页面里的【Add credit】，按提示操作充值。\
+手机端：打开 giffgaff App 并登录，点击主页【Add credit】，按提示操作充值。
 
 ## 保号
 每 6 个月余额发生变化卡有效期延迟 6 个月，即每 6 个月执行以下任一操作：
@@ -54,18 +54,18 @@ tags:
 
 准备：检查手机是否支持 eSIM，手机安装 giffgaff 软件。
 
-1. 打开 giffgaff App，【Account】→【SIM】→【Replace my SIM】→【Switch to a new eSIM】
-2.勾选【I understand and accept this】→ 点击【Start the switch】
-3. 输入收到的 6 位数验证码，点击【Confirm】
-4. 点击【Install eSIM】，按提示操作，最后出现【We're activating your eSIM】，等待转移成功即可。
+1、打开 giffgaff App，【Account】→【SIM】→【Replace my SIM】→【Switch to a new eSIM】\
+2、勾选【I understand and accept this】→ 点击【Start the switch】\
+3、输入收到的 6 位数验证码，点击【Confirm】\
+4、点击【Install eSIM】，按提示操作，最后出现【We're activating your eSIM】，等待转移成功即可
 
 ## 默认有话费吗？
 没有话费，自助充值。
 
 ## 无法登录
-①登录官网或 App 电话号码用 `07xxxxxxx` 格式；\
-②其他平台电话号码格式用 `7xxxxxxx`，国际区号根据需要选择 UK（英国）或添加 `+44` 为前缀；\
-③发送短信到 giffgaff 用 `0044+7xxxxxxx` 的格式，注意 44 后面去掉 0。
+1、登录官网或 App 电话号码用 `07xxxxxxx` 格式；\
+2、其他平台电话号码格式用 `7xxxxxxx`，国际区号根据需要选择 UK（英国）或添加 `+44` 为前缀；\
+3、发送短信到 giffgaff 用 `0044+7xxxxxxx` 的格式，注意 44 后面去掉 0。
 
 ## 不能发短信和打电话
 1、手机设置里取消**运营商自动选择**，改为手动切换信号到中国移动，并重启手机。\
