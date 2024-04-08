@@ -24,21 +24,23 @@ tags:
 
 
 ## 激活
-1. 打开[官网](https://www.giffgaff.com/activate)，输入 SIM 卡上 6 位激活码或 13 位序列号，点击 **Activate your SIM**
-2. 输入你的邮箱，点击 **Next**
-3. 创建密码，点击 **Register**
-4. 选择是否接受邮件和短信广告，不需要的话选择右边的 **No,thanks**，点击 **Continue**
-5. 选择套餐（如果没套餐需求，网页拉至最下方），选择 **Pay as you go**，点击 **Continue**
-6. 激活需要充值至少 10 英镑话费，选择金额，点击 **Pay now**
-7. 输入支持美元的实体卡信用卡（例如 VISA）和地址（随便填），勾选同意，点击 **Activate your SIM**
-8. 付款成功后，页面上出现号码（英国区号 +44）`号码和会员名要牢记！`
+1. 打开[官网](https://www.giffgaff.com/activate)，输入 SIM 卡上 6 位激活码或 13 位序列号，点击【Activate your SIM】
+2. 输入你的邮箱，点击【Next】
+3. 创建密码，点击【Register】
+4. 选择是否接受邮件和短信广告，不需要的话选择右边的【No,thanks】，点击 【Continue】
+5. 网页下拉至底部选择【Pay as you go】，点击【Continue】
+6. 选择充值话费金额（至少 10 英镑），点击【Pay now】
+7. 输入地址（随便填）和信用卡（支持美元的实体卡），勾选同意，点击【Activate your SIM】
+8. 付款成功后，页面上出现号码（下图），插卡使用。
+
+>注：➊号码、密码和会员名要牢记，➋号码 `079XXXXX557` 前面的 `0` 登陆时用到，日常是区号 + 号码，示例 `+44 79XXXXX557`
 
 ![](https://i.imgur.com/Q9cZKmj.png)
 
 ## 充值
 
-- 网页端：打开[官网](https://www.giffgaff.com)并登录，点击页面里的 **Add credit**，按提示操作充值。
-- 手机端：打开 giffgaff App 并登录，点击主页 **Add credit**，按提示操作充值。
+- 网页端：打开[官网](https://www.giffgaff.com)并登录，点击页面里的【Add credit】，按提示操作充值。
+- 手机端：打开 giffgaff App 并登录，点击主页【Add credit】，按提示操作充值。
 
 ## 保号
 每 6 个月余额发生变化卡有效期延迟 6 个月，即每 6 个月执行以下任一操作：
@@ -48,14 +50,14 @@ tags:
 - 发送一条短信（最佳选择）
 - 使用移动数据连一次互联网
 
-
-
 ## eSIM
-1. 检查手机是否支持 eSIM，giffgaff App 升级到最新版本
-2. 打开 giffgaff App，**Account** → **SIM** → **Replace my SIM** → **Switch to a new eSIM**
-3. 勾选 **I understand and accept this** → 点击 **Start the switch**
-4. 输入收到的 6 位数验证码，点击 **Confirm**
-5. 点击 **Install eSIM**，按提示操作，最后出现 **We're activating your eSIM**，激活时间快的话 30 分钟内，慢的话 24 小时内。
+
+准备：检查手机是否支持 eSIM，手机安装 giffgaff 软件。
+
+1. 打开 giffgaff App，【Account】→【SIM】→【Replace my SIM】→【Switch to a new eSIM】
+2.勾选【I understand and accept this】→ 点击【Start the switch】
+3. 输入收到的 6 位数验证码，点击【Confirm】
+4. 点击【Install eSIM】，按提示操作，最后出现【We're activating your eSIM】，等待转移成功即可。
 
 ## 默认有话费吗？
 没有话费，自助充值。
