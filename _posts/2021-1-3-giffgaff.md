@@ -54,10 +54,12 @@ tags:
 
 准备：检查手机是否支持 eSIM，手机安装 giffgaff 软件。
 
+>注：如果手机里没有卡，请连接 Wi-Fi 确保有网络。
+
 1、打开 giffgaff App，【Account】→【SIM】→【Replace my SIM】→【Switch to a new eSIM】\
 2、勾选【I understand and accept this】→ 点击【Start the switch】\
-3、输入收到的 6 位数验证码，点击【Confirm】\
-4、点击【Install eSIM】，按提示操作，最后出现【We're activating your eSIM】，等待转移成功即可
+3、输入短信收到的 6 位数验证码，点击【Confirm】\
+4、点击【Install eSIM】，按提示操作最后出现【We're activating your eSIM】，等待转移成功即可。
 
 ## 默认有话费吗？
 没有话费，自助充值。
