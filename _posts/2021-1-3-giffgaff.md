@@ -47,19 +47,36 @@ tags:
 
 - 进行一次充值
 - 拨打一个电话
-- 发送一条短信（最佳选择）
+- 发送一条短信（最便宜，如果不想打扰朋友可以编辑`会员名`发送至 `43430` [参考官网](https://www.giffgaff.com/help/articles/why-cant-i-log-in)）
 - 使用移动数据连一次互联网
 
-## eSIM
+## 实体 SIM 卡切换 eSIM
 
-准备：检查手机是否支持 eSIM，手机安装 giffgaff 软件。
+### 准备
+1. 支持 eSIM 的手机，有锁机不支持，国产品牌及国行手机均不支持；\
+2. 手机安装 giffgaff App\
+3. 手机连接 Wi-Fi，最好开启英国代理 IP
 
->注：如果手机里没有卡，请连接 Wi-Fi 确保有网络。
+### 步骤
+1. 打开 giffgaff App，【Account】→【SIM】→【Replace my SIM】→【Switch to a new eSIM】\
+2. 勾选【I understand and accept this】→ 点击【Start the switch】\
+3. 输入短信收到的 6 位数验证码，点击【Confirm】\
+4. 点击【Install eSIM】，按提示操作最后出现【We're activating your eSIM】，等待 10 分钟-24 小时，获得信号即可使用。
 
-1、打开 giffgaff App，【Account】→【SIM】→【Replace my SIM】→【Switch to a new eSIM】\
-2、勾选【I understand and accept this】→ 点击【Start the switch】\
-3、输入短信收到的 6 位数验证码，点击【Confirm】\
-4、点击【Install eSIM】，按提示操作最后出现【We're activating your eSIM】，等待转移成功即可。
+官方指引：<https://www.giffgaff.com/help/articles/how-do-i-get-an-esim-on-giffgaff>
+
+## 添加卡之后一直「激活中……」，收不到信号
+eSIM 转换会在 24 小时之内完成，如果在工作时间之外会出现无法添加/一直转圈的情况（工作时间：英国时间 4:30AM-9:30PM，夏季中国时间 11:30PM-4:30AM，冬季中国时间 12:30PM-5:30AM）这样就需要你稍后再试。
+
+## eSIM 切换回实体 SIM 卡
+
+当然可以，你只需通过 giffgaff App 按照以下步骤操作即可：
+1. 准备一张未激活的 giffgaff 实体 SIM 卡
+2. 前往 giffgaff App 并登录
+3. 如果您使用该应用程序，【Account】 > 【SIM】 > 【Replace my SIM】 > 【Switch to a new physical SIM】
+4. 按照步骤重新开始使用实体 SIM 卡
+
+官方指引：<https://www.giffgaff.com/help/articles/can-i-switch-back-to-a-physical-sim-card-from-an-esim>
 
 ## 默认有话费吗？
 没有话费，自助充值。
