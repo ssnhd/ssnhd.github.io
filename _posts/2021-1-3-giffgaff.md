@@ -73,7 +73,7 @@ eSIM 转换会在 24 小时之内完成，如果在工作时间之外会出现�
 当然可以，你只需通过 giffgaff App 按照以下步骤操作即可：
 1. 准备一张未激活的 giffgaff 实体 SIM 卡
 2. 前往 giffgaff App 并登录
-3. 如果您使用该应用程序，【Account】 > 【SIM】 > 【Replace my SIM】 > 【Switch to a new physical SIM】
+3. 【Account】 > 【SIM】 > 【Replace my SIM】 > 【Switch to a new physical SIM】
 4. 按照步骤重新开始使用实体 SIM 卡
 
 官方指引：<https://www.giffgaff.com/help/articles/can-i-switch-back-to-a-physical-sim-card-from-an-esim>
