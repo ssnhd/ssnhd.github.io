@@ -53,14 +53,14 @@ tags:
 ## 实体 SIM 卡切换 eSIM
 
 ### 准备
-1. 支持 eSIM 的手机，有锁机不支持，国产品牌及国行手机均不支持；\
-2. 手机安装 giffgaff App\
+1. 支持 eSIM 的手机，有锁机不支持，国产品牌及国行手机均不支持；
+2. 手机安装 giffgaff App
 3. 手机连接 Wi-Fi，最好开启英国代理 IP
 
 ### 步骤
-1. 打开 giffgaff App，【Account】→【SIM】→【Replace my SIM】→【Switch to a new eSIM】\
-2. 勾选【I understand and accept this】→ 点击【Start the switch】\
-3. 输入短信收到的 6 位数验证码，点击【Confirm】\
+1. 打开 giffgaff App，【Account】→【SIM】→【Replace my SIM】→【Switch to a new eSIM】
+2. 勾选【I understand and accept this】→ 点击【Start the switch】
+3. 输入短信收到的 6 位数验证码，点击【Confirm】
 4. 点击【Install eSIM】，按提示操作最后出现【We're activating your eSIM】，等待 10 分钟-24 小时，获得信号即可使用。
 
 官方指引：<https://www.giffgaff.com/help/articles/how-do-i-get-an-esim-on-giffgaff>
