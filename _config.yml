@@ -1,6 +1,6 @@
 # 站点设置
-title: 值得你的信赖！ # 名称
-SEOTitle: 188444.xyz # 网页标签上显示的小标题
+title: 一卡在手，新鲜尽收 # 名称
+SEOTitle: TG客服 @GV188 # 网页标签上显示的小标题
 header-img: img/home-bg.jpg
 email: liuour@gmail.com
 description: "科技 数码 美术 设计 | 这里是 188 的个人博客, 与你一起发现更大的世界。"
@@ -80,7 +80,7 @@ sidebar-avatar: /img/avatar-me.jpg # 头像
 
 # Featured Tags 主页右侧特色标签
 featured-tags: true # whether or not using Feature-Tags
-featured-condition-size: 1 # 0显示所有标签，1表示相同标签数大于 1 才会显示
+featured-condition-size: 0 # 0显示所有标签，1表示相同标签数大于 1 才会显示
 
 # 网页应用程序
 chrome-tab-theme-color: "#000000"
