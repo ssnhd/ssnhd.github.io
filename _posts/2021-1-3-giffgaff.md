@@ -4,7 +4,7 @@ title: 英国实体卡 giffgaff 激活使用教程
 subtitle: 适合接码注册
 date: 2021-1-3
 author: 河東
-header-img: img/uk.png
+header-img: img/post-bg-mac.jpeg
 catalog: true
 top: true
 tags:

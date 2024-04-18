@@ -4,7 +4,7 @@ title: Apple ID 使用方法
 subtitle: 
 date: 2021-1-5
 author: 河東
-header-img: img/usa.jpg
+header-img: img/post-bg-mac.jpeg
 catalog: true
 top: true
 tags:

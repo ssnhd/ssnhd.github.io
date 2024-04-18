@@ -1,10 +1,10 @@
 # 站点设置
-title: 三十年河東 # 名称
-SEOTitle: SSNHD # 网页标签上显示的小标题
+title: Telegram 商店：https://t.me/GVStore # 名称
+SEOTitle: 188444.xyz # 网页标签上显示的小标题
 header-img: img/home-bg.jpg
 email: liuour@gmail.com
-description: "科技 数码 美术 设计 | 这里是河東的个人博客, 与你一起发现更大的世界。"
-keyword: "河東, 河東, 三十年河东, 河東博客, ssnhd, @ssnhd, ssnhd.com, 河東的博客, 三十年河東, HD Blog, 博客, 个人网站" # 关键词
+description: "科技 数码 美术 设计 | 这里是 188 的个人博客, 与你一起发现更大的世界。"
+keyword: "@GV188, 188444.xyz, 188的博客, 博客, 个人网站" # 关键词
 url: "http://ssnhd.github.io" # 博客链接地址
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -75,7 +75,7 @@ ga_domain: auto # 默认的是 auto, 你如果没有自己的域名，需要改�
 
 # 侧边栏设置
 sidebar: true
-sidebar-about-description: "河東 设计师 GIA 钻石鉴定师"
+sidebar-about-description: "188 设计师 GIA 钻石鉴定师"
 sidebar-avatar: /img/avatar-me.jpg # 头像
 
 # Featured Tags 主页右侧特色标签
@@ -92,7 +92,7 @@ page-mathjax: false
 # Friends 友链
 friends:
   [
-    { title: " 商店", href: "https://ssnhd.github.io/2023/03/19/store/" },
+    { title: "出售 GV 外国手机卡", href: "https://ssnhd.github.io/2023/03/19/store/" },
     { title: "V2EX 交流群", href: "https://t.me/V2EXPro/" },
     { title: "Rime 交流群", href: "https://t.me/rimeim/" },
   ]
