@@ -1,10 +1,10 @@
 # 站点设置
 title: 一卡在手，新鲜尽收 # 名称
-SEOTitle: TG客服 @GV188 # 网页标签上显示的小标题
+SEOTitle: simgv.com # 网页标签上显示的小标题
 header-img: img/post-bg-google.jpeg
 email: liuour@gmail.com
-description: "科技 数码 美术 设计 | 这里是 188 的个人博客, 与你一起发现更大的世界。"
-keyword: "@GV188, 手机卡, Google Voice, GV, Apple, 博客, 个人网站" # 关键词
+description: "科技 数码 美术 设计 | 这里是 simgv 的个人博客, 与你一起发现更大的世界。"
+keyword: "simgv, 手机卡, Google Voice, GV, Apple, 博客, 个人网站" # 关键词
 url: "http://ssnhd.github.io" # 博客链接地址
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -92,7 +92,7 @@ page-mathjax: false
 # Friends 友链
 friends:
   [
-    { title: "GV 外国手机卡", href: "https://ssnhd.github.io/2023/03/19/store/" },
+    { title: "GV 外国手机卡", href: "https://simgv.com/2023/03/19/store/" },
     { title: "V2EX 群", href: "https://t.me/V2EXPro/" },
     { title: "Rime 群", href: "https://t.me/rimeim/" },
   ]

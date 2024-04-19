@@ -39,4 +39,4 @@ tags:
 
 ## 商店
 
-商店地址：[点击这里](https://ssnhd.github.io/2023/03/19/store/)
+商店地址：[点击这里](https://simgv.com/2023/03/19/store/)
