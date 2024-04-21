@@ -51,12 +51,12 @@ tags:
 - 发送一条短信（最便宜，如果不想打扰朋友可以编辑`会员名`发送至 `43430` [参考官网](https://www.giffgaff.com/help/articles/why-cant-i-log-in)）
 - 使用移动数据连一次互联网
 
-## eSIM
+## 实体卡转 eSIM
 
 ### 准备
 1. 支持 eSIM 的手机，有锁机不支持，国产品牌及国行手机均不支持；
 2. 手机安装 giffgaff App
-3. 手机连接 Wi-Fi，最好开启英国代理 IP
+3. 手机连接 Wi-Fi，如果开启英国代理 IP 更好
 
 ### 步骤
 1. 打开 giffgaff App，【Account】→【SIM】→【Replace my SIM】→【Switch to a new eSIM】
