@@ -51,36 +51,6 @@ tags:
 - 发送一条短信（最便宜，如果不想打扰朋友可以编辑`会员名`发送至 `43430` [参考官网](https://www.giffgaff.com/help/articles/why-cant-i-log-in)）
 - 使用移动数据连一次互联网
 
-## 实体卡转 eSIM
-
-### 准备
-1. 支持 eSIM 的手机，有锁机不支持，国产品牌及国行手机均不支持；
-2. 手机安装 giffgaff App
-3. 手机连接 Wi-Fi，如果开启英国代理 IP 更好
-
-### 步骤
-1. 打开 giffgaff App，【Account】→【SIM】→【Replace my SIM】→【Switch to a new eSIM】
-2. 勾选【I understand and accept this】→ 点击【Start the switch】
-3. 输入短信收到的 6 位数验证码，点击【Confirm】
-4. 点击【Install eSIM】，按提示操作最后出现【We're activating your eSIM】，等待 10 分钟-24 小时，获得信号即可使用。
-
-官方指引：<https://www.giffgaff.com/help/articles/how-do-i-get-an-esim-on-giffgaff>
-
-## eSIM 转实体卡
-
-当然可以，你只需通过 giffgaff App 按照以下步骤操作即可：
-1. 准备一张未激活的 giffgaff 实体 SIM 卡
-2. 前往 giffgaff App 并登录
-3. 【Account】 > 【SIM】 > 【Replace my SIM】 > 【Switch to a new physical SIM】
-4. 按照步骤重新开始使用实体 SIM 卡
-
-官方指引：<https://www.giffgaff.com/help/articles/can-i-switch-back-to-a-physical-sim-card-from-an-esim>
-
-## 显示“激活中…”
-添加卡之后一直「激活中……」，收不到信号。
-
-答：eSIM 转换会在 24 小时之内完成，如果在工作时间之外会出现无法添加/一直转圈的情况（工作时间：英国时间 4:30AM-9:30PM，夏季中国时间 11:30PM-4:30AM，冬季中国时间 12:30PM-5:30AM）这样就需要你稍后再试。
-
 ## 默认有话费吗？
 新卡未激活默认没有话费，激活时最低充值 10 英镑话费。
 
@@ -120,6 +90,48 @@ tags:
 
 ## 换号码
 号码是在您首次充值后，系统随机分配，后续可以到官网申请更换 2 次（也是随机分配），点击[这里](https://www.giffgaff.com/auth/login?redirect=%2Fprofile%2Fdetails%2Fgetnumber)申请更换.
+
+官方指引：[点击这里](https://www.giffgaff.com/profile/details/getnumber)
+
+## 转 eSIM
+
+### 准备
+1. 支持 eSIM 的手机，有锁机不支持，国产品牌及国行手机均不支持；
+2. 手机安装 giffgaff App
+3. 手机连接 Wi-Fi，如果开启英国代理 IP 更好
+
+### 步骤
+1. 打开 giffgaff App，【Account】→【SIM】→【Replace my SIM】→【Switch to a new eSIM】
+2. 勾选【I understand and accept this】→ 点击【Start the switch】
+3. 输入短信收到的 6 位数验证码，点击【Confirm】
+4. 点击【Install eSIM】，按提示操作最后出现【We're activating your eSIM】，等待 10 分钟-24 小时，获得信号即可使用。
+
+官方指引：[点击这里](https://www.giffgaff.com/help/articles/how-do-i-get-an-esim-on-giffgaff)
+
+
+## eSIM 转实体卡
+
+当然可以，你只需通过 giffgaff App 按照以下步骤操作即可：
+1. 准备一张未激活的 giffgaff 实体 SIM 卡
+2. 前往 giffgaff App 并登录
+3. 【Account】 > 【SIM】 > 【Replace my SIM】 > 【Switch to a new physical SIM】
+4. 按照步骤重新开始使用实体 SIM 卡
+
+官方指引：[点击这里](https://www.giffgaff.com/help/articles/can-i-switch-back-to-a-physical-sim-card-from-an-esim)
+
+## 显示“激活中…”
+添加卡之后一直「激活中……」，收不到信号。
+
+答：eSIM 转换会在 24 小时之内完成，如果在工作时间之外会出现无法添加/一直转圈的情况（工作时间：英国时间 4:30AM-9:30PM，夏季中国时间 11:30PM-4:30AM，冬季中国时间 12:30PM-5:30AM）这样就需要你稍后再试。
+
+## 换手机，还可以用 eSIM 吗？
+是的可以，按照以下步骤即可将你的 eSIM 移动到新手机
+1. 检查新手机是否支持 eSIM
+2. 新手机下载并登录 giffgaff 应用程序
+3. **Account** > **SIM** > **Replace my SIM** > **Switch to new eSIM**
+4. 最后，只需要简单的步骤将你的 eSIM 切换到新手机
+
+官方指引：[点击这里](https://www.giffgaff.com/help/articles/can-i-still-use-my-esim-if-i-switch-to-a-different-phone)
 
 ## 商店
 
