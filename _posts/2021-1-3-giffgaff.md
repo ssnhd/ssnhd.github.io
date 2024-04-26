@@ -96,7 +96,7 @@ tags:
 ## eSIM
 
 ### 准备
-1. 支持 eSIM 的手机，有锁机不支持，国产品牌及国行手机均不支持；
+1. 支持 eSIM 的手机，[点击这里](https://simgv.com/2024/04/26/esim/)查看哪些手机支持 eSIM；
 2. 手机安装 giffgaff App
 3. 手机连接 Wi-Fi，使用英国 IP 更好
 
