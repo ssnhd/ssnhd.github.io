@@ -93,18 +93,21 @@ tags:
 
 官方指引：[点击这里](https://www.giffgaff.com/profile/details/getnumber)
 
-## 转 eSIM
+## eSIM
 
 ### 准备
 1. 支持 eSIM 的手机，有锁机不支持，国产品牌及国行手机均不支持；
 2. 手机安装 giffgaff App
-3. 手机连接 Wi-Fi，如果开启英国代理 IP 更好
+3. 手机连接 Wi-Fi，使用英国 IP 更好
 
 ### 步骤
-1. 打开 giffgaff App，【Account】→【SIM】→【Replace my SIM】→【Switch to a new eSIM】
-2. 勾选【I understand and accept this】→ 点击【Start the switch】
-3. 输入短信收到的 6 位数验证码，点击【Confirm】
-4. 点击【Install eSIM】，按提示操作最后出现【We're activating your eSIM】，等待 10 分钟-24 小时，获得信号即可使用。
+1. 打开 giffgaff App 并登录，依次点击 **Account** → **SIM** → **Replace my SIM** → **Switch to a new eSIM**
+2. 会看到一个重要信息，请保持稳定的 Wi-Fi 连接（最好使用英国 IP）
+3. 勾选 **I understand and accept this** → 点击 **Start the switch**
+4. 输入短信收到的 6 位数验证码，点击 **Confirm**
+5. 点击 **Install eSIM**，按提示操作最后出现 **We're activating your eSIM**，等待约 5 分钟-24 小时，获得信号即可使用，同时实体卡自动失效可以扔掉了。
+
+注：第五步点击 **Install eSIM** 如果提示 `eSIM setup isn't possible right now.Please , try again later.`，可以尝试重启 App，重新拔卡插卡再试。
 
 官方指引：[点击这里](https://www.giffgaff.com/help/articles/how-do-i-get-an-esim-on-giffgaff)
 
