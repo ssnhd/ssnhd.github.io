@@ -91,7 +91,7 @@ tags:
 
 ## eSIM
 
-首先，你需要满足➊支持 eSIM 的手机，[点击这里](https://simgv.com/2024/04/26/esim/)查看哪些手机支持；➋安装 giffgaff App；➌手机连接 Wi-Fi。
+首先，你需要满足➊支持 eSIM 的手机，[点击这里](https://www.giffgaff.com/help/articles/can-i-use-an-esim-in-my-current-phone)查看哪些手机支持；➋安装 giffgaff App；➌手机连接 Wi-Fi。
 
 
 1. 打开 giffgaff App 并登录，依次点击 **Account** > **SIM** > **Replace my SIM** > **Switch to a new eSIM**
