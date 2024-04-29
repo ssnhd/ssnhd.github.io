@@ -91,9 +91,12 @@ tags:
 
 ## eSIM
 
-首先，你需要满足➊支持 eSIM 的手机，[点击这里](https://www.giffgaff.com/help/articles/can-i-use-an-esim-in-my-current-phone)查看哪些手机支持；➋安装 giffgaff App；➌手机连接 Wi-Fi。
+**首先，需要满足以下条件**：
+1. 支持 eSIM 的手机，2018-2020 年期间发布的某些手机不支持，建议用 2021 年及之后的手机，[点击这里查看哪些手机支持](https://www.giffgaff.com/help/articles/can-i-use-an-esim-in-my-current-phone)；
+2. 手机安装 giffgaff App；
+3. 手机连接 Wi-Fi。
 
-
+**转 eSIM 步骤**：
 1. 打开 giffgaff App 并登录，依次点击 **Account** > **SIM** > **Replace my SIM** > **Switch to a new eSIM**
 2. 会看到一个提示，请保持稳定的 Wi-Fi 连接（最好使用英国 IP）
 3. 勾选 **I understand and accept this** > 点击 **Start the switch**
