@@ -91,19 +91,19 @@ tags:
 
 ## eSIM
 
-**首先，需要满足以下条件**：
-1. 支持 eSIM 的手机，2018-2020 年期间发布的某些手机不支持，建议用 2021 年及之后的手机，[点击这里查看哪些手机支持](https://www.giffgaff.com/help/articles/can-i-use-an-esim-in-my-current-phone)；
-2. 手机安装 giffgaff App；
-3. 手机连接 Wi-Fi。
+**需要满足以下条件**：
+1. 支持 eSIM 的手机（例如美版 iPhone），有锁机不支持，2018-2020 年期间发布的某些手机不支持，建议用 2021 年及之后的手机，[点击查看哪些手机支持](https://www.giffgaff.com/help/articles/can-i-use-an-esim-in-my-current-phone)
+2. 手机安装 giffgaff App
+3. 手机连接 Wi-Fi
 
 **转 eSIM 步骤**：
 1. 打开 giffgaff App 并登录，依次点击 **Account** > **SIM** > **Replace my SIM** > **Switch to a new eSIM**
 2. 会看到一个提示，请保持稳定的 Wi-Fi 连接（最好使用英国 IP）
 3. 勾选 **I understand and accept this** > 点击 **Start the switch**
 4. 输入短信收到的 6 位数验证码，点击 **Confirm**
-5. 点击 **Install eSIM**，按提示操作最后出现 **We're activating your eSIM**，等待约 5 分钟-24 小时，获得信号即可使用，同时实体卡自动失效。
+5. 点击 **Install eSIM**，按提示操作最后出现 **We're activating your eSIM**，等待约 5 分钟-24 小时，获得信号即可使用，同时实体卡自动失效
 
-注：第五步点击 **Install eSIM** 如果提示 `eSIM setup isn't possible right now.Please , try again later.`，可以尝试重启 App，重新拔卡插卡再试。
+注：第五步点击 **Install eSIM** 如果提示 **eSIM setup isn't possible right now.Please , try again later.** 可以尝试重启 App，重新拔卡插卡再试。
 
 官方指引：[点击这里](https://www.giffgaff.com/help/articles/how-do-i-get-an-esim-on-giffgaff)
 
@@ -131,6 +131,4 @@ tags:
 
 官方指引：[点击这里](https://www.giffgaff.com/help/articles/can-i-still-use-my-esim-if-i-switch-to-a-different-phone)
 
-## 商店
-
-商店地址：[点击这里](https://simgv.com/2023/03/19/store/)
+## 商店：[点击这里](https://simgv.com/2023/03/19/store/)
