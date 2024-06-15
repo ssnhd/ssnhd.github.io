@@ -1,4 +1,4 @@
-Hi, I'm Hedong, art major, art designer, can't code, and like to toss, so I have this About.
+Hi, I'm North America Tim
 
 About the world, may there be peace in the world.\
 About animals, boycott all animal performances.\
