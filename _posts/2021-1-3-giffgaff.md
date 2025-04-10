@@ -66,6 +66,7 @@ tags:
 - SIM 卡损坏或丢了，更换/补 SIM 卡（联系 TG 客服）：<https://www.giffgaff.com/profile/details#simswap>
 
 ## eSIM
+
 ### 满足以下条件
 1. 支持 eSIM 的手机（例如美版 iPhone），国行和有锁机不支持，[点击查看哪些手机支持](https://www.giffgaff.com/help/articles/can-i-use-an-esim-in-my-current-phone)
 2. 手机安装 giffgaff App
