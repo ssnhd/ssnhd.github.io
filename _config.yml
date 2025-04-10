@@ -1,10 +1,10 @@
 # 站点设置
-title: 一卡在手，新鲜尽收 # 名称
+title: SIMGV 卡乐乐 # 名称
 SEOTitle: simgv.com # 网页标签上显示的小标题
 header-img: img/post-bg-google.jpeg
 email: liuour@gmail.com
 description: "科技 数码 美术 设计 | 这里是 simgv 的个人博客, 与你一起发现更大的世界。"
-keyword: "simgv, 手机卡, Google Voice, GV, Apple, 博客, 个人网站" # 关键词
+keyword: "simgv, 手机卡, Google Voice, GV, Apple ID 注册, 海外号码, 美国手机号, SIM 卡" # 关键词
 url: "http://ssnhd.github.io" # 博客链接地址
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -75,7 +75,7 @@ ga_domain: auto # 默认的是 auto, 你如果没有自己的域名，需要改�
 
 # 侧边栏设置
 sidebar: true
-sidebar-about-description: "Telegram 客服：@GV188"
+sidebar-about-description: "ahezuo@gmail.com"
 sidebar-avatar: /img/avatar-me.jpg # 头像
 
 # Featured Tags 主页右侧特色标签
@@ -92,6 +92,6 @@ page-mathjax: false
 # Friends 友链
 friends:
   [
-    { title: "GV 外国手机卡", href: "https://simgv.com/2023/03/19/store/" },
-    { title: "V2EX 群", href: "https://t.me/V2EXPro/" },
+    { title: "TG 频道", href: "https://t.me/GVStore" },
+    { title: "V2EX  交流群", href: "https://t.me/V2EXPro/" },
   ]
