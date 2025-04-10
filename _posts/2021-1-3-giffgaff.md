@@ -9,6 +9,7 @@ catalog: true
 top: true
 tags:
   - giffgaff
+  - 手机卡
 ---
 
 商店购买：[点击这里](https://t.me/GVStore)
