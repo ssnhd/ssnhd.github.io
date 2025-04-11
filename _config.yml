@@ -9,7 +9,7 @@ url: "http://ssnhd.github.io" # 博客链接地址
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
 # 发布具有未来日期的帖子或收藏文档
-future: true
+future: #true
 
 # SNS 设置
 RSS: false
