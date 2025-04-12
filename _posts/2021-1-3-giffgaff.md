@@ -88,7 +88,7 @@ tags:
 
 ## 更改号码
 
-打开[官方获取新号码](https://www.giffgaff.com/profile/details/getnumber)，按照步骤操作即可。注意以下事项：
+打开[官网获取新号码](https://www.giffgaff.com/profile/details/getnumber)，按照步骤操作即可。注意以下事项：
 
 1. 英国时间晚上 9:30-凌晨 4:30 期间不提供服务
 2. 新的号码和余额可能需要 4 个小时才会显示到新账户中
