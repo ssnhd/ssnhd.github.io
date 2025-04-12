@@ -63,47 +63,46 @@ tags:
 
 ⚠️注：经众多卡友实践，即便切换信号到中国移动，如果对方是中国移动的手机号码，由于国内防电信欺诈的原因，通常收不到你发的短信。目前联通及电信的手机号码，还是能接收 giffgaff 发出的国际短信。
 
-## 常见问题
+## 查询本机号码
 
-- 查询本机号码：发送短信 `NUMBER` 到 `43430`
-- 查询话费余额：拨号界面输入 `*100#`
-- 更改密码：[点击这里](https://www.giffgaff.com/auth/reset-password)
-- 更改邮箱等资料：[点击这里](https://www.giffgaff.com/profile/details)
-- 续费充值：[点击这里](https://www.giffgaff.com/top-up)
-- 话费账单查询：[点击这里](https://www.giffgaff.com/profile/usage-statement)
-- 更换号码：[点击这里](https://www.giffgaff.com/profile/details/getnumber)（支持更换 2 次，号码随机分配）
-- 换手机，转移 eSIM：[点击这里](https://www.giffgaff.com/help/articles/can-i-still-use-my-esim-if-i-switch-to-a-different-phone)
-- eSIM 转到实体卡：[点击这里](https://www.giffgaff.com/help/articles/can-i-switch-back-to-a-physical-sim-card-from-an-esim)
-- SIM 卡损坏或丢了，更换/补 SIM 卡（联系 TG 客服）：[点击这里](https://www.giffgaff.com/profile/details#simswap)
+发送短信 `NUMBER` 到 `43430`
+
+## 查询余额
+
+拨号界面输入 `*100#`
 
 ## eSIM
 
-### 满足以下条件
-
-1. 支持 eSIM 的手机，查看手机是否支持[点击这里](https://www.giffgaff.com/help/articles/can-i-use-an-esim-in-my-current-phone)
-2. 手机安装 giffgaff App
-3. 手机连接 Wi-Fi
-
-### 步骤
+实体 SIM 卡转到 eSIM 需满足：①手机支持 eSIM（例如美版无锁 iPhone）；②安装 giffgaff App；③连接 Wi-Fi。
 
 1. 打开 giffgaff App 并登录，依次点击 **Account** > **SIM** > **Replace my SIM** > **Switch to a new eSIM**
-2. 会看到一个提示，请保持稳定的 Wi-Fi 连接
+2. . 会看到一个提示，请保持稳定的 Wi-Fi 连接
 3. 勾选 **I understand and accept this** > 点击 **Start the switch**
 4. 输入短信收到的 6 位数验证码（或者选择邮箱接收验证码），点击 **Confirm**
 5. 点击 **Install eSIM**，按提示操作最后出现 **We're activating your eSIM**，等待约 5 分钟-24 小时，获得信号即可使用，同时实体卡自动失效
 
 ⚠️注：第 5 步点击 **Install eSIM** 如果提示 **eSIM setup isn't possible right now.Please , try again later.** 可以尝试重启 App，重新拔卡插卡再试。
 
-官方指引：[点击这里](https://www.giffgaff.com/help/articles/how-do-i-get-an-esim-on-giffgaff)
+>官方教程：[点击这里](https://www.giffgaff.com/help/articles/how-do-i-get-an-esim-on-giffgaff)
 
-### 显示“激活中…”
+>⚠️注：添加卡之后一直「激活中……」，收不到信号。\
+>答：eSIM 转换会在 24 小时之内完成，如果在工作时间之外会出现无法添加/一直转圈的情况（工作时间：英国时间 4:30AM-9:30PM，夏季中国时间 11:30PM-4:30AM，冬季中国时间 12:30PM-5:30AM）这样就需要你稍后再试。
 
-添加卡之后一直「激活中……」，收不到信号。
+## 更改号码
 
-答：eSIM 转换会在 24 小时之内完成，如果在工作时间之外会出现无法添加/一直转圈的情况（工作时间：英国时间 4:30AM-9:30PM，夏季中国时间 11:30PM-4:30AM，冬季中国时间 12:30PM-5:30AM）这样就需要你稍后再试。
+打开[官方获取新号码](https://www.giffgaff.com/profile/details/getnumber)，按照步骤操作即可。注意以下事项：
 
-## 友情提示
+1. 英国时间晚上 9:30-凌晨 4:30 期间不提供服务
+2. 新的号码和余额可能需要 4 个小时才会显示到新账户中
+3. 全程使用 Wi-Fi
+4. 每个账户只能更换 2 次号码
 
-注册第三方平台建议使用 iPhone，IP 越干净越好，若 IP 不干净有概率收不到验证码。
+## 其他问题
 
-友情提示：请遵守当地法律法规，禁止用于违法犯罪行为，否则后果自负。
+- 更改密码：[点击这里](https://www.giffgaff.com/auth/reset-password)
+- 更改邮箱等资料：[点击这里](https://www.giffgaff.com/profile/details)
+- 续费充值：[点击这里](https://www.giffgaff.com/top-up)
+- 话费账单查询：[点击这里](https://www.giffgaff.com/profile/usage-statement)
+- eSIM 转到另一部手机：[点击这里](https://www.giffgaff.com/help/articles/can-i-still-use-my-esim-if-i-switch-to-a-different-phone)
+- eSIM 转到实体卡：[点击这里](https://www.giffgaff.com/help/articles/can-i-switch-back-to-a-physical-sim-card-from-an-esim)
+- SIM 卡损坏或丢了，更换/补 SIM 卡（联系 TG 客服）：[点击这里](https://www.giffgaff.com/profile/details#simswap)
