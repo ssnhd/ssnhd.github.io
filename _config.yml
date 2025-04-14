@@ -23,7 +23,7 @@ RSS: false
 # Build settings
 # 从2016年起, GitHub 不支持 'pygments'，使用 'rouge' 突出显示.
 highlighter: rouge
-permalink: /:title/
+permalink: pretty
 paginate: 15 # 一页中的帖子数
 exclude:
   [
