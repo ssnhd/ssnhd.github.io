@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 英国实体卡 giffgaff 激活使用教程
+title: giffgaff 英国实体 SIM 卡激活使用教程
 subtitle: 适合接码注册
 date: 2021-1-3
 author: 河東
@@ -12,7 +12,9 @@ tags:
   - 手机卡
 ---
 
-商店购买：[点击这里](https://t.me/GVStore)
+请遵守当地法律法规，禁止用于违法犯罪行为，否则后果自负。
+
+购买商店：[点击这里](https://t.me/GVStore)。
 
 ## 激活
 
