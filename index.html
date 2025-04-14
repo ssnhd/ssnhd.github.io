@@ -6,7 +6,7 @@ description: "GV、Gmail、Telegram、实体手机 SIM 卡、Apple ID 礼品卡"
 {% for post in site.posts %}
 {% if post.top == true %}
 <div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}" target="_blank">
+    <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">
             📍 {{ post.title }}
         </h2>
@@ -34,7 +34,7 @@ description: "GV、Gmail、Telegram、实体手机 SIM 卡、Apple ID 礼品卡"
 {% for post in paginator.posts %}
 {% if post.top != true %}
 <div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}" target="_blank">
+    <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">
             {{ post.title }}
         </h2>
