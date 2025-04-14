@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 测试
+title: Telegram 常见问题及解决方案
 subtitle: 
-date: 
+date: 2021-1-1
 author: 河東
 header-img: img/post-bg-mac.jpeg
 catalog: true
