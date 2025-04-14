@@ -1,0 +1,37 @@
+---
+layout: post
+title: 测试
+subtitle: 
+date: 2021-1-1
+author: 河東
+header-img: img/post-bg-mac.jpeg
+catalog: true
+top: 
+tags:
+  - Telegram
+---
+
+以下问题由网友总结反馈
+
+## 一、收不到验证码
+
+- 代理 IP 问题，请更换更好更干净的 IP；
+- 优先用 iPhone，安卓用户用 [Telegram X](https://apkpure.com/search?q=Telegram+X)（开发者为 Telegram FZ-LLC），安卓会出现代理连不上 TG 服务器的情况；
+- 检查是否输入了正确的国家区号和手机号；
+- 重启代理软件。
+
+## 二、向已登录的 Telegram 客户端发送验证码
+
+**情况一**：手机号曾被他人注册过（例如号码的前用户没有保号，被运营商收回并重新分配出来），可以在验证码页面点击【未收到验证码】后，发送邮件至 Telegram 客服申请注销账号或请求短信验证码登录。
+
+⚠️注：客服不回复，等待几个工作日后再试。如果还是不行多申诉几次，再不行则无解。
+
+**情况二**：如果在第一部手机上注册或更换绑定 TG，但由于代理问题未收到短信或短信延迟，当你尝试在第二部手机上注册或更换绑定时，会出现“向已登录的 Telegram 客户端发送验证码”的提示。这时，请切换回第一部手机进行注册或更换绑定操作。
+
+## 三、提示“号码已绑定账号”
+打开 [TG 官网](https://my.telegram.org/auth?to=delete) 输入手机号进行注销，然后重新注册。
+
+## 四、号码被禁用
+
+发送邮件至 TG 客服进行申诉：[recover@telegram.org](recover@telegram.org)
+
