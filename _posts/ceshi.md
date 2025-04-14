@@ -2,7 +2,7 @@
 layout: post
 title: 测试
 subtitle: 
-date: 2021-1-1
+date: 
 author: 河東
 header-img: img/post-bg-mac.jpeg
 catalog: true
