@@ -44,7 +44,7 @@ tags:
 |  **发短信**       |   0.3 英镑／条 |
 |  **接打电话**       |   1 英镑／分钟 |
 | **流量**    | 0.2 英镑／MB   |
-|**官网自费介绍**|[点击这里](https://www.giffgaff.com/roaming-charges)|
+|**官网资费介绍**|[点击这里](https://www.giffgaff.com/roaming-charges)|
 
 ## 保号
 连续 6 个月未使用将被停用。为了避免停用，请每隔 6 个月至少执行以下任一操作一次：
