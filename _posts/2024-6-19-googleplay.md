@@ -16,12 +16,12 @@ tags:
 ![](https://i.imgur.com/IGDxCuG.png)
 
 ## 更改地区
-1. 用美国 IP 打开 [账号关联地区更改请求](https://policies.google.com/country-association-form) 选择国家和州，勾选理由，点击**提交**；
+1. 用美国 IP 打开 <https://policies.google.com/country-association-form> 选择国家和州，勾选理由，点击**提交**；
 2. 等待几小时或几个工作日，Google 会发邮件通知是否更改成功。
 
-⚠️注：一年只能更改一次地区，若上次更改未满一年则无法再改。
+⚠️ 注：一年只能更改一次地区，若上次更改未满一年则无法再改。
 
-官方指引：https://support.google.com/googleplay/answer/7431675?hl=zh-Hans
+官方指引：<https://support.google.com/googleplay/answer/7431675?hl=zh-Hans>
 
 
 
