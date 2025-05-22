@@ -96,6 +96,10 @@ tags:
 3. 全程使用 Wi-Fi
 4. 每个账户支持更换 2 次号码
 
+## WiFi 通话和 VoLTE
+
+官网介绍：[https://help.giffgaff.com/en/articles/258841-wifi-calling-and-volte](https://help.giffgaff.com/en/articles/258841-wifi-calling-and-volte)
+
 ## 其他问题
 
 - 更改密码：[点击这里](https://www.giffgaff.com/auth/reset-password)
