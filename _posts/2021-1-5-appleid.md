@@ -13,16 +13,15 @@ tags:
 
 商店购买：[点击这里](https://t.me/GVStore)
 
-# 外区 美区 Apple ID 使用方法
-⚠️在 App Store 里登录，⚠️不要在设置里登录 iCloud，否则手机被锁后果自负！\
-⚠️在 App Store 里登录，⚠️不要在设置里登录 iCloud，否则手机被锁后果自负！
+⚠️ 在 App Store 里登录，不要在设置里登录 iCloud，否则手机被锁后果自负！\
+⚠️ 在 App Store 里登录，不要在设置里登录 iCloud，否则手机被锁后果自负！
 
 ## 更改邮箱和密码
 1. 电脑网页打开 [Apple ID](https://appleid.apple.com/) 并登录。若弹出【Apple ID 安全】选择【其他选项】→【不升级】。
 2. 在“登录和安全”部分，选择【Apple 账户】更改邮箱，选择【密码】更改密码。
 3. 选择【账户安全】更改密保，双重认证自行决定是否开启，开启就是绑定手机号更安全。
 
-⚠️注：若显示密码错误，打开[忘记密码](https://iforgot.apple.com/)通过安全问题(密保)重置密码。
+⚠️ 注：若显示密码错误，打开[忘记密码](https://iforgot.apple.com/)通过安全问题(密保)重置密码。
 
 ![](https://i.imgur.com/knuXDH2.png)
 
