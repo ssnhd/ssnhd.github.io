@@ -68,7 +68,7 @@ tags:
 
 ## 余额
 
-登录官网或者官方 App，都可以查看卡信息。
+登录官网 <https://www.giffgaff.com/> 或 giffgaff App。
 
 ## eSIM
 
