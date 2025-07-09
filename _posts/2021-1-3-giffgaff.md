@@ -22,16 +22,16 @@ tags:
 
 使用支持美元的信用卡（例如卡上有 VISA 或 Master 图标）进行充值。若无，联系[客服](https://t.me/GVStore)代充值。
 
-1. 打开[官网](https://www.giffgaff.com/activate)，输入 SIM 卡中间位置 6 位激活码，点击【Activate your SIM】
+1. 打开官网 <https://www.giffgaff.com/activate> ，输入 SIM 卡中间位置灰色 6 位激活码，点击【Activate your SIM】
 2. 输入你的邮箱，点击【Next】
 3. 创建密码，点击【Register】
-4. 不接受广告，选择【No,thanks】，点击 【Continue】
+4. 不接收广告，选择【No,thanks】，点击 【Continue】
 5. 网页下拉至底部选择【Pay as you go】，点击【Continue】
 6. 选择 10 英镑，点击【Pay now】
 7. 输入地址（随便填）和信用卡信息，勾选同意，点击【Activate your SIM】
-8. 付款后等待一会页面上出现号码（如下图），插卡等待有信号即可使用。
+8. 付款后会出现号码（如下图），插卡等待有信号即可使用。
 
-⚠️ 注：英国区号 `+44`，例如 `079xxxxx557` 前面的 `0` 登录网站或 App 时才需要，日常使用将 `0` 改为区号 `+4479xxxxx557`
+⚠️ 注：号码前面的 `0` 登录网站或 App 时才需要，日常使用将其去掉，示例：`+4479xxxxx557` （英国区号 +44）
 
 ![](https://i.imgur.com/Q9cZKmj.png)
 
