@@ -96,9 +96,15 @@ tags:
 3. 全程使用 Wi-Fi
 4. 每个账户支持更换 2 次号码
 
-## WiFi 通话和 VoLTE
+## Wi-Fi Calling
 
-官网介绍：[https://help.giffgaff.com/en/articles/258841-wifi-calling-and-volte](https://help.giffgaff.com/en/articles/258841-wifi-calling-and-volte)
+开启 Wi-Fi Calling 接打电话和发短信回便宜很多，缺点是需要英国 IP。方法如下：
+
+1. 全局英国 IP 网络；
+2. iPhone 设置→ App→  电话→  打开 Wi-Fi 通话
+3. iPhone 设置→ 蜂窝网络→ 点击你的号码→ 语音与数据→ 选择 4G 或 5G
+
+⚠️ 注：不懂的还可以看官网介绍（有视频教程）：[https://help.giffgaff.com/en/articles/258841-wifi-calling-and-volte](https://help.giffgaff.com/en/articles/258841-wifi-calling-and-volte)
 
 ## 其他问题
 
