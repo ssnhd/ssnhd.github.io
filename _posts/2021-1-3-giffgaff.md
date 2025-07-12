@@ -20,9 +20,9 @@ tags:
 
 激活需充值 10 英镑话费。不接打电话，仅发短信保号，使用时长可达 16 年以上。
 
-使用支持美元的信用卡（例如卡上有 VISA 或 Master 图标）进行充值。若无，联系[客服](https://t.me/GVStore)代充值。
+使用支持美元的信用卡（卡上有 VISA 或 Master 图标）进行充值。若无，联系[客服](https://t.me/GVStore)代充值。
 
-1. 打开官网 <https://www.giffgaff.com/activate> ，输入卡片中间位置 Your Activation Code：6 位激活码，点击【Activate your SIM】
+1. 打开官网 <https://www.giffgaff.com/activate> ，输入卡片上 Your Activation Code 的 6 位激活码，点击【Activate your SIM】
 ![](https://i.imgur.com/2MvepgL.jpg)
 
 2. 输入你的邮箱，点击【Next】
