@@ -97,12 +97,12 @@ tags:
 2. 输入密码，再点击【Change my number】
 3. 系统会跳转至【个人信息与设置】界面，等待显示新号码。
 
-注意以下事项：
+注意事项：
 
-3. 中国时间深夜 4:30 至上午 11:30 期间不可以更换
-4. 新的号码和余额最多需要 4 个小时显示到账户中
-5. 全程使用 Wi-Fi
-6. 每个账户支持更换 2 次号码
+1. 中国时间深夜 4:30 至上午 11:30 期间不可以更换
+2. 新的号码和余额最多需要 4 个小时显示到账户中
+3. 全程使用 Wi-Fi
+4. 每个账户支持更换 2 次号码
 
 ## Wi-Fi Calling
 
@@ -112,14 +112,15 @@ tags:
 2. iPhone 设置→ App→  电话→  打开 Wi-Fi 通话；
 3. iPhone 设置→ 蜂窝网络→ 点击你的号码→ 语音与数据→ 选择 4G 或 5G。
 
-不懂的还可以看官网介绍（有视频教程）：[https://help.giffgaff.com/en/articles/258841-wifi-calling-and-volte](https://help.giffgaff.com/en/articles/258841-wifi-calling-and-volte)
+不懂的可以看官网介绍（有视频演示）：[https://help.giffgaff.com/en/articles/258841-wifi-calling-and-volte](https://help.giffgaff.com/en/articles/258841-wifi-calling-and-volte)
 
 ## 其他问题
 
-- 更改密码：[点击这里](https://www.giffgaff.com/auth/reset-password)
-- 更改邮箱等资料：[点击这里](https://www.giffgaff.com/profile/details)
-- 续费充值：[点击这里](https://www.giffgaff.com/top-up)
-- 话费账单查询：[点击这里](https://www.giffgaff.com/profile/usage-statement)
-- eSIM 转到另一部手机：[点击这里](https://www.giffgaff.com/help/articles/can-i-still-use-my-esim-if-i-switch-to-a-different-phone)
-- eSIM 转到实体卡：[点击这里](https://www.giffgaff.com/help/articles/can-i-switch-back-to-a-physical-sim-card-from-an-esim)
-- SIM 卡损坏或丢了，更换/补 SIM 卡（联系 TG 客服）：[点击这里](https://www.giffgaff.com/profile/details#simswap)
+- 更改密码：<https://www.giffgaff.com/auth/reset-password>
+- 更改邮箱等资料：<https://www.giffgaff.com/profile/details>
+- 续费充值：<https://www.giffgaff.com/top-up>
+- 话费账单查询：<https://www.giffgaff.com/profile/usage-statement>
+- eSIM 转到另一部手机：<https://www.giffgaff.com/help/articles/can-i-still-use-my-esim-if-i-switch-to-a-different-phone>
+- eSIM 转到实体卡：<https://www.giffgaff.com/help/articles/can-i-switch-back-to-a-physical-sim-card-from-an-esim>
+- 补卡联系客服：<https://t.me/GVStore>
+- 转入空卡：<https://www.giffgaff.com/profile/details#simswap>
