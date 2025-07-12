@@ -22,7 +22,9 @@ tags:
 
 使用支持美元的信用卡（例如卡上有 VISA 或 Master 图标）进行充值。若无，联系[客服](https://t.me/GVStore)代充值。
 
-1. 打开官网 <https://www.giffgaff.com/activate> ，输入 SIM 卡中间位置灰色 6 位激活码，点击【Activate your SIM】
+1. 打开官网 <https://www.giffgaff.com/activate> ，输入卡片中间位置 Your Activation Code：6 位激活码，点击【Activate your SIM】
+![](https://i.imgur.com/2MvepgL.jpg)
+
 2. 输入你的邮箱，点击【Next】
 3. 创建密码，点击【Register】
 4. 不接收广告，选择【No,thanks】，点击 【Continue】
