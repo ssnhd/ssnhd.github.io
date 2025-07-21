@@ -76,10 +76,10 @@ tags:
 
 ## eSIM
 
-eSIM 是电子 SIM 卡，无需插卡就能在手机里使用，实体 SIM 卡转到 eSIM 需满足：\
-①手机支持 eSIM，例如美版无锁 iPhone、Pixel；\
-②手机安装 giffgaff App；\
-③连接 Wi-Fi。
+eSIM 是电子 SIM 卡，无需插卡就能在手机里使用，需满足：
+1. 手机支持 eSIM，例如美版无锁 iPhone、Pixel
+2. 手机安装 giffgaff App
+3. 连接 Wi-Fi
 
 **转 eSIM 步骤：**
 
