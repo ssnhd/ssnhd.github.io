@@ -81,18 +81,15 @@ eSIM 是电子 SIM 卡，无需插卡就能在手机里使用，实体 SIM 卡�
 ②手机安装 giffgaff App；\
 ③连接 Wi-Fi。
 
+**转 eSIM 步骤：**
+
 1. 打开 giffgaff App 并登录，依次点击 **Account** > **SIM** > **Replace my SIM** > **Switch to a new eSIM**
 2. 会看到一个提示，请保持稳定的 Wi-Fi 连接
 3. 勾选 **I understand and accept this** > 点击 **Start the switch**
 4. 输入短信收到的 6 位数验证码（或者选择邮箱接收验证码），点击 **Confirm**
 5. 点击 **Install eSIM**，按提示操作最后出现 **We're activating your eSIM**，等待约 5 分钟-24 小时，获得信号即可使用，同时实体卡自动失效
 
-⚠️注：第 5 步点击 **Install eSIM** 如果提示 **eSIM setup isn't possible right now.Please , try again later.** 可以尝试重启 App，重新拔卡插卡再试。
-
->官方教程：[点击这里](https://www.giffgaff.com/help/articles/how-do-i-get-an-esim-on-giffgaff)
-
->⚠️注：添加卡之后一直「激活中……」，收不到信号。\
->答：eSIM 转换会在 24 小时之内完成，如果在工作时间之外会出现无法添加/一直转圈的情况（工作时间：英国时间 4:30AM-9:30PM，夏季中国时间 11:30PM-4:30AM，冬季中国时间 12:30PM-5:30AM）这样就需要你稍后再试。
+官网教程：<https://www.giffgaff.com/help/articles/how-do-i-get-an-esim-on-giffgaff>
 
 ## 更改号码
 
