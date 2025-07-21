@@ -76,10 +76,13 @@ tags:
 
 ## eSIM
 
-实体 SIM 卡转到 eSIM 需满足：①手机支持 eSIM（例如美版无锁 iPhone）；②安装 giffgaff App；③连接 Wi-Fi。
+eSIM 是电子 SIM 卡，无需插卡就能在手机里使用，实体 SIM 卡转到 eSIM 需满足：\
+①手机支持 eSIM，例如美版无锁 iPhone、Pixel；\
+②手机安装 giffgaff App；\
+③连接 Wi-Fi。
 
 1. 打开 giffgaff App 并登录，依次点击 **Account** > **SIM** > **Replace my SIM** > **Switch to a new eSIM**
-2. . 会看到一个提示，请保持稳定的 Wi-Fi 连接
+2. 会看到一个提示，请保持稳定的 Wi-Fi 连接
 3. 勾选 **I understand and accept this** > 点击 **Start the switch**
 4. 输入短信收到的 6 位数验证码（或者选择邮箱接收验证码），点击 **Confirm**
 5. 点击 **Install eSIM**，按提示操作最后出现 **We're activating your eSIM**，等待约 5 分钟-24 小时，获得信号即可使用，同时实体卡自动失效
