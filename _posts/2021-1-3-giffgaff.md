@@ -74,6 +74,11 @@ tags:
 
 登录官网 <https://www.giffgaff.com/> 或 giffgaff App。
 
+## 充值
+
+1. 打开 <https://www.giffgaff.com/> 并登录，点击【Add credit】；
+2. 选择金额和支付方式（例如信用卡或 PayPal），点击【Continue】按提示操作。
+
 ## eSIM
 
 eSIM 是电子 SIM 卡，无需插卡就能在手机里使用，需满足：
