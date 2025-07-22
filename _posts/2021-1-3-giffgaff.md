@@ -77,7 +77,7 @@ tags:
 ## 充值
 
 1. 打开 <https://www.giffgaff.com/> 并登录，点击【Add credit】；
-2. 选择金额和支付方式（例如信用卡或 PayPal），点击【Continue】按提示操作。
+2. 选择金额和支付方式（信用卡或 PayPal），点击【Continue】按提示操作。
 
 ## eSIM
 
