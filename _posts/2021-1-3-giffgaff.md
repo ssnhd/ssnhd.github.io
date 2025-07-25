@@ -96,6 +96,19 @@ eSIM 是电子 SIM 卡，无需插卡就能在手机里使用，需满足：
 
 官网教程：<https://www.giffgaff.com/help/articles/how-do-i-get-an-esim-on-giffgaff>
 
+## 从 eSIM 切换回实体 SIM
+
+1. 首先，您需要一张全新的、未激活的 giffgaff SIM 卡。您可以[在这里](https://t.me/GVStore)免费订购一张。
+2. 拿到 SIM 卡后，前往 giffgaff 应用或网站并登录
+3. 请按照以下步骤更换您的 SIM 卡。您可以：
+    - 在应用程序上：tap on Account > SIM > Replace my SIM > Switch to a new physical SIM. 
+    - 在网站上：pop over to My profile and settings > Replace my SIM
+4. 按照提示，操作即可再次使用实体 SIM 卡
+
+重要提示：您只能在中国时间 11:30 – 次日凌晨 4:30 之间切换到 eSIM。
+
+官网说明：<https://help.giffgaff.com/en/articles/240706-can-i-switch-back-to-a-physical-sim-card-from-an-esim>
+
 ## 更改号码
 
 若您对激活时系统分配的号码不满意，或该号码有使用记录，您可以选择更换为新号码（依旧是随机分配）。
@@ -128,6 +141,5 @@ eSIM 是电子 SIM 卡，无需插卡就能在手机里使用，需满足：
 - 续费充值：<https://www.giffgaff.com/top-up>
 - 话费账单查询：<https://www.giffgaff.com/profile/usage-statement>
 - eSIM 转到另一部手机：<https://www.giffgaff.com/help/articles/can-i-still-use-my-esim-if-i-switch-to-a-different-phone>
-- eSIM 转到实体卡：<https://www.giffgaff.com/help/articles/can-i-switch-back-to-a-physical-sim-card-from-an-esim>
 - 补卡联系客服：<https://t.me/GVStore>
 - 转入空卡：<https://www.giffgaff.com/profile/details#simswap>
