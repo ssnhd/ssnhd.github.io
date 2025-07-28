@@ -142,3 +142,7 @@ eSIM 是电子 SIM 卡，无需插卡就能在手机里使用，需满足：
 - eSIM 转到另一部手机：<https://www.giffgaff.com/help/articles/can-i-still-use-my-esim-if-i-switch-to-a-different-phone>
 - 补卡联系客服：<https://t.me/GVStore>
 - 转入空卡：<https://www.giffgaff.com/profile/details#simswap>
+
+## 友情提示：关于 TG
+
+关于 Telegram 常见疑问：<https://simgv.com/2021/01/01/tg/>
