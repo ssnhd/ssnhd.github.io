@@ -92,6 +92,6 @@ page-mathjax: false
 # Friends 友链
 friends:
   [
-    { title: "TG 频道", href: "https://t.me/GVStore" },
+    { title: "TG 频道", href: "https://t.me/gvstoresim" },
     { title: "V2EX  交流群", href: "https://t.me/V2EXPro/" },
   ]
